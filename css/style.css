@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #111317;
     min-width: 350px;
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +10,7 @@ body {
 body::after {
     content: "";
     background-image: url("../images/icons/pattern.svg");
-    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -23,14 +24,61 @@ body::after {
 }
 
 .first-screen__wrapper {
+    position: relative;
     max-width: 1410px;
     width: 90%;
     margin: 0 auto;
 }
 
+.first-screen__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 400px;
+    width: 311.88px;
+    height: 908.818px;
+    z-index: -1;
+    transform: rotate(-31.418deg);
+    border-radius: 908.818px;
+    opacity: 0.15;
+    -moz-opacity: 0.15;
+    -webkit-opacity: 0.15;
+    filter: alpha(opacity=15);
+    background: #6C48FF;
+    filter: blur(90px);
+    display: inline-block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/gradientEllipse2.svg");
+
+}
+
+.first-screen__wrapper::after {
+    content: "";
+    position: absolute;
+    right: 1250px;
+    bottom: 300px;
+    width: 311.88px;
+    height: 908.818px;
+    z-index: -1;
+    transform: rotate(-31.418deg);
+    border-radius: 908.818px;
+    opacity: 0.15;
+    -moz-opacity: 0.15;
+    -webkit-opacity: 0.15;
+    filter: alpha(opacity=15);
+    background: #48FFD3;
+    filter: blur(85px);
+    display: inline-block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/gradientEllipse1.svg");
+}
+
+
 /* header */
 .header {
-    background: rgba(23, 25, 29, 0.80);
+    background: rgba(23, 25, 29, 0.48);
+    -webkit-backdrop-filter: blur(53.5px);
     backdrop-filter: blur(53.5px);
 }
 
@@ -208,8 +256,56 @@ body::after {
 }
 
 .banner {
+    position: relative;
     display: flex;
     height: 800px;
+}
+
+
+.banner::before {
+    content: "";
+    position: absolute;
+
+    left: 1325px;
+    bottom: 300px;
+    width: 311.88px;
+    height: 908.818px;
+    z-index: -1;
+    transform: rotate(15deg);
+    border-radius: 683.016px;
+    opacity: 0.15;
+    -moz-opacity: 0.15;
+    -webkit-opacity: 0.15;
+    filter: alpha(opacity=15);
+    background: #6C48FF;
+    filter: blur(90px);
+    display: inline-block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/gradientEllipse4.svg");
+
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    left: 1300px;
+    bottom: 250px;
+    width: 419.82px;
+    height: 528.848px;
+    transform: rotate(30deg);
+    border-radius: 528.848px;
+    flex-shrink: 0;
+    opacity: 0.15;
+    -moz-opacity: 0.15;
+    -webkit-opacity: 0.15;
+    filter: alpha(opacity=15);
+    background: #48FFD3;
+    filter: blur(90px);
+    display: inline-block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/gradientEllipse3.svg");
 }
 
 .banner__content {
@@ -370,13 +466,6 @@ body::after {
     flex-direction: column;
 }
 
-.slider__text {
-    text-transform: uppercase;
-    font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.06);
-    min-height: 100px;
-    padding: 20 0;
-}
 
 .slider__img {
     width: 646px;
@@ -408,11 +497,12 @@ body::after {
     display: flex;
     padding: 20px 30px;
     align-items: center;
-    background: rgba(255, 255, 255, 0.03);
     color: #ffff;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.4px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .slider__logo {
