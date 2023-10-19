@@ -1162,8 +1162,8 @@ label {
 
 .game__card {
     width: 260px;
-    padding: 0 0 20px 0;
     height: 345px;
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -1184,6 +1184,23 @@ label {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.game__card:nth-child(1)::before,
+.game__card:nth-child(9)::before,
+.game__card:nth-child(13)::before,
+.game__card:nth-child(16)::before,
+.game__card:nth-child(22)::before {
+    content: "sale";
+    position: absolute;
+    color: #111317;
+    padding: 10px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.144px;
+    text-transform: uppercase;
+    border-radius: 8px 0px;
+    background: linear-gradient(90deg, #37FFFF -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
 }
 
 .game__card-title {
@@ -1336,6 +1353,7 @@ label {
     width: 17px;
     height: 17px;
     padding: 4px 8px;
+
 }
 
 .showMore {
