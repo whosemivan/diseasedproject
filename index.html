@@ -97,21 +97,21 @@
                     <div class="slider__text">
                         <div class="slider__logo"></div>
                         <div class="game__info">
-                            <a class="rightArrow"><a>
-                                    <div class="slider__title">
-                                        GTA V Special Edition
-                                    </div>
-                                    <div class="game__info-items">
-                                        <div class="game__info-item">
-                                            Аккаунт
-                                        </div>
-                                        <div class="game__info-item">
-                                            Steam
-                                        </div>
-                                        <div class="game__info-item">
-                                            ₽550
-                                        </div>
-                                    </div>
+                            <a class="rightArrow"></a>
+                            <div class="slider__title">
+                                GTA V Special Edition
+                            </div>
+                            <div class="game__info-items">
+                                <div class="game__info-item">
+                                    Аккаунт
+                                </div>
+                                <div class="game__info-item">
+                                    Steam
+                                </div>
+                                <div class="game__info-item">
+                                    ₽550
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,1230 @@
                 </div>
             </div>
         </div>
+
+        <div class="filter__wrapper">
+            <div class="filter__categories">
+                <button class="filter__categoryName">Все категории</button>
+                <button class="filter__categoryName">Ключи</button>
+                <button class="filter__categoryName">Игровые аккаунты</button>
+                <button class="filter__categoryName">Сервисы</button>
+                <button class="filter__categoryName">Донат</button>
+
+                <div class="filter__dropdown">
+                    <div class="filter__dropdown-select">
+                        <span class="filter__dropdown-selected">Фильтр поиска</span>
+                        <div class="filter__dropdown-arrow"></div>
+                    </div>
+                    <ul class="filter__dropdown-list">
+                        <li class="filter__dropdown-item">По популярности</11>
+                        <li class="filter__dropdown-item">Сначала дешевые</li>
+                        <li class="filter__dropdown-item">Сначала дорогие</li>
+                        <li class="filter__dropdown-item-active">Новые</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter__wrapper-content">
+
+                <div class="filter__settings">
+                    <p class="filter__settings-text">Сортировать</p>
+                    <div class="filter__settings-dropdown">
+                        <div class="filter__settings__dropdown-select">
+                            <button class="filter__settings__dropdown-selected">Выберите</button>
+                        </div>
+                        <ul class="filter__settings__dropdown-list">
+                            <li class="filter__dropdown-item">По популярности</li>
+                            <li class="filter__dropdown-item">Сначала дешевые</li>
+                            <li class="filter__dropdown-item">Сначала дорогие</li>
+                            <li class="filter__dropdown-item-active">Новые</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter__radio">
+                    <fieldset class="radio-group">
+                        <p class="filter__settings-text">Сетка товаров</p>
+
+                        <div class="radio-group-text">
+                            <p class="radio-group__wrapper">
+                                <input id="gridfour" type="radio" name="radio-button" class="radio-group__radio"
+                                    checked>
+                                <label for="gridfour" class="radio-group__label">4x1</label>
+                            </p>
+                            <p class="radio-group__wrapper">
+                                <input id="gridfive" type="radio" name="radio-button" class="radio-group__radio">
+                                <label for="gridfive" class="radio-group__label">5x1</label>
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filter__price">
+                    <div class="filter__price-form">
+                        <p class="filter__settings-text">цена от</p>
+                        <input class="filter__settings-input" type="number" placeholder="29" name="price-input">
+                        <label for="price-input" class="filter__settings-input-label">₽</label>
+                    </div>
+
+                    <div class="filter__price-form">
+                        <p class="filter__settings-text">цена до</p>
+                        <input class="filter__settings-input" type="number" placeholder="2999" name="price-input">
+                        <label for="price-input" class="filter__settings-input-label">₽</label>
+                    </div>
+                </div>
+
+                <div class="filter__checkbox">
+                    <div class="checkbox">
+                        <input type="checkbox" class="filter__input" id="input-check" />
+                        <label for="input-check" class="filter__settings-input-label">Скрыть отсутствующий товар</label>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="filter__all-settings">
+                <div class="filter__settings-row">
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Random steam
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Игры от ₽700
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Игры от ₽900
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Игры от ₽1200
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Steam
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Steam points
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Ubisoft
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Epic games
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Ea play
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Apex legends
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Rockstar
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Накрутка
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Буст
+                                </label>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="filter__settings-row">
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Riot
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Fortnite
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    В-баксы
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Minecraft
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Hypixel
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Genshin impact
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Примогемы
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Vk play
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Донат
+                                </label>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    GOG
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="filter__settings-row">
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Xbox
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check3" />
+                                <label for="check3">
+                                    Xbox gamepass
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Playstation
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Подписка
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Nintendo
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Mobile
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Аккаунты
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Донат
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Roblux
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Робуксы
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Подарочные карты
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Software
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Ключи
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Аккаунты
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check-title" />
+                                <label for="check" class="check-title">
+                                    Сервисы
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Музыка
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Кино
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check" />
+                                <label for="check">
+                                    Промокоды
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <input type="checkbox" name="" class="check" id="check2" />
+                                <label for="check2">
+                                    Баллы
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="games__wrapper">
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Metro Last Light Complete Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Spotify 12 Месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/minecraft.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/thelongdark.jpg');">
+                </div>
+                <div class="game__card-title">
+                    The Long Dark: Survival Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/discord.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Discord Nitro Full 12 месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/discord.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Discord Nitro 6 месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/cyberpunk.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Cyberpunk 2077
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/thelongdark.jpg');">
+                </div>
+                <div class="game__card-title">
+                    The Long Dark: Survival Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Metro Last Light Complete Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/hypixel.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия Hypixel VIP
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/cyberpunk.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Cyberpunk 2077
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/callofduty.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Call of Duty®: Modern Warfare® II
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Metro Last Light Complete Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/residentevil.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия Hypixel VIP
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Spotify 12 Месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Metro Last Light Complete Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Spotify 12 Месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/minecraft.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия Hypixel VIP
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/thelongdark.jpg');">
+                </div>
+                <div class="game__card-title">
+                    The Long Dark: Survival Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/discord.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Discord Nitro Full 12 месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/hypixel.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия Hypixel VIP
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Metro Last Light Complete Edition
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/callofduty.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Call of Duty®: Modern Warfare® II
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/cyberpunk.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Cyberpunk 2077
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Spotify 12 Месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/callofduty.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Call of Duty®: Modern Warfare® II
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/residentevil.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия Hypixel VIP
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/cyberpunk.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Cyberpunk 2077
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Spotify 12 Месяцев
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-info"></div>
+                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__card">
+                <div class="game__card-img" style="background-image: url('./images/minecraft.jpg');">
+                </div>
+                <div class="game__card-title">
+                    Minecraft Лицензия
+                </div>
+                <div class="games__card-info">
+                    <div class="games__card-icons">
+                        <div class="games__card-icon-key"></div>
+                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-price"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="showMore">Показать больше</button>
+
+
+
     </section>
+    <section class="lastPurchase">
+        <h2 class="visually-hidden">Последние покупки</h2>
+        <div class="lastPurchase__wrapper">
+
+            <div class="lastPurchase__text">
+                <div class="lastPurchase__subtitle">Не знаешь что купить? Тогда смотри</div>
+                <h3 class="lastPurchase__title">Последние покупки</h3>
+
+            </div>
+
+
+
+            <div class="lastPurchase__group">
+                <button class="lastPurchase__group-left-arrow"></button>
+
+                <div class="lastPurchase__card">
+                    <div class="lastPurchase__card-img" style="background-image: url('./images/discord.jpg');">
+                    </div>
+                    <div class="lastPurchase__card-info">
+                        <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
+
+                        <div class="lastPurchase__card-icons">
+                            <div class="lastPurchase__card-icon-info">Сервисы</div>
+                            <div class="lastPurchase__card-icon-discord">Discord</div>
+                            <div class="lastPurchase__card-price"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lastPurchase__card">
+                    <div class="lastPurchase__card-img" style="background-image: url('./images/discord.jpg');">
+                    </div>
+                    <div class="lastPurchase__card-info">
+                        <div class="lastPurchase__card-title">
+                            <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
+                        </div>
+                        <div class="lastPurchase__card-icons">
+                            <div class="lastPurchase__card-icon-info">Сервисы</div>
+                            <div class="lastPurchase__card-icon-discord">Discord</div>
+                            <div class="lastPurchase__card-price"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lastPurchase__card">
+                    <div class="lastPurchase__card-img" style="background-image: url('./images/metro.jpg');">
+                    </div>
+                    <div class="lastPurchase__card-info">
+                        <div class="lastPurchase__card-title">
+                            <div class="lastPurchase__card-title">Metro Last Light Complete Edition</div>
+                        </div>
+                        <div class="lastPurchase__card-icons">
+                            <div class="lastPurchase__card-icon-info">Сервисы</div>
+                            <div class="lastPurchase__card-icon-steam">Steam</div>
+                            <div class="lastPurchase__card-price"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="lastPurchase__group-right-arrow"></button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__info-container">
+                <a href="#" class="footer__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="41" viewBox="0 0 76 41" fill="none">
+                        <path
+                            d="M13.3731 6.88916H0V16.8293H6.07869L0 23.0198V32.8892H13.3731L19.4518 26.7341V13.115L13.3731 6.88916ZM13.3731 26.7341H6.07869V13.115H13.3731V26.7341Z"
+                            fill="#F4F4F4" />
+                        <path
+                            d="M49.6269 6.88916L43.5482 13.115V16.8293L49.6269 16.7939V13.115H63V6.88916H49.6269ZM43.5482 22.9844H56.9213V26.6987H63V16.8293H49.6269L43.5482 22.9844ZM43.5482 32.8892H56.9213L63 26.6987H43.5482V32.8892Z"
+                            fill="#F4F4F4" />
+                        <path
+                            d="M27.7883 6.88916L21.7096 13.115V16.8293L27.7883 16.7939V13.115H55.8977V6.88916H27.7883ZM21.7096 22.9844H35.0827V26.6987H41.1614V16.8293H27.7883L21.7096 22.9844ZM4.6703 32.8892H35.0827L41.1614 26.6987H4.6703V32.8892Z"
+                            fill="#F4F4F4" />
+                    </svg>
+                </a>
+                <p class="footer__info-text">
+                    Один из лучших и надежных магазинов игровых цифровых товаров, аккаунтов и ключей на территории СНГ
+                </p>
+
+                <div class="footer__payLogos">
+                    <img src="./images/icons/freekassa.svg" alt="freekassa" width="20" height="20"
+                        class="footer__payLogo">
+                    <img src="./images/icons/mir.svg" alt="mir" width="20" height="20" class="footer__payLogo">
+                    <img src="./images/icons/sbp.svg" alt="sbp" width="20" height="20" class="footer__payLogo">
+                    <img src="./images/icons/umoney.svg" alt="umoney" width="20" height="20" class="footer__payLogo">
+                    <img src="./images/icons/payeer.svg" alt="payeer" width="20" height="20" class="footer__payLogo">
+                    <img src="./images/icons/lava.svg" alt="lava" width="20" height="20" class="footer__payLogo">
+
+                </div>
+            </div>
+            <div class="footer__questions-blocks">
+                <div class="footer__questions-block">
+                    <div class="footer__questions-title">Навигация</div>
+                    <ul class="footer__questions-list">
+                        <li class="footer__questions-list-item">Главная</li>
+                        <li class="footer__questions-list-item">Faq & помощь</li>
+                        <li class="footer__questions-list-item">Корзина</li>
+                    </ul>
+                </div>
+                <div class="footer__questions-block">
+                    <div class="footer__questions-title">Другое</div>
+                    <ul class="footer__questions-list">
+                        <li class="footer__questions-list-item">Гарантии</li>
+                        <li class="footer__questions-list-item">Условия использования</li>
+                        <li class="footer__questions-list-item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="footer__questions-block">
+                    <div class="footer__questions-title">Социальные сети</div>
+                    <ul class="footer__questions-list">
+                        <li class="footer__questions-list-icons"></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__about-container">
+            <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
+            <div class="footer__about-text-group">
+                <p class="footer__about-text">Система по созданию магазинов: <span>Lequeshop.com</span></p>
+                <p class="footer__about-text">Designed by: <span>Maxyao</span></p>
+            </div>
+
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
