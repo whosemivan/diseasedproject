@@ -155,17 +155,24 @@
                 <button class="filter__categoryName">Игровые аккаунты</button>
                 <button class="filter__categoryName">Сервисы</button>
                 <button class="filter__categoryName">Донат</button>
-
                 <div class="filter__dropdown">
                     <div class="filter__dropdown-select">
                         <span class="filter__dropdown-selected">Фильтр поиска</span>
                         <div class="filter__dropdown-arrow"></div>
                     </div>
                     <ul class="filter__dropdown-list">
-                        <li class="filter__dropdown-item">По популярности</11>
-                        <li class="filter__dropdown-item">Сначала дешевые</li>
-                        <li class="filter__dropdown-item">Сначала дорогие</li>
-                        <li class="filter__dropdown-item-active">Новые</li>
+                        <li class="filter__dropdown-item">
+                            <button class="filter__dropdown-item-btn">По популярности</button>
+                        </li>
+                        <li class="filter__dropdown-item">
+                            <button class="filter__dropdown-item-btn">Сначала дешевые</button>
+                        </li>
+                        <li class="filter__dropdown-item">
+                            <button class="filter__dropdown-item-btn">Сначала дорогие</button>
+                        </li>
+                        <li class="filter__dropdown-item-active">
+                            <button class="filter__dropdown-item-btn">Новые</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -179,10 +186,27 @@
                             <button class="filter__settings__dropdown-selected">Выберите</button>
                         </div>
                         <ul class="filter__settings__dropdown-list">
-                            <li class="filter__dropdown-item">По популярности</li>
-                            <li class="filter__dropdown-item">Сначала дешевые</li>
-                            <li class="filter__dropdown-item">Сначала дорогие</li>
-                            <li class="filter__dropdown-item-active">Новые</li>
+                            <li class="filter__settings__dropdown-item">
+                                <button class="filter__dropdown-item-btn">
+                                    По популярности
+                                </button>
+
+                            </li>
+                            <li class="filter__dropdown-item">
+                                <button>
+                                    Сначала дешевые
+                                </button>
+                            </li>
+                            <li class="filter__dropdown-item">
+                                <button>
+                                    Сначала дорогие
+                                </button>
+                            </li>
+                            <li class="filter__dropdown-item-active">
+                                <button>
+                                    Новые
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -190,16 +214,16 @@
                     <fieldset class="radio-group">
                         <p class="filter__settings-text">Сетка товаров</p>
 
-                        <div class="radio-group-text">
-                            <p class="radio-group__wrapper">
-                                <input id="gridfour" type="radio" name="radio-button" class="radio-group__radio"
+                        <div class="radio-group__block">
+                            <div class="radio-group__wrapper">
+                                <input id="gridfour" type="radio" name="radio-button" class="radio-group__input"
                                     checked>
                                 <label for="gridfour" class="radio-group__label">4x1</label>
-                            </p>
-                            <p class="radio-group__wrapper">
-                                <input id="gridfive" type="radio" name="radio-button" class="radio-group__radio">
+                            </div>
+                            <div class="radio-group__wrapper">
+                                <input id="gridfive" type="radio" name="radio-button" class="radio-group__input">
                                 <label for="gridfive" class="radio-group__label">5x1</label>
-                            </p>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
@@ -799,8 +823,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -813,8 +839,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -827,8 +855,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -841,8 +871,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -855,8 +887,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-discord"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -870,8 +904,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-discord"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -885,8 +921,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -900,8 +938,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -914,8 +954,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -929,8 +971,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -944,8 +988,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -958,8 +1004,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -973,8 +1021,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -988,8 +1038,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1003,8 +1055,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1017,8 +1071,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1032,8 +1088,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1047,8 +1105,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1062,8 +1122,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1078,8 +1140,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-discord"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1093,8 +1157,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1108,8 +1174,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1123,8 +1191,11 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
+
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1138,8 +1209,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1153,8 +1226,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1168,8 +1243,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1182,8 +1259,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1196,8 +1275,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1210,8 +1291,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1225,8 +1308,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1234,9 +1319,6 @@
 
         </div>
         <button class="showMore">Показать больше</button>
-
-
-
     </section>
     <section class="lastPurchase">
         <h2 class="visually-hidden">Последние покупки</h2>
@@ -1257,13 +1339,15 @@
                     <div class="lastPurchase__card-img" style="background-image: url('./images/discord.jpg');">
                     </div>
                     <div class="lastPurchase__card-info">
-                        <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
-
-                        <div class="lastPurchase__card-icons">
-                            <div class="lastPurchase__card-icon-info">Сервисы</div>
-                            <div class="lastPurchase__card-icon-discord">Discord</div>
-                            <div class="lastPurchase__card-price"></div>
+                        <div class="lastPurchase__card-text-block">
+                            <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
+                            <div class="lastPurchase__card-icons">
+                                <div class="lastPurchase__card-icon-info">Сервисы</div>
+                                <div class="lastPurchase__card-icon-discord">Discord</div>
+                                <div class="lastPurchase__card-price"></div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -1271,14 +1355,13 @@
                     <div class="lastPurchase__card-img" style="background-image: url('./images/discord.jpg');">
                     </div>
                     <div class="lastPurchase__card-info">
-                        <div class="lastPurchase__card-title">
+                        <div class="lastPurchase__card-text-block">
                             <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
-                        </div>
-                        <div class="lastPurchase__card-icons">
-                            <div class="lastPurchase__card-icon-info">Сервисы</div>
-                            <div class="lastPurchase__card-icon-discord">Discord</div>
-                            <div class="lastPurchase__card-price"></div>
-
+                            <div class="lastPurchase__card-icons">
+                                <div class="lastPurchase__card-icon-info">Сервисы</div>
+                                <div class="lastPurchase__card-icon-discord">Discord</div>
+                                <div class="lastPurchase__card-price"></div>
+                            </div>
                         </div>
 
                     </div>
@@ -1287,21 +1370,22 @@
                     <div class="lastPurchase__card-img" style="background-image: url('./images/metro.jpg');">
                     </div>
                     <div class="lastPurchase__card-info">
-                        <div class="lastPurchase__card-title">
+                        <div class="lastPurchase__card-text-block">
                             <div class="lastPurchase__card-title">Metro Last Light Complete Edition</div>
+                            <div class="lastPurchase__card-icons">
+                                <div class="lastPurchase__card-icon-info">Аккаунт</div>
+                                <div class="lastPurchase__card-icon-discord">Steam</div>
+                                <div class="lastPurchase__card-price"></div>
+                            </div>
                         </div>
-                        <div class="lastPurchase__card-icons">
-                            <div class="lastPurchase__card-icon-info">Сервисы</div>
-                            <div class="lastPurchase__card-icon-steam">Steam</div>
-                            <div class="lastPurchase__card-price"></div>
-
-                        </div>
-
                     </div>
-                </div>
 
+                </div>
                 <button class="lastPurchase__group-right-arrow"></button>
             </div>
+
+
+        </div>
         </div>
     </section>
     <footer class="footer">

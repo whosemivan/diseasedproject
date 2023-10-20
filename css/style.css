@@ -932,7 +932,7 @@ input[type="number"] {
     border: none;
 }
 
-.radio-group-text {
+.radio-group__block {
     display: flex;
     align-items: center;
     height: 42px;
@@ -1220,14 +1220,24 @@ label {
     align-items: center;
 }
 
-.games__card-price::before {
+.games__card-price::after {
     content: "₽350";
-    background: rgba(255, 255, 255, 0.03);
     background: linear-gradient(90deg, #0CEBEB 0.25%, #20E3B2 47.04%, #29FFC6 99.32%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
     font-size: 16px;
 }
+
+.games__card-price::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    bottom: 30px;
+    right: 140px;
+    min-height: 20px;
+    width: 1px;
+}
+
 
 .games__card-icon-info {
     display: flex;
@@ -1344,6 +1354,12 @@ label {
     gap: 30px;
 }
 
+.games__card-group-icons {
+    display: flex;
+    gap: 5px;
+}
+
+
 .games__card-icon {
     display: flex;
     justify-content: center;
@@ -1388,12 +1404,21 @@ label {
 /* last purchase */
 
 .lastPurchase {
-    max-width: 1410px;
+    width: 100%;
+    /* max-width: 1410px;
     width: 90%;
     margin: 80px auto;
+    justify-content: center; */
+}
+
+.lastPurchase__wrapper {
+    max-width: 1551px;
+    margin: 0 0 190px 0;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+
 }
 
 .lastPurchase__subtitle {
@@ -1421,24 +1446,29 @@ label {
 
 .lastPurchase__group {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 32px;
+    /* justify-content: center;
+    gap: 10px; */
 }
 
 .lastPurchase__card {
-    width: 500px;
-    height: 125px;
-    background-color: antiquewhite;
+    width: 468px;
     display: flex;
+    padding: 0 20px 0 0;
     border: 1px solid rgba(255, 255, 255, 0.05);
     background: rgba(17, 19, 23, 0.86);
 }
 
+.lastPurchase__card:nth-child(4) {
+    padding: 0 20px 0 0;
+}
+
 .lastPurchase__card-info {
     display: flex;
-    gap: 20px;
+    gap: 16px;
+    width: 468px;
+    height: 124px;
     color: white;
-    padding: 12px;
     flex-direction: column;
     justify-content: center;
 }
@@ -1446,20 +1476,24 @@ label {
 .lastPurchase__card-img {
     background-image: url('./images/discord.jpg');
     width: 140px;
-    height: 125px;
+    /* height: 124px; */
     border-radius: 8px 0 0 8px;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
+.lastPurchase__card-text-block {
+    padding: 24px 25px;
+}
 
 .lastPurchase__card-title {
     color: #DBDBDB;
     font-size: 10px;
     font-weight: 800;
     line-height: 24px;
-
+    width: 170px;
+    padding: 0 0 16px 0;
 }
 
 .lastPurchase__card-icon:nth-child(1)::before {
@@ -1505,10 +1539,9 @@ label {
 
 .lastPurchase__card-price::before {
     content: "₽3600";
-    background: rgba(255, 255, 255, 0.03);
     background: linear-gradient(90deg, #0CEBEB 0.25%, #20E3B2 47.04%, #29FFC6 99.32%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
     font-size: 16px;
 }
 
@@ -1594,14 +1627,6 @@ label {
     cursor: pointer;
 }
 
-.lastPurchase__group-right-arrow {
-    background: none;
-    border: none;
-    margin: 0 0 0 20px;
-    cursor: pointer;
-}
-
-
 .lastPurchase__group-right-arrow::before {
     content: "";
     background-image: url("../images/icons/rightPArrow.svg");
@@ -1611,6 +1636,13 @@ label {
     min-height: 20px;
     display: flex;
     justify-content: center;
+}
+
+.lastPurchase__group-right-arrow {
+    background: none;
+    border: none;
+    margin: 0 0 0 20px;
+    cursor: pointer;
 }
 
 
