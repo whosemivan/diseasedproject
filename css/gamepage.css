@@ -30,7 +30,7 @@ body::after {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 90%;
+    width: 54%;
     margin: 0 auto;
 }
 
@@ -79,7 +79,8 @@ body::after {
 }
 
 
-/* Header */
+
+/* header */
 .header {
     background: rgba(23, 25, 29, 0.48);
     -webkit-backdrop-filter: blur(53.5px);
@@ -118,6 +119,7 @@ body::after {
 
 .header__nav-list {
     max-width: 1410px;
+    width: 340px;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -136,7 +138,26 @@ body::after {
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    color: rgba(219, 219, 219, 0.68);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+
+}
+
+.header__nav-link-btn {
     color: rgba(219, 219, 219, 68);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(219, 219, 219, 0.68);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
 }
 
 .header__nav-left {
@@ -164,6 +185,7 @@ body::after {
     background-color: transparent;
     color: rgba(149, 151, 159, 1);
     border: none;
+    cursor: pointer;
 }
 
 .header__center-btn::before {
@@ -230,7 +252,7 @@ body::after {
     background: rgba(255, 255, 255, 0.22);
     position: absolute;
     bottom: 12px;
-    left: 135px;
+    left: 137px;
     min-height: 20px;
     width: 1px;
 }
@@ -264,20 +286,27 @@ body::after {
     width: 90%;
     margin: 0 auto;
     /* align-items: flex-start; */
-    gap: 28px;
+    gap: 150px;
 }
 
 
 .gamePage__info {
     display: flex;
-    width: 930px;
-    /* padding: 30px 30px 0 30px; */
-    align-items: flex-start;
-    gap: 30px;
-    border-radius: 12px;
+    width: 105%;
+    height: 24%;
     padding: 30px;
+    border-radius: 12px;
+    /* padding: 30px; */
     background: #171B20;
 }
+
+.gamePage__poster-container {
+    width: 200px;
+}
+
+
+
+
 
 
 .gamePage__preview-links {
@@ -313,12 +342,15 @@ body::after {
 }
 
 .gamePage__info-img {
-    width: 240px;
-    height: 365px;
+    height: 340px;
+    width: 171px;
+    background-size: contain;
+    background-position: center;
     object-fit: cover;
+
 }
 
-.gamePage__link-icon {
+/* .gamePage__link-icon {
     position: relative;
 }
 
@@ -333,13 +365,13 @@ body::after {
     left: 22px;
     width: 30px;
     height: 30px;
-}
+} */
 
 
 .gamePage__links {
     display: flex;
-    width: 151px;
-    margin: 0 0 0 48px;
+    /* width: 104px; */
+    /* margin: 0 0 0 48px; */
     flex-direction: column;
     height: 60px;
     justify-content: center;
@@ -347,11 +379,17 @@ body::after {
 
 .gamePage__link-container {
     display: flex;
-    gap: 41px;
     margin: 0 0 12px 0;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.04);
     justify-content: center;
+    align-items: center;
+    width: 170px;
+}
+
+
+.gamePage__link-icon {
+    padding: 0 15px 0 15px;
 
 }
 
@@ -405,8 +443,8 @@ body::after {
 
 
 .gamePage__gameplay-img {
-    height: 365px;
-    width: 638px;
+    height: 340px;
+    width: 600px;
 }
 
 
@@ -417,6 +455,7 @@ body::after {
 }
 
 .gamePage__requirements-btns {
+    width: 113%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -478,7 +517,7 @@ body::after {
 
 
 .gamePage__requirements-btn:nth-child(2) {
-    background: var(--1, linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%));
+    background: linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -501,12 +540,103 @@ body::after {
 .gamePage__requirements-info {
     background: rgba(23, 25, 29, 0.48);
     margin: 0;
-    width: 930px;
+    width: 105%;
     padding: 30px;
     text-transform: uppercase;
 
 }
 
+
+.filter-checkbox__container-title {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    color: #95979F;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 10px 20px;
+    cursor: pointer;
+    font-size: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.filter-checkbox__container-title-terms {
+    align-items: center;
+    color: #62646C;
+    font-size: 18px;
+}
+
+.filter-checkbox__container-span {
+    color: #DBDBDB;
+    font-size: 10px;
+}
+
+
+/* Hide the browser's default checkbox */
+.filter-checkbox__container-title input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 4px;
+}
+
+
+/* On mouse-over, add a grey background color */
+.filter-checkbox__container-title:hover input~.checkmark-title {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.filter-checkbox__container-title input:checked~.checkmark-title {
+    background-color: #DBDBDB;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark-title:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.filter-checkbox__container-title input:checked~.checkmark-title:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter-checkbox__container-title .checkmark-title:after {
+    left: 5px;
+    top: 3px;
+    width: 2px;
+    height: 4px;
+    border: solid;
+    color: #111317;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 .gamePage__requirements-title {
     color: #62646C;
@@ -550,7 +680,6 @@ body::after {
     flex-direction: column;
     gap: 30px;
     width: 90%;
-    /* margin: 0 auto; */
 }
 
 
@@ -633,7 +762,7 @@ body::after {
     min-height: 3px;
     width: 50%;
     border-radius: 8px;
-    background: var(--1, linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%));
+    background: linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
 }
 
 .gamePage__buy-quantity {
@@ -666,7 +795,7 @@ body::after {
 .gamePage__buy-quantity-info:nth-child(1) {
     color: #FCFCFD;
     border-radius: 12px;
-    border: 2px solid var(--1, #0CEBEB);
+    border: 2px solid #0CEBEB;
 }
 
 .gamePage__buy-quantity-info:nth-child(3) {
@@ -711,12 +840,9 @@ body::after {
 span {
     color: #DBDBDB;
     text-align: right;
-    leading-trim: both;
-    text-edge: cap;
     font-size: 28px;
     font-weight: 600;
     line-height: 34px;
-    /* 121.429% */
     letter-spacing: 0.56px;
 }
 
@@ -735,7 +861,7 @@ span {
     align-items: center;
     flex-shrink: 0;
     border-radius: 12px;
-    background: var(--1, linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%));
+    background: linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
 }
 
 .gamePage__buy-btn:nth-child(2) {
@@ -875,7 +1001,7 @@ input[type=checkbox]:checked::before {
     min-height: 3px;
     width: 50%;
     border-radius: 8px;
-    background: var(--1, linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%));
+    background: linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
 }
 
 
@@ -1092,10 +1218,11 @@ input[type=checkbox]:checked::before {
 
 
 
-
 /* Footer */
+
+
 .footer {
-    height: 540px;
+    max-height: 540px;
     display: flex;
     flex-direction: column;
     padding: 35px 0 0 0;
@@ -1106,8 +1233,13 @@ input[type=checkbox]:checked::before {
 .footer__content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    max-width: 1410px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 85px 0 85px 0;
 }
+
+
 
 .footer__logo {
     opacity: 0.55;
@@ -1120,7 +1252,6 @@ input[type=checkbox]:checked::before {
 
 .footer__info-text {
     color: #62646C;
-    width: 400px;
     margin: 30px 120px 30px 0;
 }
 
@@ -1140,7 +1271,9 @@ input[type=checkbox]:checked::before {
     padding: 0;
 }
 
-.footer__questions-list-item {
+
+.footer__questions-list-item-link {
+    text-decoration: none;
     color: rgba(219, 219, 219, 0.68);
     font-size: 12px;
     font-weight: 600;
@@ -1151,7 +1284,12 @@ input[type=checkbox]:checked::before {
 
 .footer__questions-blocks {
     display: flex;
-    gap: 300px;
+    gap: 200px;
+}
+
+.footer__questions-block {
+    width: 200px;
+
 }
 
 .footer__payLogo {
@@ -1164,47 +1302,39 @@ input[type=checkbox]:checked::before {
     gap: 30px;
 }
 
-.footer__questions-list-icons::before {
-    content: "";
-    background-image: url("../images/icons/vk.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 20px;
-    min-height: 20px;
-    display: flex;
-    justify-content: center;
+.footer__questions-list-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.footer__questions-list-icons::after {
-    content: "";
-    background-image: url("../images/icons/tg.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 20px;
-    min-height: 20px;
-    display: flex;
-    justify-content: center;
-}
 
 .footer__about-text {
+    display: flex;
+    gap: 10px;
     color: #7B7C82;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.footer__about-text span {
+.footer__about-text-link {
     color: rgba(98, 237, 237, 0.95);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
+    text-decoration: none;
 }
 
 .footer__about-container {
+    max-width: 1410px;
+    width: 90%;
+    margin: 0 auto;
     border-top: 2px solid rgba(255, 255, 255, 0.04);
     padding: 35px 170px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .footer__about-text-group {

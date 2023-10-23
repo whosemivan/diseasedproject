@@ -304,7 +304,7 @@ body::after {
 }
 
 .faq-help__title {
-    background: var(--1, linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%));
+    background: linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -334,8 +334,6 @@ body::after {
     width: 500px;
     color: #62646C;
     text-align: right;
-    leading-trim: both;
-    text-edge: cap;
     font-size: 16px;
     font-weight: 500;
     line-height: 28.8px;
@@ -636,8 +634,6 @@ body::after {
 
 .faq-help__subtext {
     color: #62646C;
-    leading-trim: both;
-    text-edge: cap;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;

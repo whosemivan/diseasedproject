@@ -299,7 +299,7 @@ body::after {
     font-size: 66px;
     font-weight: 700;
     line-height: 36px;
-    background: var(--1, linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%));
+    background: linear-gradient(90deg, #0CEBEB -0.44%, #20E3B2 33.48%, #29FFC6 71.39%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -387,8 +387,6 @@ body::after {
     display: flex;
     flex-direction: column;
     color: rgba(255, 255, 255, 0.95);
-    leading-trim: both;
-    text-edge: cap;
     font-size: 74px;
     font-weight: 800;
     line-height: 89.866px;
@@ -399,8 +397,6 @@ body::after {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    leading-trim: both;
-    text-edge: cap;
     font-size: 74px;
     font-weight: 900;
     line-height: 89.866px;
