@@ -29,11 +29,11 @@
                 <ul class="header__nav-list">
                     <li><a href="#" class="header__nav-link">Главная</a></li>
                     <li><a href="#" class="header__nav-link">FAQ & помощь</a></li>
-                    <li><a href="#" class="header__nav-link">Корзина</a></li>
+                    <li><button class="header__nav-link-btn">Корзина</button></li>
                 </ul>
             </nav>
             <div class="header__center">
-                <button href="#" class="header__center-btn"></button>
+                <button class="header__center-btn"></button>
             </div>
 
             <div class="header__right">
@@ -815,7 +815,7 @@
 
         <div class="games__wrapper">
 
-            <div class="game__card">
+            <a class="game__card">
                 <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
                 </div>
                 <div class="game__card-title">
@@ -830,7 +830,7 @@
                         <div class="games__card-price"></div>
                     </div>
                 </div>
-            </div>
+            </a>
             <div class="game__card">
                 <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
                 </div>
@@ -1320,7 +1320,7 @@
         </div>
         <button class="showMore">Показать больше</button>
     </section>
-    <section class="lastPurchase">
+    <!-- <section class="lastPurchase">
         <h2 class="visually-hidden">Последние покупки</h2>
         <div class="lastPurchase__wrapper">
 
@@ -1387,7 +1387,7 @@
 
         </div>
         </div>
-    </section>
+    </section> -->
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__info-container">
@@ -1441,10 +1441,8 @@
                     <ul class="footer__questions-list">
                         <li class="footer__questions-list-icons"></li>
                     </ul>
-
                 </div>
             </div>
-
         </div>
         <div class="footer__about-container">
             <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
@@ -1452,10 +1450,184 @@
                 <p class="footer__about-text">Система по созданию магазинов: <span>Lequeshop.com</span></p>
                 <p class="footer__about-text">Designed by: <span>Maxyao</span></p>
             </div>
-
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <div class="search-popup__container">
+        <div class="search-popup__content">
+            <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
+            <p class="search-popup-subtitle">Введите название игры, сервиса или любого товара</p>
+            <button class="search-popup__input-btn"></button>
+            <input type="text" placeholder="Введите запрос" class="search-popup__input">
+            <div class="search-popup__results-container">
+                <p class="search-popup__results-text">Результаты поиска</p>
+                <div class="search-popup__results-cards">
+                    <div class="results-card">
+                        <div class="results-card-img" style="background-image: url('./images/spotify.jpg');">
+                        </div>
+                        <div class="results-card-info">
+                            <div class="results-card-text-block">
+                                <div class="results-card-title">Spotify 12 месяцев</div>
+                                <div class="results-card-icons">
+                                    <div class="results-card-group-icons">
+                                        <div class="results-card-icon-info">Сервисы</div>
+                                        <div class="results-card-icon-spotify">Spotify</div>
+                                    </div>
+                                    <div class="results-card-price"></div>
+                                    <button class="results-card-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <div class="results-card-img" style="background-image: url('./images/spotify.jpg');">
+                        </div>
+                        <div class="results-card-info">
+                            <div class="results-card-text-block">
+                                <div class="results-card-title">Spotify 6 месяцев</div>
+                                <div class="results-card-icons">
+                                    <div class="results-card-group-icons">
+                                        <div class="results-card-icon-info">Сервисы</div>
+                                        <div class="results-card-icon-spotify">Spotify</div>
+                                    </div>
+                                    <div class="results-card-price"></div>
+                                    <button class="results-card-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <div class="results-card-img" style="background-image: url('./images/sonsOfForest.jpg');">
+                        </div>
+                        <div class="results-card-info">
+                            <div class="results-card-text-block">
+                                <div class="results-card-title">Sons Of The Forest</div>
+                                <div class="results-card-icons">
+                                    <div class="results-card-group-icons">
+                                        <div class="results-card-icon-info">Аккаунт</div>
+                                        <div class="results-card-steam">Steam</div>
+                                    </div>
+                                    <div class="results-card-price"></div>
+                                    <button class="results-card-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopping-cart__container">
+        <div class="shopping-cart__content">
+            <h2 class="shopping-cart-title">Корзина</h2>
+            <p class="shopping-cart-subtitle">Ваши выбранные товары находяться здесь</p>
+            <div class="shopping-cart__block">
+                <div class="shopping-cart__left-block">
+                    <div class="shopping-cart__left-block-text">
+                        <p class="shopping-cart__left-subtitle">Окно просмотра выбранных товаров</p>
+                        <button class="shopping-cart__left-close"></button>
+                    </div>
+                    <h3 class="shopping-cart__left-title">Оплата товара</h3>
+                    <p class="shopping-cart__left-text">Отмеченный товар</p>
+                    <div class="shopping-cart__left-cards-block">
+                        <div class="shopping-cart__card">
+                            <div class="shopping-cart__card-block">
+                                <div class="shopping-cart__card-text">Call of Duty®: Modern Wa...</div>
+                                <div class="shopping-cart__card-quantity">
+                                    <button class="shopping-cart__card-quantity-plus">+</button>
+                                    <p class="shopping-cart__card-quantity-number">1</p>
+                                    <button class="shopping-cart__card-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-cart__card">
+                            <div class="shopping-cart__card-block">
+                                <div class="shopping-cart__card-text">Spotify 12 месяцев</div>
+                                <div class="shopping-cart__card-quantity">
+                                    <button class="shopping-cart__card-quantity-plus">+</button>
+                                    <p class="shopping-cart__card-quantity-number">1</p>
+                                    <button class="shopping-cart__card-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-cart__card">
+                            <div class="shopping-cart__card-block">
+                                <div class="shopping-cart__card-text">Spotify 12 месяцев</div>
+                                <div class="shopping-cart__card-quantity">
+                                    <button class="shopping-cart__card-quantity-plus">+</button>
+                                    <p class="shopping-cart__card-quantity-number">1</p>
+                                    <button class="shopping-cart__card-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopping-cart__total">
+                        <div class="shopping-cart__total-price">
+                            <p class="shopping-cart__text">К оплате</p>
+                            <span class="shopping-cart__subtext">₽4999</span>
+                        </div>
+                        <div class="shopping-cart__total-block">
+                            <div class="shopping-cart__total-promocode">
+                                <button class="shopping-cart__input-btn"></button>
+                                <input type="text" placeholder="Введите запрос" class="shopping-cart__input">
+                            </div>
+                            <button class="shopping-cart__total-btn">Оплатить</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="shopping-cart__right-block">
+                    <p class="shopping-cart__right-subtitle">Популярные платежные системы:</p>
+                    <div class="shopping-cart__right-btns-block">
+                        <div class="shopping-cart__right-btn-qiwi">
+                            <div class="shopping-cart__btn-title-img-qiwi"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-freekassa">
+                            <div class="shopping-cart__btn-title-img-freekassa"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-visa">
+                            <div class="shopping-cart__btn-title-img-visa"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-walletKz">
+                            <div class="shopping-cart__btn-title-img-walletKz"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-walletUkr">
+                            <div class="shopping-cart__btn-title-img-walletUkr"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-bitcoin">
+                            <div class="shopping-cart__btn-title-img-bitcoin"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-sbp">
+                            <div class="shopping-cart__btn-title-img-sbp"></div>
+                            <div class="shopping-cart__btn-title-img-sbp-text"></div>
+
+                        </div>
+                        <div class="shopping-cart__right-btn-steam">
+                            <div class="shopping-cart__btn-title-img-steam"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="shopping-cart__right-input-mail">
+                        <button class="shopping-cart__right-input-btn"></button>
+                        <input type="text" placeholder="Введите email" class="shopping-cart__right-input">
+                    </div>
+                    <div class="shopping-cart__right-info-block">
+                        <p class="shopping-cart__right-block-text">Будьте внимательны! Указывайте только ту почту, к
+                            которой имеете постоянный доступ.</p>
+                        <p class="shopping-cart__right-block-text">На указанную почту приходит чек, а также содержимое
+                            цифрового товара. В случае какой либо ошибки, в тикете обращения в поддержку указывайте
+                            номер заказа, который придет на почту</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

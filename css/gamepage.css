@@ -1007,7 +1007,7 @@ input[type=checkbox]:checked::before {
 .gamePage__buy-similar-card-icon-steam {
     display: flex;
     height: 20px;
-    padding: 5px;
+    padding: 5px 15px;
     font-size: 10px;
     align-items: center;
     justify-content: center;
@@ -1055,6 +1055,40 @@ input[type=checkbox]:checked::before {
     flex-direction: column;
     gap: 20px;
 }
+
+.ggamePage__buy-similar-card-price {
+    position: relative;
+    border-radius: 8px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 6px 17px;
+    display: flex;
+    align-items: center;
+}
+
+
+.gamePage__buy-similar-card-price::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    right: 300px;
+    min-height: 20px;
+    width: 1px;
+}
+
+.gamePage__buy-similar-card-price::after {
+    content: "₽3500";
+    background: linear-gradient(90deg, #0CEBEB 0.25%, #20E3B2 47.04%, #29FFC6 99.32%);
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+}
+
+
+
+
+
+
 
 
 
