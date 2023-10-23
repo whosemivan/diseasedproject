@@ -1,12 +1,11 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #111317;
     min-width: 350px;
     position: relative;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 body::after {
@@ -44,7 +43,6 @@ body::after {
     opacity: 0.15;
     -moz-opacity: 0.15;
     -webkit-opacity: 0.15;
-    filter: alpha(opacity=15);
     background: #6C48FF;
     filter: blur(90px);
     display: inline-block;
@@ -67,7 +65,6 @@ body::after {
     opacity: 0.15;
     -moz-opacity: 0.15;
     -webkit-opacity: 0.15;
-    filter: alpha(opacity=15);
     background: #48FFD3;
     filter: blur(85px);
     display: inline-block;
@@ -487,6 +484,7 @@ body::after {
     height: 820px;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 }
 
 
@@ -1807,7 +1805,6 @@ ul li {
     width: 90%;
     margin: 0 auto;
     border-top: 2px solid rgba(255, 255, 255, 0.04);
-    padding: 35px 170px;
     display: flex;
     justify-content: space-between;
 

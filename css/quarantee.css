@@ -23,11 +23,6 @@ body::after {
     filter: alpha(opacity=25);
 }
 
-.quarantee {
-    max-width: 1410px;
-    width: 90%;
-    margin: 0 auto;
-}
 
 .quarantee__wrapper {
     position: relative;
@@ -44,7 +39,7 @@ body::after {
 .quarantee__wrapper::before {
     content: "";
     position: absolute;
-    bottom: 400px;
+    bottom: 1300px;
     width: 311.88px;
     height: 908.818px;
     z-index: -1;
@@ -53,7 +48,6 @@ body::after {
     opacity: 0.15;
     -moz-opacity: 0.15;
     -webkit-opacity: 0.15;
-    filter: alpha(opacity=15);
     background: #6C48FF;
     filter: blur(90px);
     display: inline-block;
@@ -66,6 +60,7 @@ body::after {
 .quarantee__wrapper::after {
     content: "";
     position: absolute;
+    top: 0;
     right: 1250px;
     bottom: 300px;
     width: 311.88px;
@@ -76,7 +71,6 @@ body::after {
     opacity: 0.15;
     -moz-opacity: 0.15;
     -webkit-opacity: 0.15;
-    filter: alpha(opacity=15);
     background: #48FFD3;
     filter: blur(85px);
     display: inline-block;
@@ -344,8 +338,9 @@ body::after {
 .quarantee__text-block::before {
     content: "";
     position: absolute;
+    top: 0;
     left: 1100px;
-    bottom: 300px;
+    bottom: 1400px;
     width: 311.88px;
     height: 908.818px;
     z-index: -1;
@@ -365,7 +360,9 @@ body::after {
 
 .quarantee__text-block::after {
     content: "";
+    top: 0;
     position: absolute;
+    bottom: 1200px;
     left: 1100px;
     bottom: 250px;
     width: 419.82px;
@@ -636,6 +633,8 @@ body::after {
 
 
 /* Footer */
+
+
 .footer {
     max-height: 540px;
     display: flex;
@@ -746,7 +745,6 @@ body::after {
     width: 90%;
     margin: 0 auto;
     border-top: 2px solid rgba(255, 255, 255, 0.04);
-    padding: 35px 170px;
     display: flex;
     justify-content: space-between;
 

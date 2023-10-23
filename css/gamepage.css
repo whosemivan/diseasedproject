@@ -339,6 +339,14 @@ body::after {
 .gamePage__link {
     display: flex;
     flex-direction: column;
+    color: rgba(229, 229, 229, 0.78);
+    font-size: 11px;
+    width: 125px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.132px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .gamePage__info-img {
@@ -405,16 +413,6 @@ body::after {
     text-decoration: none;
 }
 
-.gamePage__link {
-    color: rgba(229, 229, 229, 0.78);
-    font-size: 11px;
-    width: 125px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0.132px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
 .gamePage__gameplay-category {
     color: #62646C;
@@ -686,9 +684,9 @@ body::after {
 .gamePage__buy-wrapper::before {
     content: "";
     position: absolute;
-    right: 200px;
+    width: 200px;
     top: 0px;
-    right: 184px;
+    right: 331px;
     bottom: 1904px;
     z-index: -1;
     transform: rotate(15deg);
@@ -708,7 +706,8 @@ body::after {
 
 .gamePage__buy-wrapper::after {
     content: "";
-    right: 0px;
+    position: absolute;
+    left: 1200px;
     top: 53px;
     width: 419.82px;
     z-index: -5;
@@ -897,7 +896,7 @@ span {
 
 input[type=checkbox] {
     appearance: none;
-    width: 15px;
+    width: 25px;
     height: 15px;
     background-color: #969696;
     border-radius: 4px;
@@ -957,6 +956,7 @@ input[type=checkbox]:checked::before {
 
 .gamePage__buy-terms {
     display: flex;
+    align-items: center;
     gap: 20px;
     color: #62646C;
     font-size: 14px;
@@ -1331,7 +1331,6 @@ input[type=checkbox]:checked::before {
     width: 90%;
     margin: 0 auto;
     border-top: 2px solid rgba(255, 255, 255, 0.04);
-    padding: 35px 170px;
     display: flex;
     justify-content: space-between;
 
