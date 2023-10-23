@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseased</title>
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -27,13 +27,13 @@
             </a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li><a href="#" class="header__nav-link">Главная</a></li>
-                    <li><a href="#" class="header__nav-link">FAQ & помощь</a></li>
-                    <li><a href="#" class="header__nav-link">Корзина</a></li>
+                    <li><a href="index.html" class="header__nav-link">Главная</a></li>
+                    <li><a href="faq.html" class="header__nav-link">FAQ & помощь</a></li>
+                    <li><a href="gamepage.html" class="header__nav-link">Корзина</a></li>
                 </ul>
             </nav>
             <div class="header__center">
-                <button href="#" class="header__center-btn"></button>
+                <button class="header__center-btn"></button>
             </div>
 
             <div class="header__right">
@@ -116,6 +116,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="catalog">
@@ -150,22 +151,113 @@
 
         <div class="filter__wrapper">
             <div class="filter__categories">
-                <button class="filter__categoryName">Все категории</button>
-                <button class="filter__categoryName">Ключи</button>
-                <button class="filter__categoryName">Игровые аккаунты</button>
-                <button class="filter__categoryName">Сервисы</button>
-                <button class="filter__categoryName">Донат</button>
+                <button class="filter__categoryName filter__categoryName">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 16V12H4V16H0ZM6 16V12H20V16H6ZM0 10V6H4V10H0ZM6 10V6H20V10H6ZM0 4V0H4V4H0ZM6 4V0H20V4H6Z"
+                            fill="url(#paint0_linear_84_458)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_84_458" x1="-0.131531" y1="10.3047" x2="144.934"
+                                y2="5.85007" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0CEBEB" />
+                                <stop offset="0.472222" stop-color="#20E3B2" />
+                                <stop offset="1" stop-color="#29FFC6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
 
+                    Все категории
+                </button>
+                <button class="filter__categoryName">
+
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.0476 0.000917077C16.9307 -0.0091088 17.807 0.156771 18.6258 0.488951C19.4446 0.821131 20.1896 1.31301 20.8176 1.9361C21.4456 2.55919 21.9442 3.30112 22.2845 4.11891C22.6248 4.9367 22.8 5.81411 22.8 6.70032C22.8 7.58654 22.6248 8.46394 22.2845 9.28174C21.9442 10.0995 21.4456 10.8415 20.8176 11.4645C20.1896 12.0876 19.4446 12.5795 18.6258 12.9117C17.807 13.2439 16.9307 13.4098 16.0476 13.3997C14.2767 13.3997 12.5785 12.6939 11.3263 11.4374C10.0741 10.1809 9.37068 8.4768 9.37068 6.69989C9.37068 4.92299 10.0741 3.21886 11.3263 1.9624C12.5785 0.705933 14.2767 0.000917115 16.0476 0.000917077ZM18.184 2.33081C17.8927 2.33024 17.6041 2.38742 17.3348 2.49906C17.0656 2.6107 16.8209 2.77461 16.615 2.98137C16.409 3.18813 16.2457 3.43367 16.1346 3.70391C16.0234 3.97414 15.9666 4.26374 15.9672 4.55608C15.9664 4.84842 16.0232 5.13803 16.1344 5.40827C16.2455 5.6785 16.4088 5.92404 16.6148 6.13075C16.8208 6.33747 17.0655 6.50128 17.3348 6.61279C17.6041 6.7243 17.8927 6.78129 18.184 6.7805C18.4754 6.78129 18.764 6.7243 19.0333 6.61279C19.3026 6.50128 19.5473 6.33747 19.7533 6.13075C19.9593 5.92404 20.1226 5.6785 20.2337 5.40827C20.3448 5.13803 20.4016 4.84842 20.4008 4.55608C20.4014 4.26381 20.3444 3.9743 20.2332 3.70417C20.122 3.43404 19.9588 3.18859 19.7528 2.98192C19.5468 2.77526 19.3022 2.61143 19.033 2.49984C18.7638 2.38825 18.4753 2.33024 18.184 2.33081ZM8.70325 9.80756C8.93774 10.3576 9.23361 10.8791 9.58518 11.3623L2.9083 18.0612C2.76791 18.204 2.6892 18.3966 2.6892 18.5972C2.6892 18.7978 2.76791 18.9903 2.9083 19.1331C3.05084 19.2736 3.24263 19.3523 3.44241 19.3523C3.64219 19.3523 3.83399 19.2736 3.97653 19.1331L10.5731 12.4873C11.4061 13.2792 12.3987 13.8828 13.4838 14.2573V15.4363C13.4838 15.8137 13.1668 16.1327 12.789 16.1327H10.92V18.0089C10.92 18.3862 10.603 18.7052 10.2253 18.7052H8.35629V20.5815C8.35629 20.9588 8.03838 21.2778 7.66151 21.2778H5.76604L5.2849 21.7606C4.99263 22.053 2.06482 22.1996 1.33244 21.4656C0.600059 20.7298 0.747902 17.792 1.03932 17.4996L8.70325 9.80842V9.80756Z"
+                            fill="#62646C" />
+                    </svg>
+                    Ключи
+                </button>
+                <button class="filter__categoryName">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.77498 18.85C5.37498 19.0833 4.96665 19.15 4.54998 19.05C4.13331 18.9333 3.80831 18.6917 3.57498 18.325C3.35831 17.9583 3.28331 17.5417 3.34998 17.075L4.22498 12.1C4.22498 12.0667 4.22498 12.0667 4.22498 12.1C4.24165 12.1167 4.24998 12.15 4.24998 12.2C4.26665 12.2833 4.28331 12.3667 4.29998 12.45C4.33331 12.5333 4.35831 12.5833 4.37498 12.6L0.749981 9.025C0.416648 8.70833 0.241648 8.34167 0.224981 7.925C0.208315 7.49167 0.333315 7.10833 0.599981 6.775C0.883315 6.44167 1.24998 6.25 1.69998 6.2L6.42498 5.5C6.30831 5.7 6.24165 5.80833 6.22498 5.825L8.49998 1.225C8.71665 0.825 9.01665 0.558333 9.39998 0.425C9.79998 0.275 10.1916 0.275 10.575 0.425C10.975 0.558333 11.2833 0.825 11.5 1.225L13.775 5.825C13.6916 5.70833 13.6166 5.59167 13.55 5.475L18.35 6.225C18.8 6.29167 19.15 6.49167 19.4 6.825C19.6666 7.14167 19.7833 7.50833 19.75 7.925C19.7333 8.34167 19.5666 8.70833 19.25 9.025L15.625 12.6C15.575 12.6333 15.5833 12.5417 15.65 12.325C15.7166 12.1083 15.7583 12.0333 15.775 12.1L16.65 17.075C16.7333 17.5417 16.6583 17.9583 16.425 18.325C16.1916 18.675 15.8666 18.9083 15.45 19.025C15.05 19.125 14.6416 19.0667 14.225 18.85L9.69998 16.475C9.63332 16.4417 9.66665 16.425 9.79998 16.425C9.93331 16.4083 10.0666 16.4083 10.2 16.425C10.3333 16.425 10.3666 16.4417 10.3 16.475L5.77498 18.85ZM9.32498 14.725C9.54165 14.6083 9.76665 14.55 9.99998 14.55C10.25 14.55 10.475 14.6083 10.675 14.725L15.175 17.1C15.3083 17.1667 15.3333 17.25 15.25 17.35C15.1833 17.45 15.075 17.5167 14.925 17.55C14.7916 17.5833 14.7166 17.5333 14.7 17.4L13.825 12.45C13.775 12.2333 13.7833 12.0083 13.85 11.775C13.9333 11.5417 14.0583 11.35 14.225 11.2L17.85 7.625C17.95 7.525 18.0416 7.53333 18.125 7.65C18.2083 7.75 18.2416 7.86667 18.225 8C18.2083 8.13333 18.1416 8.19167 18.025 8.175L13.025 7.425C12.775 7.39167 12.5583 7.30833 12.375 7.175C12.1916 7.025 12.05 6.85 11.95 6.65L9.69998 2.15C9.63332 2.03333 9.66665 1.95 9.79998 1.9C9.93331 1.85 10.0666 1.85 10.2 1.9C10.3333 1.95 10.3666 2.03333 10.3 2.15L8.04998 6.65C7.94998 6.85 7.80831 7.025 7.62498 7.175C7.44165 7.30833 7.23331 7.39167 6.99998 7.425L1.97498 8.2C1.84165 8.21667 1.76665 8.15833 1.74998 8.025C1.74998 7.875 1.79165 7.75 1.87498 7.65C1.95831 7.53333 2.04998 7.525 2.14998 7.625L5.77498 11.2C5.94165 11.35 6.05831 11.5417 6.12498 11.775C6.20831 12.0083 6.22498 12.2333 6.17498 12.45L5.29998 17.4C5.28331 17.5333 5.20831 17.5833 5.07498 17.55C4.94165 17.5167 4.83331 17.45 4.74998 17.35C4.68331 17.25 4.70831 17.1667 4.82498 17.1L9.32498 14.725Z"
+                            fill="#62646C" />
+                    </svg>
+                    Игровые аккаунты
+
+                </button>
+                <button class="filter__categoryName">
+
+                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.6384 16.4286H19.1151V15H19.8767V12.1429H16.8301V12.8571H15.3068V11.4286C15.3068 11.2391 15.387 11.0574 15.5299 10.9235C15.6727 10.7895 15.8664 10.7143 16.0684 10.7143H20.6384C20.8404 10.7143 21.0341 10.7895 21.1769 10.9235C21.3198 11.0574 21.4 11.2391 21.4 11.4286V15.7143C21.4 15.9037 21.3198 16.0854 21.1769 16.2194C21.0341 16.3533 20.8404 16.4286 20.6384 16.4286Z"
+                            fill="#62646C" />
+                        <path
+                            d="M16.8301 20H12.2602C12.0582 20 11.8644 19.9247 11.7216 19.7908C11.5787 19.6568 11.4985 19.4752 11.4985 19.2857V15C11.4985 14.8106 11.5787 14.6289 11.7216 14.4949C11.8644 14.361 12.0582 14.2857 12.2602 14.2857H16.8301C17.0321 14.2857 17.2258 14.361 17.3687 14.4949C17.5115 14.6289 17.5917 14.8106 17.5917 15V19.2857C17.5917 19.4752 17.5115 19.6568 17.3687 19.7908C17.2258 19.9247 17.0321 20 16.8301 20ZM13.0218 18.5714H16.0684V15.7143H13.0218V18.5714ZM9.97519 12.7557C9.42485 12.6212 8.92575 12.3447 8.53457 11.9575C8.14339 11.5704 7.8758 11.0881 7.76219 10.5655C7.64858 10.0429 7.6935 9.50091 7.89185 9.00105C8.09019 8.50118 8.43402 8.06349 8.88429 7.73767C9.33456 7.41185 9.87322 7.21096 10.4391 7.15782C11.005 7.10467 11.5755 7.20139 12.0857 7.437C12.5959 7.67261 13.0255 8.03766 13.3256 8.49071C13.6257 8.94376 13.7843 9.46665 13.7835 10H15.3068C15.3077 9.18272 15.0593 8.38224 14.5911 7.69295C14.1228 7.00366 13.4542 6.4543 12.664 6.10965C11.8738 5.765 10.995 5.63943 10.1312 5.74775C9.26739 5.85607 8.45463 6.19375 7.78874 6.72099C7.12285 7.24823 6.63159 7.94303 6.3729 8.72347C6.1142 9.50392 6.09886 10.3375 6.32867 11.1258C6.55848 11.9142 7.02387 12.6245 7.66996 13.1729C8.31605 13.7214 9.1159 14.0852 9.97519 14.2214V12.7557Z"
+                            fill="#62646C" />
+                        <path
+                            d="M20.5546 8.25L18.7952 9.7L17.7136 8.68571L19.5492 7.17143L17.7517 4.25714L15.1316 5.08571C14.5179 4.60662 13.8227 4.22754 13.0751 3.96429L12.5344 1.42857H8.93934L8.39856 3.96429C7.64498 4.22018 6.94604 4.59992 6.33448 5.08571L3.722 4.25714L1.92449 7.17143L3.99619 8.87857C3.85528 9.61795 3.85528 10.3749 3.99619 11.1143L1.92449 12.8286L3.722 15.7429L6.34209 14.9143C6.95584 15.3934 7.65099 15.7725 8.39856 16.0357L8.93934 18.5714H9.97519V20H8.93934C8.5871 19.9997 8.24584 19.885 7.97366 19.6753C7.70147 19.4656 7.51518 19.174 7.44649 18.85L7.05805 17.05C6.71322 16.8923 6.3799 16.7133 6.06028 16.5143L4.20946 17.1C4.05207 17.148 3.8875 17.1721 3.722 17.1714C3.45445 17.1732 3.19125 17.1079 2.95961 16.9823C2.72797 16.8567 2.53627 16.6754 2.40433 16.4571L0.606825 13.5429C0.429044 13.2564 0.362982 12.921 0.419952 12.5939C0.476922 12.2668 0.65338 11.9685 0.919104 11.75L2.38148 10.55C2.36625 10.3643 2.35863 10.1857 2.35863 10C2.35863 9.81429 2.37387 9.63571 2.3891 9.45714L0.919104 8.25C0.65338 8.03152 0.476922 7.73319 0.419952 7.40612C0.362982 7.07904 0.429044 6.74356 0.606825 6.45714L2.40433 3.54286C2.53627 3.32457 2.72797 3.14328 2.95961 3.01771C3.19125 2.89214 3.45445 2.82684 3.722 2.82857C3.8875 2.82786 4.05207 2.85197 4.20946 2.9L6.05266 3.48571C6.37489 3.28664 6.71075 3.10769 7.05805 2.95L7.44649 1.15C7.51518 0.826008 7.70147 0.534352 7.97366 0.324676C8.24584 0.115001 8.5871 0.000265359 8.93934 0H12.5344C12.8866 0.000265359 13.2278 0.115001 13.5 0.324676C13.7722 0.534352 13.9585 0.826008 14.0272 1.15L14.4156 2.95C14.7605 3.10772 15.0938 3.28669 15.4134 3.48571L17.2642 2.9C17.4216 2.85197 17.5862 2.82786 17.7517 2.82857C18.0192 2.82684 18.2824 2.89214 18.5141 3.01771C18.7457 3.14328 18.9374 3.32457 19.0694 3.54286L20.8669 6.45714C21.0446 6.74356 21.1107 7.07904 21.0537 7.40612C20.9968 7.73319 20.8203 8.03152 20.5546 8.25Z"
+                            fill="#62646C" />
+                    </svg>
+                    Сервисы
+                </button>
+                <button class="filter__categoryName">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.6958 0C11.9642 4.56347 11.3495 7.27625 9.66292 8.96285C7.97632 10.6494 5.26354 11.2641 0.700073 11.9957C5.26354 12.7272 7.97632 13.3419 9.66292 15.0336C11.3495 16.7202 11.9642 19.433 12.6958 24C13.4273 19.433 14.042 16.7202 15.7286 15.0285C17.4203 13.3419 20.133 12.7272 24.7001 11.9957C20.133 11.2641 17.4203 10.6494 15.7337 8.96285C14.042 7.27625 13.4273 4.56347 12.6958 0Z"
+                            fill="#62646C" />
+                    </svg>
+                    Донат
+
+                </button>
                 <div class="filter__dropdown">
-                    <div class="filter__dropdown-select">
-                        <span class="filter__dropdown-selected">Фильтр поиска</span>
-                        <div class="filter__dropdown-arrow"></div>
-                    </div>
+                    <button class="filter__dropdown-select">
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99985 8.99878V16.8777C10.0398 17.1777 9.93986 17.4976 9.70989 17.7076C9.61739 17.8003 9.50752 17.8738 9.38656 17.924C9.2656 17.9742 9.13594 18 9.00499 18C8.87404 18 8.74437 17.9742 8.62342 17.924C8.50246 17.8738 8.39259 17.8003 8.30009 17.7076L6.29037 15.6979C6.18132 15.5913 6.0984 15.4609 6.0481 15.3169C5.9978 15.173 5.98147 15.0193 6.00041 14.868V8.99878H5.97041L0.211208 1.61978C0.0488388 1.41134 -0.0244255 1.1471 0.00742424 0.88481C0.039274 0.622517 0.173648 0.383494 0.381185 0.21997C0.571158 0.0799892 0.781129 0 1.0011 0H14.9992C15.2191 0 15.4291 0.0799892 15.6191 0.21997C15.8266 0.383494 15.961 0.622517 15.9928 0.88481C16.0247 1.1471 15.9514 1.41134 15.7891 1.61978L10.0298 8.99878H9.99985Z"
+                                fill="#62646C" />
+                            <path
+                                d="M9.99985 8.99878V16.8777C10.0398 17.1777 9.93986 17.4976 9.70989 17.7076C9.61739 17.8003 9.50752 17.8738 9.38656 17.924C9.2656 17.9742 9.13594 18 9.00499 18C8.87404 18 8.74437 17.9742 8.62342 17.924C8.50246 17.8738 8.39259 17.8003 8.30009 17.7076L6.29037 15.6979C6.18132 15.5913 6.0984 15.4609 6.0481 15.3169C5.9978 15.173 5.98147 15.0193 6.00041 14.868V8.99878H5.97041L0.211208 1.61978C0.0488388 1.41134 -0.0244255 1.1471 0.00742424 0.88481C0.039274 0.622517 0.173648 0.383494 0.381185 0.21997C0.571158 0.0799892 0.781129 0 1.0011 0H14.9992C15.2191 0 15.4291 0.0799892 15.6191 0.21997C15.8266 0.383494 15.961 0.622517 15.9928 0.88481C16.0247 1.1471 15.9514 1.41134 15.7891 1.61978L10.0298 8.99878H9.99985Z"
+                                fill="url(#paint0_linear_84_498)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_84_498" x1="-4.67244" y1="9" x2="15.9293" y2="9.04119"
+                                    gradientUnits="userSpaceOnUse">
+
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        Фильтр поиска
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.4751 1.1675C10.2877 0.98125 10.0343 0.876711 9.77012 0.876711C9.50592 0.876711 9.25252 0.98125 9.06512 1.1675L5.47512 4.70746L1.93511 1.1675C1.74775 0.981249 1.4943 0.876709 1.23011 0.876709C0.965929 0.876709 0.712479 0.981249 0.525109 1.1675C0.431379 1.26047 0.356989 1.37107 0.306219 1.49293C0.255449 1.61479 0.229309 1.74549 0.229309 1.8775C0.229309 2.00956 0.255449 2.14026 0.306219 2.26206C0.356989 2.38396 0.431379 2.49456 0.525109 2.58746L4.76512 6.82746C4.85812 6.92126 4.96872 6.99566 5.09052 7.04636C5.21242 7.09716 5.34312 7.12326 5.47512 7.12326C5.60712 7.12326 5.73782 7.09716 5.85972 7.04636C5.98152 6.99566 6.09212 6.92126 6.18512 6.82746L10.4751 2.58746C10.5688 2.49456 10.6432 2.38396 10.694 2.26206C10.7448 2.14026 10.7709 2.00956 10.7709 1.8775C10.7709 1.74549 10.7448 1.61479 10.694 1.49293C10.6432 1.37107 10.5688 1.26047 10.4751 1.1675Z"
+                                fill="#62646C" />
+                            <path
+                                d="M10.4751 1.1675C10.2877 0.98125 10.0343 0.876711 9.77012 0.876711C9.50592 0.876711 9.25252 0.98125 9.06512 1.1675L5.47512 4.70746L1.93511 1.1675C1.74775 0.981249 1.4943 0.876709 1.23011 0.876709C0.965929 0.876709 0.712479 0.981249 0.525109 1.1675C0.431379 1.26047 0.356989 1.37107 0.306219 1.49293C0.255449 1.61479 0.229309 1.74549 0.229309 1.8775C0.229309 2.00956 0.255449 2.14026 0.306219 2.26206C0.356989 2.38396 0.431379 2.49456 0.525109 2.58746L4.76512 6.82746C4.85812 6.92126 4.96872 6.99566 5.09052 7.04636C5.21242 7.09716 5.34312 7.12326 5.47512 7.12326C5.60712 7.12326 5.73782 7.09716 5.85972 7.04636C5.98152 6.99566 6.09212 6.92126 6.18512 6.82746L10.4751 2.58746C10.5688 2.49456 10.6432 2.38396 10.694 2.26206C10.7448 2.14026 10.7709 2.00956 10.7709 1.8775C10.7709 1.74549 10.7448 1.61479 10.694 1.49293C10.6432 1.37107 10.5688 1.26047 10.4751 1.1675Z"
+                                fill="url(#paint0_linear_84_500)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_84_500" x1="-2.84921" y1="3.99998" x2="10.7241"
+                                    y2="4.05151" gradientUnits="userSpaceOnUse">
+
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+
+
+                    </button>
                     <ul class="filter__dropdown-list">
-                        <li class="filter__dropdown-item">По популярности</11>
-                        <li class="filter__dropdown-item">Сначала дешевые</li>
-                        <li class="filter__dropdown-item">Сначала дорогие</li>
-                        <li class="filter__dropdown-item-active">Новые</li>
+                        <li class="filter__dropdown-item">
+                            <button class="filter__dropdown-item-btn">По популярности</button>
+                        </li>
+                        <li class="filter__dropdown-item">
+                            <button class="filter__dropdown-item-btn">Сначала дешевые</button>
+                        </li>
+                        <li class="filter__dropdown-item">
+                            <button class="filter__dropdown-item-btn">Сначала дорогие</button>
+                        </li>
+                        <li class="filter__dropdown-item-active">
+                            <button class="filter__dropdown-item-btn">Новые</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -179,10 +271,27 @@
                             <button class="filter__settings__dropdown-selected">Выберите</button>
                         </div>
                         <ul class="filter__settings__dropdown-list">
-                            <li class="filter__dropdown-item">По популярности</li>
-                            <li class="filter__dropdown-item">Сначала дешевые</li>
-                            <li class="filter__dropdown-item">Сначала дорогие</li>
-                            <li class="filter__dropdown-item-active">Новые</li>
+                            <li class="filter__settings__dropdown-item">
+                                <button class="filter__dropdown-item-btn">
+                                    По популярности
+                                </button>
+
+                            </li>
+                            <li class="filter__dropdown-item">
+                                <button>
+                                    Сначала дешевые
+                                </button>
+                            </li>
+                            <li class="filter__dropdown-item">
+                                <button>
+                                    Сначала дорогие
+                                </button>
+                            </li>
+                            <li class="filter__dropdown-item-active">
+                                <button>
+                                    Новые
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -190,16 +299,16 @@
                     <fieldset class="radio-group">
                         <p class="filter__settings-text">Сетка товаров</p>
 
-                        <div class="radio-group-text">
-                            <p class="radio-group__wrapper">
-                                <input id="gridfour" type="radio" name="radio-button" class="radio-group__radio"
+                        <div class="radio-group__block">
+                            <div class="radio-group__wrapper">
+                                <input id="gridfour" type="radio" name="radio-button" class="radio-group__input"
                                     checked>
                                 <label for="gridfour" class="radio-group__label">4x1</label>
-                            </p>
-                            <p class="radio-group__wrapper">
-                                <input id="gridfive" type="radio" name="radio-button" class="radio-group__radio">
+                            </div>
+                            <div class="radio-group__wrapper">
+                                <input id="gridfive" type="radio" name="radio-button" class="radio-group__input">
                                 <label for="gridfive" class="radio-group__label">5x1</label>
-                            </p>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
@@ -208,20 +317,22 @@
                     <div class="filter__price-form">
                         <p class="filter__settings-text">цена от</p>
                         <input class="filter__settings-input" type="number" placeholder="29" name="price-input">
-                        <label for="price-input" class="filter__settings-input-label">₽</label>
+                        <label class="filter__settings-input-label">₽</label>
                     </div>
 
                     <div class="filter__price-form">
                         <p class="filter__settings-text">цена до</p>
                         <input class="filter__settings-input" type="number" placeholder="2999" name="price-input">
-                        <label for="price-input" class="filter__settings-input-label">₽</label>
+                        <label class="filter__settings-input-label">₽</label>
                     </div>
                 </div>
 
                 <div class="filter__checkbox">
                     <div class="checkbox">
-                        <input type="checkbox" class="filter__input" id="input-check" />
-                        <label for="input-check" class="filter__settings-input-label">Скрыть отсутствующий товар</label>
+                        <label class="filter-checkbox__container">Скрыть отсутсвующий товар
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
                 </div>
 
@@ -233,29 +344,29 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Random steam
+                                <label class="filter-checkbox__container-title">Random Steam
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Игры от ₽700
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Игры от ₽900
+                                <label class="filter-checkbox__container">Игры от ₽150
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Игры от ₽1200
+                                <label class="filter-checkbox__container">Игры от ₽700
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Игры от ₽900
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -264,29 +375,28 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Steam
+                                <label class="filter-checkbox__container-title">Steam
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Ключи
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Steam points
+                                <label class="filter-checkbox__container">Steam points
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -295,29 +405,29 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Ubisoft
+                                <label class="filter-checkbox__container-title">Ubisoft
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Ключи
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -326,29 +436,29 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Epic games
+                                <label class="filter-checkbox__container-title">Epic games
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Ключи
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -357,35 +467,35 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Ea play
+                                <label class="filter-checkbox__container-title">EA play
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Ключи
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Apex legends
+                                <label class="filter-checkbox__container">Apex legends
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -394,192 +504,35 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Rockstar
+                                <label class="filter-checkbox__container-title">Rockstar
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Накрутка
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Буст
-                                </label>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="filter__settings-row">
-                    <div class="filter__settings-container">
-                        <ul class="filter__settings-list">
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Riot
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
-                                </label>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="filter__settings-container">
-                        <ul class="filter__settings-list">
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Fortnite
+                                <label class="filter-checkbox__container">Накрутка
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    В-баксы
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
-                                </label>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="filter__settings-container">
-                        <ul class="filter__settings-list">
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Minecraft
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Ключи
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Hypixel
-                                </label>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="filter__settings-container">
-                        <ul class="filter__settings-list">
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Genshin impact
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Примогемы
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
-                                </label>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="filter__settings-container">
-                        <ul class="filter__settings-list">
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Vk play
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Донат
-                                </label>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="filter__settings-container">
-                        <ul class="filter__settings-list">
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    GOG
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Буст
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -592,29 +545,22 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Xbox
+                                <label class="filter-checkbox__container-title">Riot
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Ключи
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check3" />
-                                <label for="check3">
-                                    Xbox gamepass
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -623,29 +569,29 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Playstation
+                                <label class="filter-checkbox__container-title">Fortnite
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Ключи
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Подписка
+                                <label class="filter-checkbox__container">B-баксы
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -654,22 +600,29 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Nintendo
+                                <label class="filter-checkbox__container-title">Minecraft
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Донат
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Hypixel
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -678,22 +631,29 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Mobile
+                                <label class="filter-checkbox__container-title">Genshin impact
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Примогемы
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Донат
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -702,22 +662,177 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Roblux
+                                <label class="filter-checkbox__container-title">Vk play
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Робуксы
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container-title">Gog
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="filter__settings-row">
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container-title">Xbox
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Подарочные карты
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Xbox gamepass
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container-title">Playstation
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Подписка
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item-title">
+                                <label class="filter-checkbox__container-title">Nintendo
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container-title">Mobile
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Донат
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter__settings-container">
+                        <ul class="filter__settings-list">
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container-title">Roblox
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Робуксы
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Подарочные карты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -726,22 +841,22 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Software
+                                <label class="filter-checkbox__container-title">Software
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Ключи
+                                <label class="filter-checkbox__container">Ключи
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Аккаунты
+                                <label class="filter-checkbox__container">Аккаунты
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -749,35 +864,35 @@
                     <div class="filter__settings-container">
                         <ul class="filter__settings-list">
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check-title" />
-                                <label for="check" class="check-title">
-                                    Сервисы
+                                <label class="filter-checkbox__container-title">Сервисы
+                                    <input type="checkbox">
+                                    <span class="checkmark-title"></span>
                                 </label>
                             </li>
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Музыка
-                                </label>
-                            </li>
-
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Кино
-                                </label>
-                            </li>
-                            <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check" />
-                                <label for="check">
-                                    Промокоды
+                                <label class="filter-checkbox__container">Музыка
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
 
                             <li class="filter__settings-list-item">
-                                <input type="checkbox" name="" class="check" id="check2" />
-                                <label for="check2">
-                                    Баллы
+                                <label class="filter-checkbox__container">Кино
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Промокоды
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+
+                            <li class="filter__settings-list-item">
+                                <label class="filter-checkbox__container">Баллы
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </label>
                             </li>
                         </ul>
@@ -791,7 +906,7 @@
 
         <div class="games__wrapper">
 
-            <div class="game__card">
+            <a class="game__card">
                 <div class="game__card-img" style="background-image: url('./images/metro.jpg');">
                 </div>
                 <div class="game__card-title">
@@ -799,12 +914,14 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
-            </div>
+            </a>
             <div class="game__card">
                 <div class="game__card-img" style="background-image: url('./images/spotify.jpg');">
                 </div>
@@ -813,8 +930,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -827,8 +946,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -841,8 +962,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -855,8 +978,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-discord"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -870,8 +995,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-discord"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -885,8 +1012,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -900,8 +1029,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -914,8 +1045,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -929,8 +1062,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -944,8 +1079,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -958,8 +1095,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -973,8 +1112,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -988,8 +1129,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1003,8 +1146,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1017,8 +1162,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1032,8 +1179,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1047,8 +1196,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1062,8 +1213,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1078,8 +1231,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-discord"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-discord"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1093,8 +1248,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1108,8 +1265,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1123,8 +1282,11 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
+
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1138,8 +1300,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1153,8 +1317,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1168,8 +1334,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1182,8 +1350,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1196,8 +1366,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1210,8 +1382,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-info"></div>
-                        <div class="games__card-icon-steam"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-info"></div>
+                            <div class="games__card-icon-steam"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1225,8 +1399,10 @@
                 </div>
                 <div class="games__card-info">
                     <div class="games__card-icons">
-                        <div class="games__card-icon-key"></div>
-                        <div class="games__card-icon-minecraft"></div>
+                        <div class="games__card-group-icons">
+                            <div class="games__card-icon-key"></div>
+                            <div class="games__card-icon-minecraft"></div>
+                        </div>
                         <div class="games__card-price"></div>
                     </div>
                 </div>
@@ -1234,9 +1410,6 @@
 
         </div>
         <button class="showMore">Показать больше</button>
-
-
-
     </section>
     <section class="lastPurchase">
         <h2 class="visually-hidden">Последние покупки</h2>
@@ -1248,22 +1421,24 @@
 
             </div>
 
-
+            <button class="lastPurchase__group-left-arrow"></button>
 
             <div class="lastPurchase__group">
-                <button class="lastPurchase__group-left-arrow"></button>
+
 
                 <div class="lastPurchase__card">
                     <div class="lastPurchase__card-img" style="background-image: url('./images/discord.jpg');">
                     </div>
                     <div class="lastPurchase__card-info">
-                        <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
-
-                        <div class="lastPurchase__card-icons">
-                            <div class="lastPurchase__card-icon-info">Сервисы</div>
-                            <div class="lastPurchase__card-icon-discord">Discord</div>
-                            <div class="lastPurchase__card-price"></div>
+                        <div class="lastPurchase__card-text-block">
+                            <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
+                            <div class="lastPurchase__card-icons">
+                                <div class="lastPurchase__card-icon-info">Сервисы</div>
+                                <div class="lastPurchase__card-icon-discord">Discord</div>
+                                <div class="lastPurchase__card-price"></div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -1271,14 +1446,13 @@
                     <div class="lastPurchase__card-img" style="background-image: url('./images/discord.jpg');">
                     </div>
                     <div class="lastPurchase__card-info">
-                        <div class="lastPurchase__card-title">
+                        <div class="lastPurchase__card-text-block">
                             <div class="lastPurchase__card-title">Discord Nitro Full 12 месяцев</div>
-                        </div>
-                        <div class="lastPurchase__card-icons">
-                            <div class="lastPurchase__card-icon-info">Сервисы</div>
-                            <div class="lastPurchase__card-icon-discord">Discord</div>
-                            <div class="lastPurchase__card-price"></div>
-
+                            <div class="lastPurchase__card-icons">
+                                <div class="lastPurchase__card-icon-info">Сервисы</div>
+                                <div class="lastPurchase__card-icon-discord">Discord</div>
+                                <div class="lastPurchase__card-price"></div>
+                            </div>
                         </div>
 
                     </div>
@@ -1287,21 +1461,19 @@
                     <div class="lastPurchase__card-img" style="background-image: url('./images/metro.jpg');">
                     </div>
                     <div class="lastPurchase__card-info">
-                        <div class="lastPurchase__card-title">
+                        <div class="lastPurchase__card-text-block">
                             <div class="lastPurchase__card-title">Metro Last Light Complete Edition</div>
+                            <div class="lastPurchase__card-icons">
+                                <div class="lastPurchase__card-icon-info">Аккаунт</div>
+                                <div class="lastPurchase__card-icon-discord">Steam</div>
+                                <div class="lastPurchase__card-price"></div>
+                            </div>
                         </div>
-                        <div class="lastPurchase__card-icons">
-                            <div class="lastPurchase__card-icon-info">Сервисы</div>
-                            <div class="lastPurchase__card-icon-steam">Steam</div>
-                            <div class="lastPurchase__card-price"></div>
-
-                        </div>
-
                     </div>
-                </div>
 
-                <button class="lastPurchase__group-right-arrow"></button>
+                </div>
             </div>
+            <button class="lastPurchase__group-right-arrow"></button>
         </div>
     </section>
     <footer class="footer">
@@ -1339,39 +1511,244 @@
                 <div class="footer__questions-block">
                     <div class="footer__questions-title">Навигация</div>
                     <ul class="footer__questions-list">
-                        <li class="footer__questions-list-item">Главная</li>
-                        <li class="footer__questions-list-item">Faq & помощь</li>
-                        <li class="footer__questions-list-item">Корзина</li>
+                        <li class="footer__questions-list-item">
+                            <a href="index.html" class="footer__questions-list-item-link">Главная</a>
+                        </li>
+                        <li class="footer__questions-list-item">
+                            <a href="faq.html" class="footer__questions-list-item-link">Faq & помощь</a>
+                        </li>
+                        <li class="footer__questions-list-item">
+                            <a href="gamepage.html" class="footer__questions-list-item-link">Корзина</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__questions-block">
                     <div class="footer__questions-title">Другое</div>
                     <ul class="footer__questions-list">
-                        <li class="footer__questions-list-item">Гарантии</li>
-                        <li class="footer__questions-list-item">Условия использования</li>
-                        <li class="footer__questions-list-item">Контакты</li>
+                        <li class="footer__questions-list-item">
+                            <a href="guarantee.html" class="footer__questions-list-item-link">Гарантии</a>
+                        </li>
+                        <li class="footer__questions-list-item">
+                            <a href="terms.html" class="footer__questions-list-item-link">Условия использования</a>
+                        </li>
+                        <li class="footer__questions-list-item">
+                            <a href="contacts.html" class="footer__questions-list-item-link">Контакты</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__questions-block">
                     <div class="footer__questions-title">Социальные сети</div>
                     <ul class="footer__questions-list">
-                        <li class="footer__questions-list-icons"></li>
+                        <li class="footer__questions-list-icons">
+                            <a href="#" class="footer__questions-list-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15"
+                                    fill="none">
+                                    <path
+                                        d="M11.9825 14.8892C4.466 14.8892 0.17864 9.63386 0 0.88916H3.7651C3.8888 7.30756 6.6646 10.0263 8.8632 10.5869V0.88916H12.4085V6.42466C14.5796 6.18646 16.8607 3.66396 17.6302 0.88916H21.1755C20.8855 2.32826 20.3075 3.69086 19.4776 4.89166C18.6477 6.09246 17.5837 7.10576 16.3523 7.86816C17.7269 8.56476 18.941 9.55066 19.9145 10.7609C20.888 11.9712 21.5988 13.3782 22 14.8892H18.0974C17.7373 13.5768 17.0054 12.402 15.9934 11.512C14.9814 10.622 13.7343 10.0565 12.4085 9.88616V14.8892H11.9825Z"
+                                        fill="#E4EDEF" fill-opacity="0.78" />
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__questions-list-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+                                    fill="none">
+                                    <path
+                                        d="M17.9576 0.949L1.12445 7.9962C0.447055 8.32438 0.217942 8.98158 0.960723 9.33826L5.27914 10.8282L15.7205 3.82249C16.2906 3.38269 16.8743 3.49997 16.3721 3.98378L7.40432 12.7989L7.12262 16.5294C7.38354 17.1054 7.86128 17.1081 8.16602 16.8218L10.6471 14.2731L14.8963 17.7276C15.8832 18.3619 16.4202 17.9525 16.6326 16.7899L19.4197 2.46232C19.709 1.03125 19.2156 0.400698 17.9576 0.949Z"
+                                        fill="#E4EDEF" fill-opacity="0.78" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-
                 </div>
             </div>
-
         </div>
         <div class="footer__about-container">
             <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
             <div class="footer__about-text-group">
-                <p class="footer__about-text">Система по созданию магазинов: <span>Lequeshop.com</span></p>
-                <p class="footer__about-text">Designed by: <span>Maxyao</span></p>
+                <div class="footer__about-text">Система по созданию магазинов:
+                    <a href="#" class="footer__about-text-link">Lequeshop.com</a>
+                </div>
+                <div class="footer__about-text">Designed by:
+                    <a href="#" class="footer__about-text-link">Maxyao</a>
+                </div>
             </div>
-
         </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <!-- <div class="search-popup__container">
+        <div class="search-popup__content">
+            <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
+            <p class="search-popup-subtitle">Введите название игры, сервиса или любого товара</p>
+            <button class="search-popup__input-btn"></button>
+            <input type="text" placeholder="Введите запрос" class="search-popup__input">
+            <div class="search-popup__results-container">
+                <p class="search-popup__results-text">Результаты поиска</p>
+                <div class="search-popup__results-cards">
+                    <div class="results-card">
+                        <div class="results-card-img" style="background-image: url('./images/spotify.jpg');">
+                        </div>
+                        <div class="results-card-info">
+                            <div class="results-card-text-block">
+                                <div class="results-card-title">Spotify 12 месяцев</div>
+                                <div class="results-card-icons">
+                                    <div class="results-card-group-icons">
+                                        <div class="results-card-icon-info">Сервисы</div>
+                                        <div class="results-card-icon-spotify">Spotify</div>
+                                    </div>
+                                    <div class="results-card-price"></div>
+                                    <button class="results-card-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <div class="results-card-img" style="background-image: url('./images/spotify.jpg');">
+                        </div>
+                        <div class="results-card-info">
+                            <div class="results-card-text-block">
+                                <div class="results-card-title">Spotify 6 месяцев</div>
+                                <div class="results-card-icons">
+                                    <div class="results-card-group-icons">
+                                        <div class="results-card-icon-info">Сервисы</div>
+                                        <div class="results-card-icon-spotify">Spotify</div>
+                                    </div>
+                                    <div class="results-card-price"></div>
+                                    <button class="results-card-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <div class="results-card-img" style="background-image: url('./images/sonsOfForest.jpg');">
+                        </div>
+                        <div class="results-card-info">
+                            <div class="results-card-text-block">
+                                <div class="results-card-title">Sons Of The Forest</div>
+                                <div class="results-card-icons">
+                                    <div class="results-card-group-icons">
+                                        <div class="results-card-icon-info">Аккаунт</div>
+                                        <div class="results-card-steam">Steam</div>
+                                    </div>
+                                    <div class="results-card-price"></div>
+                                    <button class="results-card-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="shopping-cart__container">
+        <div class="shopping-cart__content">
+            <h2 class="shopping-cart-title">Корзина</h2>
+            <p class="shopping-cart-subtitle">Ваши выбранные товары находяться здесь</p>
+            <div class="shopping-cart__block">
+                <div class="shopping-cart__left-block">
+                    <div class="shopping-cart__left-block-text">
+                        <p class="shopping-cart__left-subtitle">Окно просмотра выбранных товаров</p>
+                        <button class="shopping-cart__left-close"></button>
+                    </div>
+                    <h3 class="shopping-cart__left-title">Оплата товара</h3>
+                    <p class="shopping-cart__left-text">Отмеченный товар</p>
+                    <div class="shopping-cart__left-cards-block">
+                        <div class="shopping-cart__card">
+                            <div class="shopping-cart__card-block">
+                                <div class="shopping-cart__card-text">Call of Duty®: Modern Wa...</div>
+                                <div class="shopping-cart__card-quantity">
+                                    <button class="shopping-cart__card-quantity-plus">+</button>
+                                    <p class="shopping-cart__card-quantity-number">1</p>
+                                    <button class="shopping-cart__card-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-cart__card">
+                            <div class="shopping-cart__card-block">
+                                <div class="shopping-cart__card-text">Spotify 12 месяцев</div>
+                                <div class="shopping-cart__card-quantity">
+                                    <button class="shopping-cart__card-quantity-plus">+</button>
+                                    <p class="shopping-cart__card-quantity-number">1</p>
+                                    <button class="shopping-cart__card-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-cart__card">
+                            <div class="shopping-cart__card-block">
+                                <div class="shopping-cart__card-text">Spotify 12 месяцев</div>
+                                <div class="shopping-cart__card-quantity">
+                                    <button class="shopping-cart__card-quantity-plus">+</button>
+                                    <p class="shopping-cart__card-quantity-number">1</p>
+                                    <button class="shopping-cart__card-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopping-cart__total">
+                        <div class="shopping-cart__total-price">
+                            <p class="shopping-cart__text">К оплате</p>
+                            <span class="shopping-cart__subtext">₽4999</span>
+                        </div>
+                        <div class="shopping-cart__total-block">
+                            <div class="shopping-cart__total-promocode">
+                                <button class="shopping-cart__input-btn"></button>
+                                <input type="text" placeholder="Введите запрос" class="shopping-cart__input">
+                            </div>
+                            <button class="shopping-cart__total-btn">Оплатить</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="shopping-cart__right-block">
+                    <p class="shopping-cart__right-subtitle">Популярные платежные системы:</p>
+                    <div class="shopping-cart__right-btns-block">
+                        <div class="shopping-cart__right-btn-qiwi">
+                            <div class="shopping-cart__btn-title-img-qiwi"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-freekassa">
+                            <div class="shopping-cart__btn-title-img-freekassa"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-visa">
+                            <div class="shopping-cart__btn-title-img-visa"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-walletKz">
+                            <div class="shopping-cart__btn-title-img-walletKz"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-walletUkr">
+                            <div class="shopping-cart__btn-title-img-walletUkr"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-bitcoin">
+                            <div class="shopping-cart__btn-title-img-bitcoin"></div>
+                        </div>
+                        <div class="shopping-cart__right-btn-sbp">
+                            <div class="shopping-cart__btn-title-img-sbp"></div>
+                            <div class="shopping-cart__btn-title-img-sbp-text"></div>
+
+                        </div>
+                        <div class="shopping-cart__right-btn-steam">
+                            <div class="shopping-cart__btn-title-img-steam"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="shopping-cart__right-input-mail">
+                        <button class="shopping-cart__right-input-btn"></button>
+                        <input type="text" placeholder="Введите email" class="shopping-cart__right-input">
+                    </div>
+                    <div class="shopping-cart__right-info-block">
+                        <p class="shopping-cart__right-block-text">Будьте внимательны! Указывайте только ту почту, к
+                            которой имеете постоянный доступ.</p>
+                        <p class="shopping-cart__right-block-text">На указанную почту приходит чек, а также содержимое
+                            цифрового товара. В случае какой либо ошибки, в тикете обращения в поддержку указывайте
+                            номер заказа, который придет на почту</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div> -->
 </body>
 
 </html>

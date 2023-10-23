@@ -1,0 +1,16 @@
+{
+  "name": "diseasedproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:css": "stylelint 'css/**/*.css'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "purgecss": "^5.0.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}
