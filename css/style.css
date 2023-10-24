@@ -452,7 +452,7 @@ body::after {
 
 
 .slider__img {
-    width: 646px;
+    width: 100%;
     height: 726px;
     background-image: url("../images/bannerImage.jpg");
     background-size: cover;
