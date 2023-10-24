@@ -247,6 +247,7 @@ body::after {
     position: absolute;
     left: 15px;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
