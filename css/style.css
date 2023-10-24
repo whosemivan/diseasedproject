@@ -95,6 +95,11 @@ body::after {
     line-height: 24px;
     letter-spacing: 0.24px;
     text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+
+.header__nav-link:hover {
+    color: #DBDBDB;
 }
 
 .header__center-btn {
@@ -102,6 +107,12 @@ body::after {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: #95979F;
+    transition: color 0.3s linear;
+}
+
+.header__center-btn:hover {
+    color: #DBDBDB;
 }
 
 
@@ -121,6 +132,11 @@ body::after {
     align-items: center;
     color: rgba(219, 219, 219, 0.85);
     position: relative;
+    transition: color 0.3s linear;
+}
+
+.header__side-panel-link:hover {
+    color: #DBDBDB;
 }
 
 .header__side-panel-link:nth-child(1)::before {
@@ -1149,6 +1165,7 @@ ul li {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     background: rgba(17, 19, 23, 0.86);
+    text-decoration: none;
 }
 
 .games__card-info {
@@ -1189,6 +1206,11 @@ ul li {
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 270px;
 }
 
 .games__card-price {
@@ -1632,6 +1654,11 @@ ul li {
     line-height: 24px;
     letter-spacing: 0.24px;
     text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+
+.footer__questions-list-item-link:hover {
+    color: #DBDBDB;
 }
 
 .footer__questions-blocks {
@@ -1653,6 +1680,12 @@ ul li {
     background: none;
     border: none;
     cursor: pointer;
+    color: #E4EDEF;
+    transition: color 0.3s linear;
+}
+
+.footer__questions-list-icon:hover {
+    color: #0CEBEB;
 }
 
 
