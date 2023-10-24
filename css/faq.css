@@ -293,7 +293,7 @@ body::after {
     -webkit-text-fill-color: transparent;
     font-size: 72px;
     font-weight: 800;
-    line-height: 59px;
+    line-height: 72px;
     text-transform: capitalize;
     margin: 12px 0;
 }
