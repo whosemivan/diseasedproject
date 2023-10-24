@@ -84,6 +84,7 @@ body::after {
     font-weight: 600;
     letter-spacing: 0.24px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .header__nav-link {
