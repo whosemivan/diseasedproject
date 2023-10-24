@@ -100,16 +100,6 @@ body::after {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Header */
 
 .header {
@@ -159,6 +149,7 @@ body::after {
     font-weight: 600;
     letter-spacing: 0.24px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .header__nav-link {
@@ -169,6 +160,11 @@ body::after {
     line-height: 24px;
     letter-spacing: 0.24px;
     text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+
+.header__nav-link:hover {
+    color: #DBDBDB;
 }
 
 .header__center-btn {
@@ -176,6 +172,12 @@ body::after {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: #95979F;
+    transition: color 0.3s linear;
+}
+
+.header__center-btn:hover {
+    color: #DBDBDB;
 }
 
 
@@ -195,6 +197,11 @@ body::after {
     align-items: center;
     color: rgba(219, 219, 219, 0.85);
     position: relative;
+    transition: color 0.3s linear;
+}
+
+.header__side-panel-link:hover {
+    color: #DBDBDB;
 }
 
 .header__side-panel-link:nth-child(1)::before {
