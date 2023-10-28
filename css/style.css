@@ -442,7 +442,7 @@ body::after {
 
 .first-screen__banner-subtitle-text {
   display: flex;
-  width: 338px;
+  width: 310px;
   gap: 30px;
   padding: 0 30px 0 0;
 }
@@ -2908,13 +2908,19 @@ ul li {
   .first-screen__slider {
     width: 400px;
     height: 570px;
-    right: 41%;
+    right: 40%;
   }
 
   .slider__img::after {
     display: none;
   }
 
+  .first-screen__banner-subtitle-text {
+    width: 263px;
+  }
+  .first-screen__content {
+    max-width: 1052px;
+  }
   .game__info-items {
     position: relative;
     gap: 8px;
@@ -2958,7 +2964,6 @@ ul li {
     bottom: 25%;
     left: 90%;
   }
-
 
   .first-screen__wrapper::before,
   .first-screen__wrapper::after,
@@ -3072,7 +3077,6 @@ ul li {
   .first-screen__banner-subtitle-text:nth-child(2)::before {
     width: 160px;
   }
-
   .title:nth-child(2) {
     display: flex;
     font-size: 44px;
