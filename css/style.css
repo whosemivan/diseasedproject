@@ -444,6 +444,7 @@ body::after {
   display: flex;
   width: 338px;
   gap: 30px;
+  padding: 0 30px 0 0;
 }
 
 .first-screen__banner-subtitle-text:nth-child(1)::before {
@@ -1250,7 +1251,7 @@ ul li {
 }
 
 .games__card-info {
-  padding: 25px;
+  /* padding: 25px; */
   display: flex;
   align-items: center;
 }
@@ -1332,7 +1333,7 @@ ul li {
 
 .games__card-icons {
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 
 .games__card-group-icons {
@@ -1679,7 +1680,7 @@ ul li {
 
 .lastPurchase__group-left-arrow {
   position: absolute;
-  bottom: 30%;
+  bottom: 45%;
   right: 103%;
   background: none;
   border: none;
@@ -1702,7 +1703,7 @@ ul li {
 .lastPurchase__group-right-arrow {
   position: absolute;
   left: 102%;
-  bottom: 20%;
+  bottom: 40%;
   background: none;
   border: none;
   margin: 0 0 0 20px;
@@ -2958,10 +2959,6 @@ ul li {
     left: 90%;
   }
 
-  .first-screen__banner-subtitle-text {
-    width: 270px;
-    height: 72px;
-  }
 
   .first-screen__wrapper::before,
   .first-screen__wrapper::after,
