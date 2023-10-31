@@ -31,12 +31,15 @@ body::after {
 
 .contacts__wrapper {
   position: relative;
-  max-width: 1410px;
+  width: 100%;
   height: 944px;
   display: flex;
   gap: 30px;
   z-index: -1;
   margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__wrapper::before {
@@ -440,14 +443,13 @@ body::after {
 
 .contacts-main-title-block {
   display: flex;
-  width: 796px;
+  width: 44%;
+  height: 100%;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   right: 0px;
-
   text-align: right;
   top: 657px;
-  width: 315px;
   text-transform: uppercase;
   justify-content: center;
 }
@@ -594,7 +596,149 @@ body::after {
 }
 
 /* Адаптив */
+@media (max-width: 1195px) {
+  .header__content {
+    max-width: 1105px;
+  }
+  .header__nav {
+    padding: 30px 0 30px 15px;
+  }
+  .header__nav-list {
+    font-size: 8px;
+    gap: 8px;
+  }
+  .header__center-btn {
+    padding: 0 40px;
+  }
+  .header__side-panel {
+    gap: 10px;
+  }
+  .header__side-panel-link:nth-child(3) {
+    font-size: 13px;
+  }
+  .first-block {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacts__links {
+    display: flex;
+    width: 100%;
+  }
+  .contacts-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacts__links {
+    display: flex;
+    width: 100%;
+  }
+  .contacts-title {
+    width: 100%;
+  }
+  .contacts-text {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__about-text-group {
+    padding: 10px 0 0 0;
+  }
+  .footer__about-container {
+    padding: 0 0 20px 0;
+  }
+  .footer__questions-blocks {
+    gap: 15px;
+  }
 
+  .footer__questions-block:nth-child(3) {
+    position: static;
+  }
+}
+
+@media (max-width: 835px) {
+  .header__content {
+    max-width: 680px;
+    padding: 21px 60px;
+  }
+  .header__adaptive-btn {
+    display: block;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__side-panel-link:nth-child(2),
+  .header__side-panel-link:nth-child(3) {
+    display: none;
+  }
+  .contacts-main-title-block {
+    display: flex;
+    width: 70%;
+    height: 42%;
+    align-items: center;
+    /* position: absolute; */
+    right: 0px;
+    text-align: right;
+    top: 657px;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  .contacts {
+    max-width: 1410px;
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    height: 1500px;
+  }
+
+  .contacts-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacts__wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* .contacts-main-title-block {
+    width: 70%;
+  } */
+  .first-block {
+    height: 85%;
+    width: 71%;
+  }
+  .footer__content {
+    max-width: 722px;
+  }
+  .footer__questions-blocks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer__info-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .footer__questions-block:nth-child(3) {
+    left: 5%;
+    bottom: 4%;
+  }
+  .footer__about-container {
+    flex-direction: column;
+    max-width: 722px;
+    padding: 0 0 30px 0;
+  }
+  .footer__about-text-group {
+    padding: 40px 0 0 0;
+  }
+}
 @media (max-width: 390px) {
   .nav__logo {
     width: 60px;
@@ -623,14 +767,17 @@ body::after {
     max-width: 395px;
     width: 80%;
   }
-  .contacts-block{
+  .contacts-block {
     max-width: 300px;
+  }
+  .contacts-names {
+    width: 120%;
   }
   .contacts__links {
     font-size: 10px;
   }
   .contacts-title {
-    font-size: 50px;
+    font-size: 42px;
     width: 300px;
   }
   .contacts-main-title-block {
@@ -646,23 +793,14 @@ body::after {
     line-height: 32.866px;
   }
   .contacts-text {
-    width: 288px;
+    width: 115%;
   }
-  
   .footer__about-text {
     flex-direction: column;
   }
   .footer__about-text-group {
     flex-direction: column;
     padding: 10px 0 0 0;
-  }
-  .footer__about-container {
-    flex-direction: column;
-    padding: 0 0 20px 0;
-  }
-  .footer__questions-blocks {
-    flex-direction: column;
-    gap: 15px;
   }
   .footer__content {
     max-width: 350px;
