@@ -30,9 +30,9 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 54%;
+  width: 61%;
   margin: 0 auto;
-  z-index: -1;
+  z-index: 1;
 }
 
 .gamePage__preview-wrapper::before {
@@ -59,7 +59,7 @@ body::after {
 .gamePage__preview-wrapper::after {
   content: "";
   position: absolute;
-  right: 1199px;
+  right: 70%;
   bottom: 1201px;
   width: 311.88px;
   height: 908.818px;
@@ -85,6 +85,8 @@ body::after {
   background: rgba(23, 25, 29, 0.48);
   /* -webkit-backdrop-filter: blur(53.5px); */
   backdrop-filter: blur(53.5px);
+  position: relative;
+  z-index: 10;
 }
 
 .header__content {
@@ -325,12 +327,12 @@ body::after {
   max-width: 1410px;
   width: 90%;
   margin: 0 auto;
-  gap: 141px;
+  gap: 64px;
 }
 
 .gamePage__info {
   display: flex;
-  width: 105%;
+  width: 92%;
   height: 24%;
   padding: 30px;
   border-radius: 12px;
@@ -338,14 +340,12 @@ body::after {
   gap: 30px;
 }
 
-/* .gamePage__poster-container {
-  width: 27%;
-} */
+
 .gamePage__gameplay {
   width: 73%;
-  /* height: 98%; */
 }
 .gamePage__preview-links {
+  cursor: pointer;
   display: flex;
 }
 .gamePage__gameplay-img-block {
@@ -464,7 +464,7 @@ body::after {
 .gamePage__requirements {
   position: relative;
   max-width: 990px;
-  height: 719px;
+  height: 950px;
 }
 
 .gamePage__requirements-left-btn::before {
@@ -511,7 +511,7 @@ body::after {
 }
 
 .gamePage__requirements-btns {
-  width: 113%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -524,42 +524,20 @@ body::after {
   color: #95979f;
   border: none;
   width: 78px;
+  display: flex;
   align-items: center;
+  gap: 5px;
+  justify-content: center;
   width: 930px;
   height: 84px;
   cursor: pointer;
 }
 
-.gamePage__requirements-btn:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/icons/description.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  top: 25px;
-  left: 85px;
-  width: 30px;
-  height: 30px;
-}
 
 .gamePage__requirements-btn:nth-child(2),
 .gamePage__requirements-btn:nth-child(3),
 .gamePage__requirements-btn:nth-child(4) {
   position: relative;
-}
-
-.gamePage__requirements-btn:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/icons/description.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  top: 25px;
-  left: 70px;
-  width: 30px;
-  height: 30px;
 }
 
 .gamePage__requirements-btn--active {
@@ -573,36 +551,26 @@ body::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.gamePage__requirements-btn:nth-child(3)::before {
+.gamePage__requirements-btn--active::after {
   content: "";
   position: absolute;
-  background-image: url("../images/icons/requiermentsGrey.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  top: 25px;
-  left: 28px;
-  width: 30px;
-  height: 30px;
-}
-.gamePage__requirements-btn:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/icons/eye.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  top: 25px;
-  right: 183px;
-  width: 30px;
-  height: 30px;
+  top: 96%;
+  left: 28%;
+  min-height: 3px;
+  width: 50%;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #0cebeb -0.44%,
+    #20e3b2 33.48%,
+    #29ffc6 71.39%
+  );
 }
 
 .gamePage__requirements-info {
   background: rgba(23, 25, 29, 0.48);
   margin: 0;
-  width: 105%;
+  width: 93%;
   padding: 30px;
   text-transform: uppercase;
 }
@@ -643,7 +611,7 @@ body::after {
 
 .checkmark-title {
   position: absolute;
-  top: 30%;
+  top: 2%;
   left: 0;
   height: 14px;
   width: 14px;
@@ -718,9 +686,8 @@ body::after {
   max-width: 1410px;
   display: flex;
   height: 600px;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
-  width: 90%;
 }
 
 .gamePage__buy-wrapper::before {
@@ -797,8 +764,8 @@ body::after {
 .gamePage__buy-text::after {
   content: "";
   position: absolute;
-  top: 60px;
-  left: 115px;
+  top: 96%;
+  left: 26%;
   min-height: 3px;
   width: 50%;
   border-radius: 8px;
@@ -827,7 +794,7 @@ body::after {
 }
 
 .gamePage__buy-quantity-info {
-  height: 73px;
+  height: 28%;
   display: flex;
   justify-content: space-between;
   color: #919299;
@@ -835,6 +802,8 @@ body::after {
   padding: 0px 24px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.02);
+  flex-wrap: wrap;
+  width: 85%;
 }
 
 .gamePage__buy-quantity-info:nth-child(1) {
@@ -853,17 +822,15 @@ body::after {
   background-image: url("../images/icons/buySticker.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  top: 99px;
-  left: -30px;
-  width: 118%;
-  /* height: auto; */
+  top: 125%;
+  left: -26px;
+  width: 117%;
   height: 105px;
 }
 
 .gamePage__buy-price {
   background: #171b20;
   padding: 0 30px 30px 30px;
-  /* margin: 25px 0 0 0; */
   width: 88%;
 }
 
@@ -872,6 +839,8 @@ body::after {
   justify-content: space-between;
   padding: 30px;
   align-items: center;
+  width: 76%;
+  height: 17%;
 }
 
 .gamePage__price-btn {
@@ -903,6 +872,7 @@ span {
   padding: 22px 0;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   flex-shrink: 0;
   border-radius: 12px;
   background: linear-gradient(
@@ -966,9 +936,6 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   background-color: #dbdbdb;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
 }
 
 input[type="checkbox"]::before {
@@ -995,12 +962,10 @@ input[type="checkbox"]::before {
 }
 
 .gamePage__buy-terms {
-  display: flex;
   align-items: center;
   gap: 20px;
   color: #62646c;
   font-size: 14px;
-  padding: 30px 0px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.168px;
@@ -1085,6 +1050,7 @@ input[type="checkbox"]::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: fill;
 }
 
 .gamePage__buy-similar-card-text-block {
@@ -1246,6 +1212,7 @@ input[type="checkbox"]::before {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  margin: 20px 0 0 0;
 }
 
 .ggamePage__buy-similar-card-price {
@@ -1279,12 +1246,12 @@ input[type="checkbox"]::before {
   color: rgba(0, 0, 0, 0);
   font-size: 16px;
 }
+
 /* Footer */
 
 .footer {
   display: flex;
   flex-direction: column;
-  margin: 380px 0 0 0;
   padding: 35px 0 0 0;
   justify-content: space-between;
   background: rgba(23, 27, 32, 0.36);
@@ -1401,7 +1368,6 @@ input[type="checkbox"]::before {
   display: flex;
   gap: 20px;
 }
-
 /* Адаптив */
 
 /* tablet */
@@ -1440,7 +1406,7 @@ input[type="checkbox"]::before {
   }
   .gamePage__info {
     display: flex;
-    width: 105%;
+    width: 91%;
     height: 19%;
     padding: 30px;
     border-radius: 12px;
@@ -1453,6 +1419,10 @@ input[type="checkbox"]::before {
     background-size: contain;
     background-position: center;
     object-fit: cover;
+  }
+  .gamePage__buy-quantity-info{
+    width: 81%;
+    height: 40%;
   }
 
   .gamePage__gameplay-text {
@@ -1480,7 +1450,10 @@ input[type="checkbox"]::before {
     right: 148px;
   }
   .gamePage__requirements-btns {
-    width: 115%;
+    width: 100%;
+  }
+  .gamePage__requirements-info {
+    width: 91%;
   }
   .gamePage__buy-similar-text {
     margin: 0 0 16px 0;
@@ -1497,7 +1470,7 @@ input[type="checkbox"]::before {
   }
 
   .gamePage__buy-similar-card {
-    width: 100%;
+    width: 95%;
   }
   .gamePage__buy-similar {
     width: 100%;
@@ -1505,6 +1478,12 @@ input[type="checkbox"]::before {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  /* .gamePage__buy-terms-btn span {
+    top: 2%;
+}
+.gamePage__buy-terms{
+  padding: 0;
+} */
 
   .gamePage__buy-quantity-info:nth-child(3)::after {
     display: none;
@@ -1521,10 +1500,6 @@ input[type="checkbox"]::before {
   }
   .footer__questions-blocks {
     gap: 15px;
-  }
-
-  .footer__questions-block:nth-child(3) {
-    position: static;
   }
 }
 
@@ -1563,22 +1538,31 @@ input[type="checkbox"]::before {
   .gamePage__preview {
     flex-direction: column;
     align-items: center;
-    height: 2680px;
+    height: 3220px;
   }
   .gamePage__preview-wrapper {
     width: 90%;
-    height: 1100px;
+    height: 1487px;
   }
   .gamePage__info {
     width: 91%;
-    height: 40%;
+    height: 27%;
   }
   .gamePage__requirements {
-    width: 87%;
+    width: 100%;
   }
+  .gamePage__requirements-btns {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gamePage__requirements-info {
+    width: 90%;
+  }
+
   .gamePage__buy-wrapper {
     width: 90%;
-    height: 1339px;
+    height: 1466px;
     margin: 203px 0 0 0;
   }
   .gamePage__buy-text {
@@ -1595,15 +1579,38 @@ input[type="checkbox"]::before {
     width: 92%;
   }
   .gamePage__buy-similar-games-block {
-    width: 105%;
+    width: 109%;
   }
+
   .footer {
-    margin: 236px 0 0 0;
+    margin: 300px 0 0 0;
+  }
+  .footer__content {
+    max-width: 722px;
+  }
+  .footer__questions-blocks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer__info-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .footer__about-container {
+    flex-direction: column;
+    max-width: 722px;
+    padding: 0 0 30px 0;
+  }
+  .footer__about-text-group {
+    padding: 40px 0 0 0;
   }
 }
 
 /* mobile */
-@media (max-width: 390px) {
+@media (max-width: 600px) {
   .gamePage__preview-wrapper::before,
   .gamePage__preview-wrapper::after,
   .gamePage__buy-wrapper::before,
@@ -1651,11 +1658,12 @@ input[type="checkbox"]::before {
   .gamePage__preview-link {
     margin: 0 30px 0 0;
   }
+
   .gamePage__info {
     /* flex-direction: column; */
     height: 583px;
     flex-wrap: wrap;
-    width: 82%;
+    width: 88%;
   }
   .gamePage__poster-container {
     display: flex;
@@ -1677,9 +1685,11 @@ input[type="checkbox"]::before {
   .gamePage__gameplay-category {
     display: none;
   }
-
+  .gamePage__gameplay {
+    width: 100%;
+  }
   .gamePage__gameplay-img-block {
-    width: 257px;
+    width: 100%;
     height: 130px;
     display: flex;
     overflow-x: scroll;
@@ -1698,17 +1708,17 @@ input[type="checkbox"]::before {
 
   .gamePage__requirements {
     /* max-width: 395px; */
-    width: 132%;
+    width: 100%;
     height: 60%;
   }
   .gamePage__requirements-btn:nth-child(2)::before {
     left: 68px;
   }
   .gamePage__requirements-btns {
-    width: 76%;
+    width: 99%;
   }
   .gamePage__requirements-info {
-    width: 63%;
+    width: 88%;
   }
 
   .gamePage__requirements-left-btn {
@@ -1719,7 +1729,7 @@ input[type="checkbox"]::before {
   .gamePage__requirements-right-btn {
     display: flex;
     align-items: center;
-    left: 57%;
+    left: 79%;
   }
 
   .gamePage__requirements-btn:nth-child(3),
@@ -1746,13 +1756,14 @@ input[type="checkbox"]::before {
   }
   .gamePage__buy-quantity {
     margin: -47px 0 -47px 0;
-    width: 83%;
+    width: 88%;
   }
   .gamePage__preview {
-    width: 85%;
+    width: 90%;
   }
   .gamePage__buy-price {
-    width: 82%;
+    width: 88%;
+    height: 35%;
   }
   .gamePage__buy-btn,
   .gamePage__buy-btn:nth-child(2) {
@@ -1763,11 +1774,13 @@ input[type="checkbox"]::before {
   }
   .gamePage__buy-terms {
     font-size: 10px;
+    height: 20%;
+    display: flex;
   }
 
   .input[type="checkbox"]:checked,
   .gamePage__buy-terms-btn {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding: 0 0 5px 3px;
   }
@@ -1824,9 +1837,6 @@ input[type="checkbox"]::before {
     width: 13px;
   }
 
-  .footer {
-    margin: 900px 0 0 0;
-  }
   .footer__about-text {
     flex-direction: column;
   }
@@ -1834,20 +1844,9 @@ input[type="checkbox"]::before {
     flex-direction: column;
     padding: 10px 0 0 0;
   }
-  .footer__about-container {
-    flex-direction: column;
-    padding: 0 0 20px 0;
-  }
-  .footer__questions-blocks {
-    flex-direction: column;
-    gap: 15px;
-  }
   .footer__content {
-    max-width: 350px;
-    width: 80%;
+    max-width: 530px;
+    width: 90%;
     flex-direction: column;
-  }
-  .footer__questions-block:nth-child(3) {
-    position: static;
   }
 }
