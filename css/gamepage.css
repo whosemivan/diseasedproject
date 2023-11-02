@@ -1057,7 +1057,7 @@ input[type="checkbox"]::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .gamePage__buy-similar-card-text-block {
@@ -1404,10 +1404,12 @@ input[type="checkbox"]::before {
     width: 88%;
   }
   .gamePage__gameplay-img {
-    height: 84%;
+    height: 100%;
+    object-fit: cover;
   }
   .gamePage__gameplay-img-block {
-    height: 98%;
+    height: 81%;
+    /* width: 100%;*/
   }
   .gamePage__info {
     display: flex;
@@ -1547,7 +1549,7 @@ input[type="checkbox"]::before {
     width: 89%;
     height: 27%;
   }
-  
+
   .gamePage__requirements {
     width: 100%;
   }
@@ -1577,7 +1579,7 @@ input[type="checkbox"]::before {
     width: 91%;
     height: 25%;
   }
-  .gamePage__buy-quantity-info{
+  .gamePage__buy-quantity-info {
     height: 30%;
   }
   .gamePage__buy-price {

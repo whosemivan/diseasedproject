@@ -52,7 +52,6 @@ body::after {
   line-height: 24px;
   letter-spacing: 0.168px;
 }
-
 /* header */
 
 .header {
@@ -293,7 +292,6 @@ body::after {
   line-height: 24px;
   letter-spacing: 0.28px;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
