@@ -1,333 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="css/terms.css">
-</head>
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="css/terms.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__content">
-          <a href="#" class="nav__logo">
+      <div class="header__content">
+        <a href="#" class="nav__logo">
+          <svg
+            width="76"
+            height="41"
+            viewBox="0 0 76 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.3731 6.99999H0V16.9401H6.07869L0 23.1306V33H13.3731L19.4518 26.8449V13.2258L13.3731 6.99999ZM13.3731 26.8449H6.07869V13.2258H13.3731V26.8449Z"
+              fill="#F4F4F4"
+            />
+            <path
+              d="M49.6269 6.99999L43.5482 13.2258V16.9401L49.6269 16.9048V13.2258H63V6.99999H49.6269ZM43.5482 23.0952H56.9213V26.8095H63V16.9401H49.6269L43.5482 23.0952ZM43.5482 33H56.9213L63 26.8095H43.5482V33Z"
+              fill="#F4F4F4"
+            />
+            <path
+              d="M27.7883 6.99999L21.7096 13.2258V16.9401L27.7883 16.9048V13.2258H55.8977V6.99999H27.7883ZM21.7096 23.0952H35.0827V26.8095H41.1614V16.9401H27.7883L21.7096 23.0952ZM4.6703 33H35.0827L41.1614 26.8095H4.6703V33Z"
+              fill="#F4F4F4"
+            />
+          </svg>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="index.html" class="header__nav-link">Главная</a>
+            </li>
+            <li>
+              <a href="faq.html" class="header__nav-link">FAQ & помощь</a>
+            </li>
+            <li>
+              <a href="gamepage.html" class="header__nav-link">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__center-btn">
+          <svg
+            width="41"
+            height="41"
+            viewBox="0 0 41 41"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.8068 27.0733L25.7152 24.0066C26.9152 22.5103 27.4964 20.611 27.3392 18.6993C27.1819 16.7877 26.2982 15.0089 24.8698 13.7288C23.4413 12.4487 21.5767 11.7645 19.6592 11.817C17.7418 11.8695 15.9174 12.6546 14.5611 14.0109C13.2048 15.3672 12.4197 17.1916 12.3672 19.109C12.3147 21.0264 12.9989 22.8911 14.279 24.3195C15.5591 25.748 17.3379 26.6317 19.2495 26.7889C21.1612 26.9462 23.0605 26.365 24.5568 25.1649L27.6235 28.2316C27.701 28.3097 27.7931 28.3717 27.8947 28.414C27.9962 28.4563 28.1052 28.4781 28.2152 28.4781C28.3252 28.4781 28.4341 28.4563 28.5356 28.414C28.6372 28.3717 28.7294 28.3097 28.8068 28.2316C28.957 28.0762 29.041 27.8685 29.041 27.6524C29.041 27.4363 28.957 27.2286 28.8068 27.0733ZM19.8818 25.1649C18.7281 25.1649 17.6003 24.8228 16.641 24.1818C15.6817 23.5409 14.934 22.6298 14.4925 21.5639C14.051 20.498 13.9355 19.3251 14.1605 18.1936C14.3856 17.062 14.9412 16.0226 15.757 15.2068C16.5728 14.391 17.6122 13.8354 18.7438 13.6103C19.8753 13.3853 21.0482 13.5008 22.1142 13.9423C23.1801 14.3838 24.0911 15.1315 24.7321 16.0908C25.373 17.0501 25.7152 18.1779 25.7152 19.3316C25.7152 20.8787 25.1006 22.3624 24.0066 23.4564C22.9127 24.5503 21.4289 25.1649 19.8818 25.1649Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+
+        <div class="header__side-panel">
+          <a href="#" class="header__side-panel-link"> Помощь </a>
+          <a href="#" class="header__side-panel-link"> Войти </a>
+          <a href="#" class="header__side-panel-link"> Раздача в Телеграм </a>
+        </div>
+        <button class="header__adaptive-btn">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.5 6H4.5C3.67157 6 3 6.67157 3 7.5C3 8.32843 3.67157 9 4.5 9H27.5C28.3284 9 29 8.32843 29 7.5C29 6.67157 28.3284 6 27.5 6Z"
+              fill="white"
+            />
+            <path
+              d="M27.5 15H4.5C3.67157 15 3 15.6716 3 16.5C3 17.3284 3.67157 18 4.5 18H27.5C28.3284 18 29 17.3284 29 16.5C29 15.6716 28.3284 15 27.5 15Z"
+              fill="white"
+            />
+            <path
+              d="M27.5 24H4.5C3.67157 24 3 24.6716 3 25.5C3 26.3284 3.67157 27 4.5 27H27.5C28.3284 27 29 26.3284 29 25.5C29 24.6716 28.3284 24 27.5 24Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="header__adaptive__block">
+        <nav class="header__adaptive-nav">
+          <ul class="header__adaptive-nav-list">
+            <li>
+              <a
+                href="index.html"
+                class="header__adaptive-link header__adaptive-link--active"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a href="faq.html" class="header__adaptive-link">FAQ & помощь</a>
+            </li>
+            <li>
+              <a href="gamepage.html" class="header__adaptive-link">Корзина</a>
+            </li>
+            <li>
+              <a href="#" class="header__adaptive-nav-list-profile">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.518 10.1291C11.4263 10.12 11.3163 10.12 11.2155 10.1291C9.03377 10.0558 7.30127 8.26829 7.30127 6.06829C7.30127 3.82246 9.11627 1.99829 11.3713 1.99829C13.6171 1.99829 15.4413 3.82246 15.4413 6.06829C15.4321 8.26829 13.6996 10.0558 11.518 10.1291Z"
+                    stroke="#DBDBDB"
+                    stroke-opacity="0.85"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.78326 13.5115C4.56492 14.9965 4.56492 17.4165 6.78326 18.8924C9.30409 20.579 13.4382 20.579 15.9591 18.8924C18.1774 17.4074 18.1774 14.9874 15.9591 13.5115C13.4474 11.834 9.31326 11.834 6.78326 13.5115Z"
+                    stroke="#DBDBDB"
+                    stroke-opacity="0.85"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Войти
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__adaptive-nav-list-tg">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.4576 2.08547L1.62445 9.13268C0.947055 9.46086 0.717942 10.1181 1.46072 10.4747L5.77914 11.9646L16.2205 4.95897C16.7906 4.51916 17.3743 4.63644 16.8721 5.12025L7.90432 13.9354L7.62262 17.6659C7.88354 18.2419 8.36128 18.2446 8.66602 17.9583L11.1471 15.4096L15.3963 18.864C16.3832 19.4983 16.9202 19.089 17.1326 17.9264L19.9197 3.5988C20.209 2.16772 19.7156 1.53717 18.4576 2.08547Z"
+                    fill="#111317"
+                  />
+                </svg>
+
+                Раздача в Телеграм
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="terms">
+      <h2 class="visually-hidden">Условия пользовательского соглашения</h2>
+      <div class="terms__wrapper">
+        <div class="terms__links">
+          <a href="index.html" class="terms-link">Главная</a>
+          <a href="terms.html" class="terms-link">Условия пользования</a>
+        </div>
+        <div class="terms__text-block">
+          <div class="terms__title-block">
+            <p class="terms__subtitle">Diseased</p>
+            <h1 class="terms__title">Условия пользования</h1>
+          </div>
+        </div>
+
+        <div class="terms-block">
+          <p class="terms-title">Политика возвратов:</p>
+          <p class="terms-adaptive-text">
+            Обязательно изучите предоставленную ниже информацию, при
+            возникновении какой либо проблемы
+          </p>
+          <ol class="terms-list">
+            <li class="terms-list-item">
+              Возврат средств за купленный товар предусмот
+            </li>
+            <li class="terms-list-item">Текст</li>
+            <li class="terms-list-item">Текст</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__info-container">
+          <a href="#" class="footer__logo">
             <svg
+              xmlns="http://www.w3.org/2000/svg"
               width="76"
               height="41"
               viewBox="0 0 76 41"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M13.3731 6.99999H0V16.9401H6.07869L0 23.1306V33H13.3731L19.4518 26.8449V13.2258L13.3731 6.99999ZM13.3731 26.8449H6.07869V13.2258H13.3731V26.8449Z"
+                d="M13.3731 6.88916H0V16.8293H6.07869L0 23.0198V32.8892H13.3731L19.4518 26.7341V13.115L13.3731 6.88916ZM13.3731 26.7341H6.07869V13.115H13.3731V26.7341Z"
                 fill="#F4F4F4"
               />
               <path
-                d="M49.6269 6.99999L43.5482 13.2258V16.9401L49.6269 16.9048V13.2258H63V6.99999H49.6269ZM43.5482 23.0952H56.9213V26.8095H63V16.9401H49.6269L43.5482 23.0952ZM43.5482 33H56.9213L63 26.8095H43.5482V33Z"
+                d="M49.6269 6.88916L43.5482 13.115V16.8293L49.6269 16.7939V13.115H63V6.88916H49.6269ZM43.5482 22.9844H56.9213V26.6987H63V16.8293H49.6269L43.5482 22.9844ZM43.5482 32.8892H56.9213L63 26.6987H43.5482V32.8892Z"
                 fill="#F4F4F4"
               />
               <path
-                d="M27.7883 6.99999L21.7096 13.2258V16.9401L27.7883 16.9048V13.2258H55.8977V6.99999H27.7883ZM21.7096 23.0952H35.0827V26.8095H41.1614V16.9401H27.7883L21.7096 23.0952ZM4.6703 33H35.0827L41.1614 26.8095H4.6703V33Z"
+                d="M27.7883 6.88916L21.7096 13.115V16.8293L27.7883 16.7939V13.115H55.8977V6.88916H27.7883ZM21.7096 22.9844H35.0827V26.6987H41.1614V16.8293H27.7883L21.7096 22.9844ZM4.6703 32.8892H35.0827L41.1614 26.6987H4.6703V32.8892Z"
                 fill="#F4F4F4"
               />
             </svg>
           </a>
-  
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li>
-                <a href="index.html" class="header__nav-link">Главная</a>
+          <p class="footer__info-text">
+            Один из лучших и надежных магазинов игровых цифровых товаров,
+            аккаунтов и ключей на территории СНГ
+          </p>
+
+          <div class="footer__payLogos">
+            <img
+              src="./images/icons/freekassa.svg"
+              alt="freekassa"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/mir.svg"
+              alt="mir"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/sbp.svg"
+              alt="sbp"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/umoney.svg"
+              alt="umoney"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/payeer.svg"
+              alt="payeer"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/lava.svg"
+              alt="lava"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+          </div>
+        </div>
+        <div class="footer__questions-blocks">
+          <div class="footer__questions-block">
+            <div class="footer__questions-title">Навигация</div>
+            <ul class="footer__questions-list">
+              <li class="footer__questions-list-item">
+                <a href="index.html" class="footer__questions-list-item-link"
+                  >Главная</a
+                >
               </li>
-              <li>
-                <a href="faq.html" class="header__nav-link">FAQ & помощь</a>
+              <li class="footer__questions-list-item">
+                <a href="faq.html" class="footer__questions-list-item-link"
+                  >Faq & помощь</a
+                >
               </li>
-              <li>
-                <a href="gamepage.html" class="header__nav-link">Корзина</a>
+              <li class="footer__questions-list-item">
+                <a href="gamepage.html" class="footer__questions-list-item-link"
+                  >Корзина</a
+                >
               </li>
             </ul>
-          </nav>
-  
-          <button class="header__center-btn">
-            <svg
-              width="41"
-              height="41"
-              viewBox="0 0 41 41"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M28.8068 27.0733L25.7152 24.0066C26.9152 22.5103 27.4964 20.611 27.3392 18.6993C27.1819 16.7877 26.2982 15.0089 24.8698 13.7288C23.4413 12.4487 21.5767 11.7645 19.6592 11.817C17.7418 11.8695 15.9174 12.6546 14.5611 14.0109C13.2048 15.3672 12.4197 17.1916 12.3672 19.109C12.3147 21.0264 12.9989 22.8911 14.279 24.3195C15.5591 25.748 17.3379 26.6317 19.2495 26.7889C21.1612 26.9462 23.0605 26.365 24.5568 25.1649L27.6235 28.2316C27.701 28.3097 27.7931 28.3717 27.8947 28.414C27.9962 28.4563 28.1052 28.4781 28.2152 28.4781C28.3252 28.4781 28.4341 28.4563 28.5356 28.414C28.6372 28.3717 28.7294 28.3097 28.8068 28.2316C28.957 28.0762 29.041 27.8685 29.041 27.6524C29.041 27.4363 28.957 27.2286 28.8068 27.0733ZM19.8818 25.1649C18.7281 25.1649 17.6003 24.8228 16.641 24.1818C15.6817 23.5409 14.934 22.6298 14.4925 21.5639C14.051 20.498 13.9355 19.3251 14.1605 18.1936C14.3856 17.062 14.9412 16.0226 15.757 15.2068C16.5728 14.391 17.6122 13.8354 18.7438 13.6103C19.8753 13.3853 21.0482 13.5008 22.1142 13.9423C23.1801 14.3838 24.0911 15.1315 24.7321 16.0908C25.373 17.0501 25.7152 18.1779 25.7152 19.3316C25.7152 20.8787 25.1006 22.3624 24.0066 23.4564C22.9127 24.5503 21.4289 25.1649 19.8818 25.1649Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-  
-          <div class="header__side-panel">
-            <a href="#" class="header__side-panel-link"> Помощь </a>
-            <a href="#" class="header__side-panel-link"> Войти </a>
-            <a href="#" class="header__side-panel-link"> Раздача в Телеграм </a>
           </div>
-          <button class="header__adaptive-btn">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M27.5 6H4.5C3.67157 6 3 6.67157 3 7.5C3 8.32843 3.67157 9 4.5 9H27.5C28.3284 9 29 8.32843 29 7.5C29 6.67157 28.3284 6 27.5 6Z"
-                fill="white"
-              />
-              <path
-                d="M27.5 15H4.5C3.67157 15 3 15.6716 3 16.5C3 17.3284 3.67157 18 4.5 18H27.5C28.3284 18 29 17.3284 29 16.5C29 15.6716 28.3284 15 27.5 15Z"
-                fill="white"
-              />
-              <path
-                d="M27.5 24H4.5C3.67157 24 3 24.6716 3 25.5C3 26.3284 3.67157 27 4.5 27H27.5C28.3284 27 29 26.3284 29 25.5C29 24.6716 28.3284 24 27.5 24Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="header__adaptive__block">
-          <nav class="header__adaptive-nav">
-            <ul class="header__adaptive-nav-list">
-              <li>
-                <a href="index.html" class="header__adaptive-link">Главная</a>
+          <div class="footer__questions-block">
+            <div class="footer__questions-title">Другое</div>
+            <ul class="footer__questions-list">
+              <li class="footer__questions-list-item">
+                <a
+                  href="guarantee.html"
+                  class="footer__questions-list-item-link"
+                  >Гарантии</a
+                >
               </li>
-              <li>
-                <a href="faq.html" class="header__adaptive-link">FAQ & помощь</a>
+              <li class="footer__questions-list-item">
+                <a href="terms.html" class="footer__questions-list-item-link"
+                  >Условия использования</a
+                >
               </li>
-              <li>
-                <a href="gamepage.html" class="header__adaptive-link">Корзина</a>
+              <li class="footer__questions-list-item">
+                <a href="contacts.html" class="footer__questions-list-item-link"
+                  >Контакты</a
+                >
               </li>
-              <li>
-                <a href="#" class="header__adaptive-nav-list-profile">
-                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.518 10.1291C11.4263 10.12 11.3163 10.12 11.2155 10.1291C9.03377 10.0558 7.30127 8.26829 7.30127 6.06829C7.30127 3.82246 9.11627 1.99829 11.3713 1.99829C13.6171 1.99829 15.4413 3.82246 15.4413 6.06829C15.4321 8.26829 13.6996 10.0558 11.518 10.1291Z" stroke="#DBDBDB" stroke-opacity="0.85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M6.78326 13.5115C4.56492 14.9965 4.56492 17.4165 6.78326 18.8924C9.30409 20.579 13.4382 20.579 15.9591 18.8924C18.1774 17.4074 18.1774 14.9874 15.9591 13.5115C13.4474 11.834 9.31326 11.834 6.78326 13.5115Z" stroke="#DBDBDB" stroke-opacity="0.85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-                   Войти 
-                  </a>
-              </li>
-              <li>
-                <a href="#" class="header__adaptive-nav-list-tg">
-                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.4576 2.08547L1.62445 9.13268C0.947055 9.46086 0.717942 10.1181 1.46072 10.4747L5.77914 11.9646L16.2205 4.95897C16.7906 4.51916 17.3743 4.63644 16.8721 5.12025L7.90432 13.9354L7.62262 17.6659C7.88354 18.2419 8.36128 18.2446 8.66602 17.9583L11.1471 15.4096L15.3963 18.864C16.3832 19.4983 16.9202 19.089 17.1326 17.9264L19.9197 3.5988C20.209 2.16772 19.7156 1.53717 18.4576 2.08547Z" fill="#111317"/>
-                    </svg>
-                    
-                  Раздача в Телеграм
+            </ul>
+          </div>
+          <div class="footer__questions-block">
+            <div class="footer__questions-title">Социальные сети</div>
+            <ul class="footer__questions-list">
+              <li class="footer__questions-list-icons">
+                <a href="#" class="footer__questions-list-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="15"
+                    viewBox="0 0 22 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9825 14.8892C4.466 14.8892 0.17864 9.63386 0 0.88916H3.7651C3.8888 7.30756 6.6646 10.0263 8.8632 10.5869V0.88916H12.4085V6.42466C14.5796 6.18646 16.8607 3.66396 17.6302 0.88916H21.1755C20.8855 2.32826 20.3075 3.69086 19.4776 4.89166C18.6477 6.09246 17.5837 7.10576 16.3523 7.86816C17.7269 8.56476 18.941 9.55066 19.9145 10.7609C20.888 11.9712 21.5988 13.3782 22 14.8892H18.0974C17.7373 13.5768 17.0054 12.402 15.9934 11.512C14.9814 10.622 13.7343 10.0565 12.4085 9.88616V14.8892H11.9825Z"
+                      fill="currentColor"
+                      fill-opacity="0.78"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="footer__questions-list-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.9576 0.949L1.12445 7.9962C0.447055 8.32438 0.217942 8.98158 0.960723 9.33826L5.27914 10.8282L15.7205 3.82249C16.2906 3.38269 16.8743 3.49997 16.3721 3.98378L7.40432 12.7989L7.12262 16.5294C7.38354 17.1054 7.86128 17.1081 8.16602 16.8218L10.6471 14.2731L14.8963 17.7276C15.8832 18.3619 16.4202 17.9525 16.6326 16.7899L19.4197 2.46232C19.709 1.03125 19.2156 0.400698 17.9576 0.949Z"
+                      fill="currentColor"
+                      fill-opacity="0.78"
+                    />
+                  </svg>
                 </a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </header>
-
-    <section class="terms">
-        <h2 class="visually-hidden">Условия пользовательского соглашения</h2>
-        <div class="terms__wrapper">
-            <div class="terms__links">
-                <a href="index.html" class="terms-link">Главная</a>
-                <a href="terms.html" class="terms-link">Условия пользования</a>
-            </div>
-            <div class="terms__text-block">
-                <div class="terms__title-block">
-                    <p class="terms__subtitle">Diseased</p>
-                    <h1 class="terms__title">Условия пользования</h1>
-                </div>
-
-            </div>
-
-
-            <div class="terms-block">
-                <p class="terms-title">Политика возвратов:</p>
-                <p class="terms-adaptive-text">Обязательно  изучите предоставленную ниже информацию, при возникновении какой либо проблемы</p>
-                <ol class="terms-list">
-                    <li class="terms-list-item">Возврат средств за купленный товар предусмот</li>
-                    <li class="terms-list-item">Текст</li>
-                    <li class="terms-list-item">Текст</li>
-                </ol>
-            </div>
-        </div>
-    </section>
-
-  
-    <footer class="footer">
-        <div class="footer__content">
-          <div class="footer__info-container">
-            <a href="#" class="footer__logo">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="76"
-                height="41"
-                viewBox="0 0 76 41"
-                fill="none"
-              >
-                <path
-                  d="M13.3731 6.88916H0V16.8293H6.07869L0 23.0198V32.8892H13.3731L19.4518 26.7341V13.115L13.3731 6.88916ZM13.3731 26.7341H6.07869V13.115H13.3731V26.7341Z"
-                  fill="#F4F4F4"
-                />
-                <path
-                  d="M49.6269 6.88916L43.5482 13.115V16.8293L49.6269 16.7939V13.115H63V6.88916H49.6269ZM43.5482 22.9844H56.9213V26.6987H63V16.8293H49.6269L43.5482 22.9844ZM43.5482 32.8892H56.9213L63 26.6987H43.5482V32.8892Z"
-                  fill="#F4F4F4"
-                />
-                <path
-                  d="M27.7883 6.88916L21.7096 13.115V16.8293L27.7883 16.7939V13.115H55.8977V6.88916H27.7883ZM21.7096 22.9844H35.0827V26.6987H41.1614V16.8293H27.7883L21.7096 22.9844ZM4.6703 32.8892H35.0827L41.1614 26.6987H4.6703V32.8892Z"
-                  fill="#F4F4F4"
-                />
-              </svg>
-            </a>
-            <p class="footer__info-text">
-              Один из лучших и надежных магазинов игровых цифровых товаров,
-              аккаунтов и ключей на территории СНГ
-            </p>
-  
-            <div class="footer__payLogos">
-              <img
-                src="./images/icons/freekassa.svg"
-                alt="freekassa"
-                width="20"
-                height="20"
-                class="footer__payLogo"
-              />
-              <img
-                src="./images/icons/mir.svg"
-                alt="mir"
-                width="20"
-                height="20"
-                class="footer__payLogo"
-              />
-              <img
-                src="./images/icons/sbp.svg"
-                alt="sbp"
-                width="20"
-                height="20"
-                class="footer__payLogo"
-              />
-              <img
-                src="./images/icons/umoney.svg"
-                alt="umoney"
-                width="20"
-                height="20"
-                class="footer__payLogo"
-              />
-              <img
-                src="./images/icons/payeer.svg"
-                alt="payeer"
-                width="20"
-                height="20"
-                class="footer__payLogo"
-              />
-              <img
-                src="./images/icons/lava.svg"
-                alt="lava"
-                width="20"
-                height="20"
-                class="footer__payLogo"
-              />
-            </div>
-          </div>
-          <div class="footer__questions-blocks">
-            <div class="footer__questions-block">
-              <div class="footer__questions-title">Навигация</div>
-              <ul class="footer__questions-list">
-                <li class="footer__questions-list-item">
-                  <a href="index.html" class="footer__questions-list-item-link"
-                    >Главная</a
-                  >
-                </li>
-                <li class="footer__questions-list-item">
-                  <a href="faq.html" class="footer__questions-list-item-link"
-                    >Faq & помощь</a
-                  >
-                </li>
-                <li class="footer__questions-list-item">
-                  <a href="gamepage.html" class="footer__questions-list-item-link"
-                    >Корзина</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="footer__questions-block">
-              <div class="footer__questions-title">Другое</div>
-              <ul class="footer__questions-list">
-                <li class="footer__questions-list-item">
-                  <a
-                    href="guarantee.html"
-                    class="footer__questions-list-item-link"
-                    >Гарантии</a
-                  >
-                </li>
-                <li class="footer__questions-list-item">
-                  <a href="terms.html" class="footer__questions-list-item-link"
-                    >Условия использования</a
-                  >
-                </li>
-                <li class="footer__questions-list-item">
-                  <a href="contacts.html" class="footer__questions-list-item-link"
-                    >Контакты</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="footer__questions-block">
-              <div class="footer__questions-title">Социальные сети</div>
-              <ul class="footer__questions-list">
-                <li class="footer__questions-list-icons">
-                  <a href="#" class="footer__questions-list-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="15"
-                      viewBox="0 0 22 15"
-                      fill="none"
-                    >
-                      <path
-                        d="M11.9825 14.8892C4.466 14.8892 0.17864 9.63386 0 0.88916H3.7651C3.8888 7.30756 6.6646 10.0263 8.8632 10.5869V0.88916H12.4085V6.42466C14.5796 6.18646 16.8607 3.66396 17.6302 0.88916H21.1755C20.8855 2.32826 20.3075 3.69086 19.4776 4.89166C18.6477 6.09246 17.5837 7.10576 16.3523 7.86816C17.7269 8.56476 18.941 9.55066 19.9145 10.7609C20.888 11.9712 21.5988 13.3782 22 14.8892H18.0974C17.7373 13.5768 17.0054 12.402 15.9934 11.512C14.9814 10.622 13.7343 10.0565 12.4085 9.88616V14.8892H11.9825Z"
-                        fill="currentColor"
-                        fill-opacity="0.78"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#" class="footer__questions-list-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="19"
-                      viewBox="0 0 20 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M17.9576 0.949L1.12445 7.9962C0.447055 8.32438 0.217942 8.98158 0.960723 9.33826L5.27914 10.8282L15.7205 3.82249C16.2906 3.38269 16.8743 3.49997 16.3721 3.98378L7.40432 12.7989L7.12262 16.5294C7.38354 17.1054 7.86128 17.1081 8.16602 16.8218L10.6471 14.2731L14.8963 17.7276C15.8832 18.3619 16.4202 17.9525 16.6326 16.7899L19.4197 2.46232C19.709 1.03125 19.2156 0.400698 17.9576 0.949Z"
-                        fill="currentColor"
-                        fill-opacity="0.78"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-        <div class="footer__about-container">
-          <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
-          <div class="footer__about-text-group">
-            <div class="footer__about-text">
-              Система по созданию магазинов:
-              <a href="#" class="footer__about-text-link">Lequeshop.com</a>
-            </div>
-            <div class="footer__about-text">
-              Designed by:
-              <a href="#" class="footer__about-text-link">Maxyao</a>
-            </div>
+      </div>
+      <div class="footer__about-container">
+        <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
+        <div class="footer__about-text-group">
+          <div class="footer__about-text">
+            Система по созданию магазинов:
+            <a href="#" class="footer__about-text-link">Lequeshop.com</a>
+          </div>
+          <div class="footer__about-text">
+            Designed by:
+            <a href="#" class="footer__about-text-link">Maxyao</a>
           </div>
         </div>
-      </footer>
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>

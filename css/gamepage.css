@@ -147,6 +147,7 @@ body::after {
 
 .header__center-btn {
   margin: 0 auto;
+  display: flex;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -243,12 +244,14 @@ body::after {
   position: absolute;
   left: 15px;
 }
+
 .header__adaptive-btn {
   display: none;
   background: transparent;
   border: none;
   cursor: pointer;
 }
+
 .header__adaptive__block {
   display: none;
   z-index: 10;
@@ -262,6 +265,7 @@ body::after {
 
 .header__adaptive-nav-list {
   display: flex;
+  gap: 20px;
   flex-direction: column;
   font-size: 16px;
   align-items: center;
@@ -277,6 +281,13 @@ body::after {
   letter-spacing: 0.18px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.header__adaptive-link--active {
+  color: #20e3b2;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.18px;
 }
 .header__adaptive-nav-list-profile {
   display: flex;
@@ -1400,7 +1411,7 @@ input[type="checkbox"]::before {
   }
   .gamePage__info {
     display: flex;
-    width: 91%;
+    width: 90%;
     height: 19%;
     padding: 30px;
     border-radius: 12px;
@@ -1447,7 +1458,7 @@ input[type="checkbox"]::before {
     width: 100%;
   }
   .gamePage__requirements-info {
-    width: 91%;
+    width: 90%;
   }
   .gamePage__buy-similar-text {
     margin: 0 0 16px 0;
@@ -1478,6 +1489,7 @@ input[type="checkbox"]::before {
   }
   .gamePage__buy-quantity {
     margin: -47px 0 -47px 0;
+    height: 65%;
   }
 
   .footer__about-text-group {
@@ -1532,11 +1544,16 @@ input[type="checkbox"]::before {
     height: 1487px;
   }
   .gamePage__info {
-    width: 91%;
+    width: 89%;
     height: 27%;
   }
+  
   .gamePage__requirements {
     width: 100%;
+  }
+  .gamePage__requirements-btn--active::after {
+    left: 30%;
+    width: 40%;
   }
   .gamePage__requirements-btns {
     width: 100%;
@@ -1544,7 +1561,7 @@ input[type="checkbox"]::before {
     flex-wrap: wrap;
   }
   .gamePage__requirements-info {
-    width: 90%;
+    width: 89%;
   }
 
   .gamePage__buy-wrapper {
@@ -1558,6 +1575,10 @@ input[type="checkbox"]::before {
   .gamePage__buy-quantity {
     margin: -47px 0 -47px 0;
     width: 91%;
+    height: 25%;
+  }
+  .gamePage__buy-quantity-info{
+    height: 30%;
   }
   .gamePage__buy-price {
     width: 91%;
@@ -1566,7 +1587,7 @@ input[type="checkbox"]::before {
     width: 92%;
   }
   .gamePage__buy-similar-games-block {
-    width: 109%;
+    width: 100%;
   }
 
   .footer {
@@ -1597,7 +1618,7 @@ input[type="checkbox"]::before {
 }
 
 /* mobile */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .gamePage__preview-wrapper::before,
   .gamePage__preview-wrapper::after,
   .gamePage__buy-wrapper::before,
@@ -1613,6 +1634,7 @@ input[type="checkbox"]::before {
     left: 88px;
   }
   .header__content {
+    width: 87%;
     padding: 21px 26px;
   }
   .header__adaptive-btn {
@@ -1628,10 +1650,11 @@ input[type="checkbox"]::before {
 
   .gamePage__preview-wrapper {
     width: 100%;
-    height: 1855px;
+    height: 2601px;
   }
   .gamePage__preview {
-    width: 85%;
+    width: 90%;
+    gap: 0;
     flex-direction: column;
   }
   .gamePage__preview-links {
@@ -1645,12 +1668,13 @@ input[type="checkbox"]::before {
   .gamePage__info {
     height: 583px;
     flex-wrap: wrap;
-    width: 88%;
+    width: 83%;
   }
   .gamePage__poster-container {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
+    justify-content: space-between;
   }
 
   .gamePage__info-img {
@@ -1696,10 +1720,10 @@ input[type="checkbox"]::before {
     left: 68px;
   }
   .gamePage__requirements-btns {
-    width: 99%;
+    width: 100%;
   }
   .gamePage__requirements-info {
-    width: 88%;
+    width: 83%;
   }
 
   .gamePage__requirements-left-btn {
@@ -1720,12 +1744,12 @@ input[type="checkbox"]::before {
 
   .gamePage__buy-wrapper {
     width: 100%;
-    margin: 372px 0 100px 0;
-    height: auto;
+    margin: 0;
+    height: 38%;
     justify-content: center;
   }
   .gamePage__buy-text {
-    width: 101%;
+    width: 100%;
   }
   .gamePage__buy-quantity-info:nth-child(3)::after {
     background-size: inherit;
@@ -1766,6 +1790,9 @@ input[type="checkbox"]::before {
   .checkmark-title {
     top: 40%;
   }
+  .gamePage__buy-similar {
+    width: 104%;
+  }
   .gamePage__buy-similar-text {
     display: none;
   }
@@ -1779,6 +1806,7 @@ input[type="checkbox"]::before {
   .gamePage__buy-similar-card-info {
     padding: 0 10px;
     height: 83px;
+    width: 72%;
   }
   .gamePage__buy-similar-card-title {
     padding: 16px 16px 10px 0;
@@ -1788,7 +1816,7 @@ input[type="checkbox"]::before {
   .gamePage__buy-similar-card {
     font-size: 8px;
     padding: 0;
-    width: 99%;
+    width: 100%;
   }
 
   .gamePage__buy-similar-card-icon-discord,

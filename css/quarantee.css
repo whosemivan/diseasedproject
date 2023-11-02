@@ -537,7 +537,7 @@ body::after {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(7px);
   width: 101%;
-  height: 308px;
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -546,7 +546,6 @@ body::after {
 
 .quarantee__middle-cards {
   display: flex;
-  flex-direction: column;
   gap: 30px;
   flex-wrap: wrap;
   width: 32%;
@@ -724,7 +723,7 @@ body::after {
 
   .quarantee__left-cards {
     width: 31%;
-    height: 50%;
+    height: 60%;
   }
   .quarantee__left-card {
     width: 100%;
@@ -735,18 +734,18 @@ body::after {
   }
   .quarantee__right-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
     width: 31%;
     height: 50%;
   }
-  .quarantee__right-card {
+  .quarantee__right-card:nth-child(1) {
     width: 102%;
-    height: 37%;
+    height: 45%;
   }
   .quarantee__right-card:nth-child(2) {
-    height: 48%;
+    height: 60%;
   }
 
   .quarantee__right-card-title-block {
@@ -754,14 +753,18 @@ body::after {
   }
   .quarantee__middle-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     width: 32%;
+    height: 52%;
+  }
+  .quarantee__middle-card:nth-child(1) {
+    width: 99%;
     height: 60%;
   }
-  .quarantee__middle-card {
+  .quarantee__middle-card:nth-child(2) {
     width: 99%;
-    height: 45%;
+    height: 66%;
   }
 
   .quarantee__middle-card-title-block {
@@ -797,9 +800,7 @@ body::after {
   .header__side-panel-link:nth-child(3) {
     display: none;
   }
-  .quarantee__wrapper {
-    height: 1916px;
-  }
+
   .quarantee-cards {
     flex-direction: column;
     width: 100%;
@@ -808,11 +809,12 @@ body::after {
     font-size: 18px;
   }
   .quarantee-block {
-    width: 100%;
-    height: 83%;
+    height: 87%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
     flex-wrap: wrap;
+  }
+  .quarantee__wrapper {
+    height: 2000px;
   }
 
   .quarantee__text-block {
@@ -820,44 +822,52 @@ body::after {
   }
   .quarantee__left-cards {
     width: 100%;
-    height: 15%;
+    height: 12%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
-
+  .quarantee__middle-card:nth-child(2) {
+    height: 97%;
+  }
   .quarantee__middle-cards {
     width: 100%;
-    height: 16%;
+    height: 21%;
     display: flex;
     flex-direction: row;
-
     flex-wrap: nowrap;
   }
-
   .quarantee__middle-card {
+    width: 99%;
+    height: 99%;
+  }
+
+  .quarantee__middle-card:nth-child(1) {
     width: 102%;
-    height: 100%;
+    height: 97%;
   }
 
   .quarantee__right-cards {
     width: 100%;
-    height: 14%;
+    height: 18%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .quarantee__right-card:nth-child(2) {
-    height: 48%;
-    height: 100%;
-  }
 
-  .quarantee__right-card {
+  .quarantee__right-card:nth-child(1) {
     width: 48%;
-    height: 100%;
+    height: 99%;
     flex-direction: column;
   }
+  .quarantee__right-card:nth-child(2) {
+    width: 46%;
+    height: 100%;
+  }
 
+  .quarantee__right-card-title-block {
+    width: 80%;
+  }
   .quarantee__left-card {
     width: 105%;
     height: 99%;
@@ -916,7 +926,7 @@ body::after {
   }
 
   .quarantee__wrapper {
-    height: 2100px;
+    height: 2400px;
     max-width: 350px;
     width: 80%;
   }
@@ -963,22 +973,30 @@ body::after {
   }
   .quarantee-cards {
     width: 100%;
+    height: 95%;
   }
 
   .quarantee__right-cards {
     width: 100%;
-    height: 22%;
+    height: 31%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .quarantee__left-cards {
     flex-direction: column;
-    height: 20%;
+    height: 25%;
   }
   .quarantee__middle-cards {
     flex-direction: column;
-    height: 30%;
+    height: 37%;
+  }
+  .quarantee__middle-card:nth-child(1) {
+    width: 100%;
+    height: 81%;
+  }
+  .quarantee__middle-card:nth-child(2) {
+    height: 100%;
   }
 
   .quarantee__left-card {
@@ -994,8 +1012,13 @@ body::after {
     width: 101%;
     height: 60%;
   }
+  .quarantee__right-card:nth-child(1) {
+    width: 100%;
+    height: 74%;
+  }
   .quarantee__right-card:nth-child(2) {
-    height: 78%;
+    height: 100%;
+    width: 100%;
   }
 
   .quarantee__left-card-title-block {

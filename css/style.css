@@ -1492,7 +1492,6 @@ ul li {
 .lastPurchase__card {
   display: flex;
   flex: 1 1;
-  padding: 0 20px 0 0;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(17, 19, 23, 0.86);
 }
@@ -1505,6 +1504,7 @@ ul li {
   display: flex;
   gap: 16px;
   height: 124px;
+  padding: 20px;
   color: white;
   flex-direction: column;
   justify-content: center;
@@ -1519,23 +1519,21 @@ ul li {
   background-repeat: no-repeat;
 }
 
-.lastPurchase__card-text-block {
-  padding: 24px 25px;
-}
-
 .lastPurchase__card-title {
   color: #dbdbdb;
-  font-size: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 800;
   line-height: 24px;
-  width: 170px;
+  width: 90%;
   padding: 0 0 16px 0;
 }
 
 .lastPurchase__card-icons {
   display: flex;
   gap: 5px;
-  justify-content: space-between;
+  flex-wrap: wrap;
   color: #76dba1;
   text-transform: uppercase;
 }
@@ -1575,6 +1573,25 @@ ul li {
 .lastPurchase__card-icon-discord::before {
   content: "";
   background-image: url("../images/icons/discord.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.lastPurchase__card-icon-steam {
+  display: flex;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.lastPurchase__card-icon-steam::before {
+  content: "";
+  background-image: url("../images/icons/steam.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3069,7 +3086,7 @@ ul li {
 
 /* teblet 1 макет */
 
-@media (max-width: 835px) {
+@media (max-width: 990px) {
   .header__content {
     max-width: 680px;
     padding: 21px 60px;
@@ -3167,7 +3184,7 @@ ul li {
     padding: 10px 14px;
   }
   .filter__categories {
-    width: 90.5%;
+    width: 94.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -3227,10 +3244,10 @@ ul li {
     display: none;
   }
   .lastPurchase__group-left-arrow {
-    bottom: 38%;
+    bottom: 45%;
   }
   .lastPurchase__group-right-arrow {
-    bottom: 34%;
+    bottom: 40%;
   }
   .footer__content {
     max-width: 722px;
