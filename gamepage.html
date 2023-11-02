@@ -1,361 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diseased</title>
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./css/gamepage.css">
-</head>
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./css/gamepage.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__content">
-            <a href="#" class="nav__logo">
-                <svg width="76" height="41" viewBox="0 0 76 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M13.3731 6.99999H0V16.9401H6.07869L0 23.1306V33H13.3731L19.4518 26.8449V13.2258L13.3731 6.99999ZM13.3731 26.8449H6.07869V13.2258H13.3731V26.8449Z"
-                        fill="#F4F4F4" />
-                    <path
-                        d="M49.6269 6.99999L43.5482 13.2258V16.9401L49.6269 16.9048V13.2258H63V6.99999H49.6269ZM43.5482 23.0952H56.9213V26.8095H63V16.9401H49.6269L43.5482 23.0952ZM43.5482 33H56.9213L63 26.8095H43.5482V33Z"
-                        fill="#F4F4F4" />
-                    <path
-                        d="M27.7883 6.99999L21.7096 13.2258V16.9401L27.7883 16.9048V13.2258H55.8977V6.99999H27.7883ZM21.7096 23.0952H35.0827V26.8095H41.1614V16.9401H27.7883L21.7096 23.0952ZM4.6703 33H35.0827L41.1614 26.8095H4.6703V33Z"
-                        fill="#F4F4F4" />
-                </svg>
-            </a>
+      <div class="header__content">
+        <a href="#" class="nav__logo">
+          <svg
+            width="76"
+            height="41"
+            viewBox="0 0 76 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.3731 6.99999H0V16.9401H6.07869L0 23.1306V33H13.3731L19.4518 26.8449V13.2258L13.3731 6.99999ZM13.3731 26.8449H6.07869V13.2258H13.3731V26.8449Z"
+              fill="#F4F4F4"
+            />
+            <path
+              d="M49.6269 6.99999L43.5482 13.2258V16.9401L49.6269 16.9048V13.2258H63V6.99999H49.6269ZM43.5482 23.0952H56.9213V26.8095H63V16.9401H49.6269L43.5482 23.0952ZM43.5482 33H56.9213L63 26.8095H43.5482V33Z"
+              fill="#F4F4F4"
+            />
+            <path
+              d="M27.7883 6.99999L21.7096 13.2258V16.9401L27.7883 16.9048V13.2258H55.8977V6.99999H27.7883ZM21.7096 23.0952H35.0827V26.8095H41.1614V16.9401H27.7883L21.7096 23.0952ZM4.6703 33H35.0827L41.1614 26.8095H4.6703V33Z"
+              fill="#F4F4F4"
+            />
+          </svg>
+        </a>
 
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li>
-                        <a href="index.html" class="header__nav-link">Главная</a>
-                    </li>
-                    <li>
-                        <a href="faq.html" class="header__nav-link">FAQ & помощь</a>
-                    </li>
-                    <li>
-                        <a href="gamepage.html" class="header__nav-link">Корзина</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="index.html" class="header__nav-link">Главная</a>
+            </li>
+            <li>
+              <a href="faq.html" class="header__nav-link">FAQ & помощь</a>
+            </li>
+            <li>
+              <a href="gamepage.html" class="header__nav-link">Корзина</a>
+            </li>
+          </ul>
+        </nav>
 
-            <button class="header__center-btn">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M28.8068 27.0733L25.7152 24.0066C26.9152 22.5103 27.4964 20.611 27.3392 18.6993C27.1819 16.7877 26.2982 15.0089 24.8698 13.7288C23.4413 12.4487 21.5767 11.7645 19.6592 11.817C17.7418 11.8695 15.9174 12.6546 14.5611 14.0109C13.2048 15.3672 12.4197 17.1916 12.3672 19.109C12.3147 21.0264 12.9989 22.8911 14.279 24.3195C15.5591 25.748 17.3379 26.6317 19.2495 26.7889C21.1612 26.9462 23.0605 26.365 24.5568 25.1649L27.6235 28.2316C27.701 28.3097 27.7931 28.3717 27.8947 28.414C27.9962 28.4563 28.1052 28.4781 28.2152 28.4781C28.3252 28.4781 28.4341 28.4563 28.5356 28.414C28.6372 28.3717 28.7294 28.3097 28.8068 28.2316C28.957 28.0762 29.041 27.8685 29.041 27.6524C29.041 27.4363 28.957 27.2286 28.8068 27.0733ZM19.8818 25.1649C18.7281 25.1649 17.6003 24.8228 16.641 24.1818C15.6817 23.5409 14.934 22.6298 14.4925 21.5639C14.051 20.498 13.9355 19.3251 14.1605 18.1936C14.3856 17.062 14.9412 16.0226 15.757 15.2068C16.5728 14.391 17.6122 13.8354 18.7438 13.6103C19.8753 13.3853 21.0482 13.5008 22.1142 13.9423C23.1801 14.3838 24.0911 15.1315 24.7321 16.0908C25.373 17.0501 25.7152 18.1779 25.7152 19.3316C25.7152 20.8787 25.1006 22.3624 24.0066 23.4564C22.9127 24.5503 21.4289 25.1649 19.8818 25.1649Z"
-                        fill="currentColor" />
-                </svg>
-            </button>
+        <button class="header__center-btn">
+          <svg
+            width="41"
+            height="41"
+            viewBox="0 0 41 41"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.8068 27.0733L25.7152 24.0066C26.9152 22.5103 27.4964 20.611 27.3392 18.6993C27.1819 16.7877 26.2982 15.0089 24.8698 13.7288C23.4413 12.4487 21.5767 11.7645 19.6592 11.817C17.7418 11.8695 15.9174 12.6546 14.5611 14.0109C13.2048 15.3672 12.4197 17.1916 12.3672 19.109C12.3147 21.0264 12.9989 22.8911 14.279 24.3195C15.5591 25.748 17.3379 26.6317 19.2495 26.7889C21.1612 26.9462 23.0605 26.365 24.5568 25.1649L27.6235 28.2316C27.701 28.3097 27.7931 28.3717 27.8947 28.414C27.9962 28.4563 28.1052 28.4781 28.2152 28.4781C28.3252 28.4781 28.4341 28.4563 28.5356 28.414C28.6372 28.3717 28.7294 28.3097 28.8068 28.2316C28.957 28.0762 29.041 27.8685 29.041 27.6524C29.041 27.4363 28.957 27.2286 28.8068 27.0733ZM19.8818 25.1649C18.7281 25.1649 17.6003 24.8228 16.641 24.1818C15.6817 23.5409 14.934 22.6298 14.4925 21.5639C14.051 20.498 13.9355 19.3251 14.1605 18.1936C14.3856 17.062 14.9412 16.0226 15.757 15.2068C16.5728 14.391 17.6122 13.8354 18.7438 13.6103C19.8753 13.3853 21.0482 13.5008 22.1142 13.9423C23.1801 14.3838 24.0911 15.1315 24.7321 16.0908C25.373 17.0501 25.7152 18.1779 25.7152 19.3316C25.7152 20.8787 25.1006 22.3624 24.0066 23.4564C22.9127 24.5503 21.4289 25.1649 19.8818 25.1649Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
 
-            <div class="header__side-panel">
-                <a href="#" class="header__side-panel-link">
-                    Помощь
-                </a>
-                <a href="#" class="header__side-panel-link">
-                    Войти
-                </a>
-                <a href="#" class="header__side-panel-link">
-                    Раздача в Телеграм
-                </a>
-            </div>
+        <div class="header__side-panel">
+          <a href="#" class="header__side-panel-link"> Помощь </a>
+          <a href="#" class="header__side-panel-link"> Войти </a>
+          <a href="#" class="header__side-panel-link"> Раздача в Телеграм </a>
         </div>
+        <button class="header__adaptive-btn">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.5 6H4.5C3.67157 6 3 6.67157 3 7.5C3 8.32843 3.67157 9 4.5 9H27.5C28.3284 9 29 8.32843 29 7.5C29 6.67157 28.3284 6 27.5 6Z"
+              fill="white"
+            />
+            <path
+              d="M27.5 15H4.5C3.67157 15 3 15.6716 3 16.5C3 17.3284 3.67157 18 4.5 18H27.5C28.3284 18 29 17.3284 29 16.5C29 15.6716 28.3284 15 27.5 15Z"
+              fill="white"
+            />
+            <path
+              d="M27.5 24H4.5C3.67157 24 3 24.6716 3 25.5C3 26.3284 3.67157 27 4.5 27H27.5C28.3284 27 29 26.3284 29 25.5C29 24.6716 28.3284 24 27.5 24Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="header__adaptive__block">
+        <nav class="header__adaptive-nav">
+          <ul class="header__adaptive-nav-list">
+            <li>
+              <a href="index.html" class="header__adaptive-link">Главная</a>
+            </li>
+            <li>
+              <a href="faq.html" class="header__adaptive-link">FAQ & помощь</a>
+            </li>
+            <li>
+              <a href="gamepage.html" class="header__adaptive-link">Корзина</a>
+            </li>
+            <li>
+              <a href="#" class="header__adaptive-nav-list-profile">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.518 10.1291C11.4263 10.12 11.3163 10.12 11.2155 10.1291C9.03377 10.0558 7.30127 8.26829 7.30127 6.06829C7.30127 3.82246 9.11627 1.99829 11.3713 1.99829C13.6171 1.99829 15.4413 3.82246 15.4413 6.06829C15.4321 8.26829 13.6996 10.0558 11.518 10.1291Z"
+                    stroke="#DBDBDB"
+                    stroke-opacity="0.85"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.78326 13.5115C4.56492 14.9965 4.56492 17.4165 6.78326 18.8924C9.30409 20.579 13.4382 20.579 15.9591 18.8924C18.1774 17.4074 18.1774 14.9874 15.9591 13.5115C13.4474 11.834 9.31326 11.834 6.78326 13.5115Z"
+                    stroke="#DBDBDB"
+                    stroke-opacity="0.85"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Войти
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__adaptive-nav-list-tg">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.4576 2.08547L1.62445 9.13268C0.947055 9.46086 0.717942 10.1181 1.46072 10.4747L5.77914 11.9646L16.2205 4.95897C16.7906 4.51916 17.3743 4.63644 16.8721 5.12025L7.90432 13.9354L7.62262 17.6659C7.88354 18.2419 8.36128 18.2446 8.66602 17.9583L11.1471 15.4096L15.3963 18.864C16.3832 19.4983 16.9202 19.089 17.1326 17.9264L19.9197 3.5988C20.209 2.16772 19.7156 1.53717 18.4576 2.08547Z"
+                    fill="#111317"
+                  />
+                </svg>
+
+                Раздача в Телеграм
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="gamePage__preview">
-        <h2 class="visually-hidden">Call of Duty®: Modern Warfare® II</h2>
-        <div class="gamePage__preview-wrapper">
-            <div class="gamePage__preview-links">
-                <a href="index.html" class="gamePage__preview-link">Главная</a>
-                <a href="gamepage.html" class="gamePage__preview-link">Call of Duty®: Modern Warfare® II></a>
-            </div>
-
-            <div class="gamePage__info">
-                <div class="gamePage__poster-container">
-                    <div class="gamePage__link-container">
-                        <a href="#" class="gamePage__link-icon">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.4222 18.3745C12.5452 18.4971 12.6428 18.6428 12.7095 18.8032C12.7761 18.9636 12.8104 19.1355 12.8104 19.3092C12.8104 19.4829 12.7761 19.6548 12.7095 19.8152C12.6428 19.9756 12.5452 20.1213 12.4222 20.2439L11.7689 20.897C10.5309 22.1347 8.85189 22.8301 7.10115 22.8301C5.35042 22.8301 3.67139 22.1347 2.43343 20.897C1.19548 19.6593 0.5 17.9806 0.5 16.2302C0.5 14.4799 1.19548 12.8012 2.43343 11.5635L5.08625 8.91228C6.2757 7.72012 7.87607 7.02778 9.55954 6.97708C11.243 6.92638 12.8822 7.52115 14.1412 8.63957C14.2712 8.7551 14.3772 8.89509 14.4531 9.05155C14.5289 9.20802 14.5732 9.37789 14.5835 9.55148C14.5937 9.72506 14.5696 9.89896 14.5126 10.0632C14.4556 10.2275 14.3668 10.379 14.2512 10.5089C14.1357 10.6389 13.9956 10.7448 13.8391 10.8207C13.6827 10.8966 13.5127 10.9409 13.3391 10.9511C13.1655 10.9613 12.9916 10.9372 12.8273 10.8802C12.6629 10.8232 12.5115 10.7344 12.3815 10.6189C11.6265 9.94848 10.6438 9.59182 9.63443 9.62187C8.62508 9.65192 7.66536 10.0664 6.95157 10.7805L4.30096 13.4284C3.5583 14.1709 3.14108 15.178 3.14108 16.228C3.14108 17.2781 3.5583 18.2852 4.30096 19.0277C5.04362 19.7702 6.05088 20.1873 7.10115 20.1873C8.15143 20.1873 9.15869 19.7702 9.90134 19.0277L10.5546 18.3745C10.6772 18.2518 10.8228 18.1545 10.983 18.0881C11.1432 18.0217 11.315 17.9875 11.4884 17.9875C11.6619 17.9875 11.8336 18.0217 11.9938 18.0881C12.154 18.1545 12.2996 18.2518 12.4222 18.3745ZM20.5698 2.75991C19.3308 1.5241 17.6522 0.830078 15.9021 0.830078C14.152 0.830078 12.4733 1.5241 11.2344 2.75991L10.581 3.41308C10.3331 3.66097 10.1938 3.99719 10.1938 4.34776C10.1938 4.69833 10.3331 5.03454 10.581 5.28243C10.829 5.53033 11.1653 5.66959 11.5159 5.66959C11.8666 5.66959 12.2028 5.53033 12.4508 5.28243L13.1041 4.62926C13.8467 3.88675 14.854 3.46961 15.9043 3.46961C16.9545 3.46961 17.9618 3.88675 18.7045 4.62926C19.4471 5.37177 19.8643 6.37883 19.8643 7.42889C19.8643 8.47896 19.4471 9.48601 18.7045 10.2285L16.0527 12.8808C15.3383 13.5946 14.3781 14.0085 13.3685 14.0378C12.3589 14.067 11.3763 13.7094 10.6217 13.0381C10.4917 12.9225 10.3403 12.8337 10.176 12.7767C10.0116 12.7197 9.83772 12.6957 9.6641 12.7059C9.49048 12.7161 9.32057 12.7604 9.16407 12.8363C9.00758 12.9121 8.86756 13.018 8.75201 13.148C8.63646 13.278 8.54765 13.4294 8.49065 13.5937C8.43364 13.758 8.40956 13.9319 8.41977 14.1055C8.42998 14.279 8.47429 14.4489 8.55017 14.6054C8.62605 14.7619 8.73201 14.9018 8.862 15.0174C10.1202 16.1355 11.7582 16.7307 13.4409 16.681C15.1236 16.6313 16.7237 15.9406 17.9137 14.7502L20.5665 12.099C21.804 10.8606 22.4994 9.18178 22.5 7.43122C22.5006 5.68066 21.8064 4.0014 20.5698 2.76211V2.75991Z"
-                                    fill="url(#paint0_linear_171_131)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_171_131" x1="0.355316" y1="14.999" x2="16.2113"
-                                        y2="15.0517" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0CEBEB" />
-                                        <stop offset="0.472222" stop-color="#20E3B2" />
-                                        <stop offset="1" stop-color="#29FFC6" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </a>
-                        <div class="gamePage__links">
-                            <a href="gamepage.html" class="gamePage__links-title">Подробности</a>
-                            <a href="gamepage.html" class="gamePage__link">Открыть ссылку</a>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="gamePage__poster">
-                        <img src="./images/gamePoster.jpg" alt="gamePoster" class="gamePage__info-img">
-                    </div>
-
-
-                </div>
-                <div class="gamePage__gameplay">
-                    <div class="gamePage__gameplay-text">
-                        <p class="gamePage__gameplay-category">Аккаунты Steam</p>
-                        <h2 class="gamePage__gameplay-title">Купить Call of Duty®: Modern Warfare® II</h2>
-                    </div>
-
-                    <img src="./images/gameGameplay.jpg" alt="Call of Duty®: Modern Warfare® II"
-                        class="gamePage__gameplay-img">
-                </div>
-
-            </div>
-
-            <div class="gamePage__requirements">
-                <div class="gamePage__requirements-btns">
-                    <button class="gamePage__requirements-btn">Описание</button>
-                    <button class="gamePage__requirements-btn">Системные требования</button>
-                    <button class="gamePage__requirements-btn">Активация</button>
-                </div>
-                <div class="gamePage__requirements-info">
-                    <p class="gamePage__requirements-title">Системные требования</p>
-                    <ul class="gamePage__requirements-list">
-                        <li class="gamePage__requirements-list-item-title">Минимальные:</li>
-                        <li class="gamePage__requirements-list-item">64-разрядные процессор и операционная система</li>
-                        <li class="gamePage__requirements-list-item">ОС: 64-разрядная Windows® 10 (с последним
-                            обновлением)</li>
-                        <li class="gamePage__requirements-list-item">Процессор: Intel® Core™ i3-6100 / Core™ i5-2500K
-                            или AMD Ryzen™ 3 1200</li>
-                        <li class="gamePage__requirements-list-item">Оперативная память: 8 GB ОЗУ</li>
-                        <li class="gamePage__requirements-list-item">Видеокарта: NVIDIA® GeForce® GTX 960 или AMD
-                            Radeon™ RX 470 - конфигурация, совместимая с DirectX 12.0</li>
-                        <li class="gamePage__requirements-list-item">DirectX: Версии 12</li>
-                        <li class="gamePage__requirements-list-item">Сеть: Широкополосное подключение к интернету</li>
-                        <li class="gamePage__requirements-list-item">Место на диске: 125 GB</li>
-                    </ul>
-                    <ul class="gamePage__requirements-list">
-                        <li class="gamePage__requirements-list-item-title">Рекомендованные:</li>
-                        <li class="gamePage__requirements-list-item">64-разрядные процессор и операционная система</li>
-                        <li class="gamePage__requirements-list-item">ОС: 64-разрядная Windows® 10 (с последним
-                            обновлением) или 64-разрядная Windows® 11 (с последним обновлением)</li>
-                        <li class="gamePage__requirements-list-item">Процессор: Intel® Core™ i5-6600K / Core™ i7-4770
-                            или AMD Ryzen™ 5 1400</li>
-                        <li class="gamePage__requirements-list-item">Оперативная память: 12 GB ОЗУ</li>
-                        <li class="gamePage__requirements-list-item">Видеокарта: NVIDIA® GeForce® GTX 1060 или AMD
-                            Radeon™ RX 580 - конфигурация, совместимая с DirectX 12.0</li>
-                        <li class="gamePage__requirements-list-item">DirectX: Версии 12</li>
-                        <li class="gamePage__requirements-list-item">Сеть: Широкополосное подключение к интернету</li>
-                        <li class="gamePage__requirements-list-item">Место на диске: 125 GB</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="gamePage__buy-wrapper">
-            <p class="gamePage__buy-text"></p>
-            <div class="gamePage__buy-quantity">
-                <div class="gamePage__buy-quantity-info">
-                    <p>Стоимость</p>
-                    <p>₽4999</p>
-                </div>
-                <div class="gamePage__buy-quantity-info">
-                    <p>Есть в наличии</p>
-                    <p>1 шт.</p>
-                </div>
-                <div class="gamePage__buy-quantity-info">
-                    <p>Всего продаж</p>
-                    <p>43</p>
-                </div>
-            </div>
-
-            <div class="gamePage__buy-price">
-                <div class="gamePage__price">
-                    <p class="gamePage__price-btn">К оплате</p>
-                    <span>₽4999</span>
-                </div>
-
-                <div class="gamePage__buy-btns">
-                    <div class="gamePage__buy-btn">Купить сразу</div>
-                    <div class="gamePage__buy-btn">Добавить в корзину</div>
-                </div>
-
-                <div class="gamePage__buy-terms">
-                    <input type="checkbox">
-                    <label class="filter-checkbox__container-title-terms">
-                        Подтверждая заказ, я принимаю условия
-                        пользовательского соглашения
-                    </label>
-
-
-
-                </div>
-            </div>
-
-            <div class="gamePage__buy-similar">
-                <p class="gamePage__buy-similar-text"></p>
-                <div class="gamePage__buy-similar-games-block">
-
-                    <div class="gamePage__buy-similar-card">
-                        <img src="./images/discord.jpg" class="gamePage__buy-similar-card-img" alt="discord">
-                        <div class="gamePage__buy-similar-card-info">
-                            <div class="gamePage__buy-similar-card-text-block">
-                                <div class="gamePage__buy-similar-card-title">Discord Nitro Full 12 месяцев</div>
-                                <div class="gamePage__buy-similar-card-icons">
-
-                                    <div class="games__buy-group-icons">
-                                        <div class="gamePage__buy-similar-card-icon-info">Сервисы</div>
-                                        <div class="gamePage__buy-similar-card-icon-discord">Discord</div>
-                                    </div>
-                                    <div class="gamePage__buy-similar-card-price"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="gamePage__buy-similar-card">
-                        <img src="./images/discord.jpg" class="gamePage__buy-similar-card-img" alt="discord">
-                        <div class="gamePage__buy-similar-card-info">
-                            <div class="gamePage__buy-similar-card-text-block">
-                                <div class="gamePage__buy-similar-card-title">Discord Nitro Full 12 месяцев</div>
-                                <div class="gamePage__buy-similar-card-icons">
-
-                                    <div class="games__buy-group-icons">
-                                        <div class="gamePage__buy-similar-card-icon-info">Сервисы</div>
-                                        <div class="gamePage__buy-similar-card-icon-discord">Discord</div>
-                                    </div>
-                                    <div class="gamePage__buy-similar-card-price"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="gamePage__buy-similar-card">
-                        <img src="./images/metro.jpg" class="gamePage__buy-similar-card-img"
-                            alt="Metro Last Light Complete Edition">
-                        <div class="gamePage__buy-similar-card-info">
-                            <div class="gamePage__buy-similar-card-text-block">
-                                <div class="gamePage__buy-similar-card-title">Metro Last Light Complete Edition</div>
-                                <div class="gamePage__buy-similar-card-icons">
-                                    <div class="games__buy-group-icons">
-                                        <div class="gamePage__buy-similar-card-icon-info">Аккаунт</div>
-                                        <div class="gamePage__buy-similar-card-icon-steam">Steam</div>
-                                    </div>
-                                    <div class="gamePage__buy-similar-card-price"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
+      <h2 class="visually-hidden">Call of Duty®: Modern Warfare® II</h2>
+      <div class="gamePage__preview-wrapper">
+        <div class="gamePage__preview-links">
+          <a href="index.html" class="gamePage__preview-link">Главная</a>
+          <a href="gamepage.html" class="gamePage__preview-link">Call of Duty®: Modern Warfare® II</a>
         </div>
 
+        <div class="gamePage__info">
+          <div class="gamePage__poster-container">
+            <div class="gamePage__link-container">
+              <a href="#" class="gamePage__link-icon">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.4222 18.3745C12.5452 18.4971 12.6428 18.6428 12.7095 18.8032C12.7761 18.9636 12.8104 19.1355 12.8104 19.3092C12.8104 19.4829 12.7761 19.6548 12.7095 19.8152C12.6428 19.9756 12.5452 20.1213 12.4222 20.2439L11.7689 20.897C10.5309 22.1347 8.85189 22.8301 7.10115 22.8301C5.35042 22.8301 3.67139 22.1347 2.43343 20.897C1.19548 19.6593 0.5 17.9806 0.5 16.2302C0.5 14.4799 1.19548 12.8012 2.43343 11.5635L5.08625 8.91228C6.2757 7.72012 7.87607 7.02778 9.55954 6.97708C11.243 6.92638 12.8822 7.52115 14.1412 8.63957C14.2712 8.7551 14.3772 8.89509 14.4531 9.05155C14.5289 9.20802 14.5732 9.37789 14.5835 9.55148C14.5937 9.72506 14.5696 9.89896 14.5126 10.0632C14.4556 10.2275 14.3668 10.379 14.2512 10.5089C14.1357 10.6389 13.9956 10.7448 13.8391 10.8207C13.6827 10.8966 13.5127 10.9409 13.3391 10.9511C13.1655 10.9613 12.9916 10.9372 12.8273 10.8802C12.6629 10.8232 12.5115 10.7344 12.3815 10.6189C11.6265 9.94848 10.6438 9.59182 9.63443 9.62187C8.62508 9.65192 7.66536 10.0664 6.95157 10.7805L4.30096 13.4284C3.5583 14.1709 3.14108 15.178 3.14108 16.228C3.14108 17.2781 3.5583 18.2852 4.30096 19.0277C5.04362 19.7702 6.05088 20.1873 7.10115 20.1873C8.15143 20.1873 9.15869 19.7702 9.90134 19.0277L10.5546 18.3745C10.6772 18.2518 10.8228 18.1545 10.983 18.0881C11.1432 18.0217 11.315 17.9875 11.4884 17.9875C11.6619 17.9875 11.8336 18.0217 11.9938 18.0881C12.154 18.1545 12.2996 18.2518 12.4222 18.3745ZM20.5698 2.75991C19.3308 1.5241 17.6522 0.830078 15.9021 0.830078C14.152 0.830078 12.4733 1.5241 11.2344 2.75991L10.581 3.41308C10.3331 3.66097 10.1938 3.99719 10.1938 4.34776C10.1938 4.69833 10.3331 5.03454 10.581 5.28243C10.829 5.53033 11.1653 5.66959 11.5159 5.66959C11.8666 5.66959 12.2028 5.53033 12.4508 5.28243L13.1041 4.62926C13.8467 3.88675 14.854 3.46961 15.9043 3.46961C16.9545 3.46961 17.9618 3.88675 18.7045 4.62926C19.4471 5.37177 19.8643 6.37883 19.8643 7.42889C19.8643 8.47896 19.4471 9.48601 18.7045 10.2285L16.0527 12.8808C15.3383 13.5946 14.3781 14.0085 13.3685 14.0378C12.3589 14.067 11.3763 13.7094 10.6217 13.0381C10.4917 12.9225 10.3403 12.8337 10.176 12.7767C10.0116 12.7197 9.83772 12.6957 9.6641 12.7059C9.49048 12.7161 9.32057 12.7604 9.16407 12.8363C9.00758 12.9121 8.86756 13.018 8.75201 13.148C8.63646 13.278 8.54765 13.4294 8.49065 13.5937C8.43364 13.758 8.40956 13.9319 8.41977 14.1055C8.42998 14.279 8.47429 14.4489 8.55017 14.6054C8.62605 14.7619 8.73201 14.9018 8.862 15.0174C10.1202 16.1355 11.7582 16.7307 13.4409 16.681C15.1236 16.6313 16.7237 15.9406 17.9137 14.7502L20.5665 12.099C21.804 10.8606 22.4994 9.18178 22.5 7.43122C22.5006 5.68066 21.8064 4.0014 20.5698 2.76211V2.75991Z"
+                    fill="url(#paint0_linear_171_131)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_171_131"
+                      x1="0.355316"
+                      y1="14.999"
+                      x2="16.2113"
+                      y2="15.0517"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0CEBEB" />
+                      <stop offset="0.472222" stop-color="#20E3B2" />
+                      <stop offset="1" stop-color="#29FFC6" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <div class="gamePage__links">
+                <a href="gamepage.html" class="gamePage__links-title"
+                  >Подробности</a
+                >
+                <a href="gamepage.html" class="gamePage__link"
+                  >Открыть ссылку</a
+                >
+              </div>
+            </div>
+
+            <div class="gamePage__poster">
+              <img
+                src="./images/gamePoster.jpg"
+                alt="gamePoster"
+                class="gamePage__info-img"
+              />
+            </div>
+          </div>
+          <div class="gamePage__gameplay">
+            <div class="gamePage__gameplay-text">
+              <p class="gamePage__gameplay-category">Аккаунты Steam</p>
+              <h2 class="gamePage__gameplay-title">
+                Купить Call of Duty®: Modern Warfare® II
+              </h2>
+            </div>
+
+            <div class="gamePage__gameplay-img-block">
+              <img
+                src="./images/gameGameplay.jpg"
+                alt="Call of Duty®: Modern Warfare® II"
+                class="gamePage__gameplay-img"
+              />
+              <img
+                src="./images/sliderImg2.png"
+                alt="Call of Duty®: Modern Warfare® II"
+                class="gamePage__gameplay-img"
+              />
+              <img
+                src="./images/sliderImg3.png"
+                alt="Call of Duty®: Modern Warfare® II"
+                class="gamePage__gameplay-img"
+              />
+              <img
+                src="./images/sliderImg4.png"
+                alt="Call of Duty®: Modern Warfare® II"
+                class="gamePage__gameplay-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="gamePage__requirements">
+          <div class="gamePage__requirements-btns">
+            <button class="gamePage__requirements-left-btn"></button>
+            <button
+              class="gamePage__requirements-btn gamePage__requirements-btn--active"
+            >
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.178 20.2871C13.4528 20.351 13.4779 20.7108 13.2103 20.8L11.6303 21.32C7.66034 22.6 5.57034 21.53 4.28034 17.56L3.00034 13.61C1.72034 9.64004 2.78034 7.54004 6.75034 6.26004L7.27434 6.08651C7.6772 5.95309 8.06927 6.35715 7.95487 6.76583C7.89817 6.9684 7.84362 7.1798 7.79034 7.40004L6.81034 11.59C5.71034 16.3 7.32034 18.9 12.0303 20.02L13.178 20.2871Z"
+                  fill="#62646C"
+                />
+                <path
+                  d="M17.6702 3.54057L16.0002 3.15057C12.6602 2.36057 10.6702 3.01057 9.50018 5.43057C9.20018 6.04057 8.96018 6.78057 8.76018 7.63057L7.78018 11.8206C6.80018 16.0006 8.09018 18.0606 12.2602 19.0506L13.9402 19.4506C14.5202 19.5906 15.0602 19.6806 15.5602 19.7206C18.6802 20.0206 20.3402 18.5606 21.1802 14.9506L22.1602 10.7706C23.1402 6.59058 21.8602 4.52057 17.6702 3.54057ZM15.7902 13.6606C15.7002 14.0006 15.4002 14.2206 15.0602 14.2206C15.0002 14.2206 14.9402 14.2106 14.8702 14.2006L11.9602 13.4606C11.5602 13.3606 11.3202 12.9506 11.4202 12.5506C11.5202 12.1506 11.9302 11.9106 12.3302 12.0106L15.2402 12.7506C15.6502 12.8506 15.8902 13.2606 15.7902 13.6606ZM18.7202 10.2806C18.6302 10.6206 18.3302 10.8406 17.9902 10.8406C17.9302 10.8406 17.8702 10.8306 17.8002 10.8206L12.9502 9.59057C12.5502 9.49057 12.3102 9.08057 12.4102 8.68057C12.5102 8.28057 12.9202 8.04058 13.3202 8.14057L18.1702 9.37057C18.5802 9.46057 18.8202 9.87057 18.7202 10.2806Z"
+                  fill="#62646C"
+                />
+              </svg>
+
+              Описание
+            </button>
+            <button class="gamePage__requirements-btn">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.75 13.0801C22.17 13.0801 22.5 12.7401 22.5 12.3301C22.5 11.9101 22.17 11.5801 21.75 11.5801H20.5V9.38008H21.75C22.17 9.38008 22.5 9.05008 22.5 8.63008C22.5 8.22008 22.17 7.88008 21.75 7.88008H20.27C19.79 6.29008 18.54 5.04008 16.95 4.56008V3.08008C16.95 2.67008 16.61 2.33008 16.2 2.33008C15.79 2.33008 15.45 2.67008 15.45 3.08008V4.33008H13.25V3.08008C13.25 2.67008 12.91 2.33008 12.5 2.33008C12.09 2.33008 11.75 2.67008 11.75 3.08008V4.33008H9.56V3.08008C9.56 2.67008 9.22 2.33008 8.81 2.33008C8.39 2.33008 8.06 2.67008 8.06 3.08008V4.56008C6.46 5.04008 5.21 6.29008 4.73 7.88008H3.25C2.84 7.88008 2.5 8.22008 2.5 8.63008C2.5 9.05008 2.84 9.38008 3.25 9.38008H4.5V11.5801H3.25C2.84 11.5801 2.5 11.9101 2.5 12.3301C2.5 12.7401 2.84 13.0801 3.25 13.0801H4.5V15.2801H3.25C2.84 15.2801 2.5 15.6101 2.5 16.0301C2.5 16.4401 2.84 16.7801 3.25 16.7801H4.73C5.2 18.3701 6.46 19.6201 8.06 20.1001V21.5801C8.06 21.9901 8.39 22.3301 8.81 22.3301C9.22 22.3301 9.56 21.9901 9.56 21.5801V20.3301H11.76V21.5801C11.76 21.9901 12.09 22.3301 12.51 22.3301C12.92 22.3301 13.26 21.9901 13.26 21.5801V20.3301H15.45V21.5801C15.45 21.9901 15.79 22.3301 16.2 22.3301C16.61 22.3301 16.95 21.9901 16.95 21.5801V20.1001C18.54 19.6201 19.79 18.3701 20.27 16.7801H21.75C22.17 16.7801 22.5 16.4401 22.5 16.0301C22.5 15.6101 22.17 15.2801 21.75 15.2801H20.5V13.0801H21.75ZM17.76 14.5901C17.76 16.2401 16.41 17.5901 14.76 17.5901H10.24C8.59 17.5901 7.24 16.2401 7.24 14.5901V10.0701C7.24 8.42008 8.59 7.07008 10.24 7.07008H14.76C16.41 7.07008 17.76 8.42008 17.76 10.0701V14.5901Z"
+                  fill="#62646C"
+                />
+                <path
+                  d="M10.52 16.5803H14.49C15.74 16.5803 16.76 15.5703 16.76 14.3103V10.3403C16.76 9.09031 15.75 8.07031 14.49 8.07031H10.52C9.27 8.07031 8.25 9.08031 8.25 10.3403V14.3103C8.25 15.5703 9.26 16.5803 10.52 16.5803Z"
+                  fill="#62646C"
+                />
+              </svg>
+
+              Системные требования
+            </button>
+            <button class="gamePage__requirements-btn">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.75 9.47977C19.44 5.84977 16.06 3.75977 12.5 3.75977C10.72 3.75977 8.99 4.27977 7.41 5.24977C5.83 6.22977 4.41 7.65977 3.25 9.47977C2.25 11.0498 2.25 13.5998 3.25 15.1698C5.56 18.8098 8.94 20.8898 12.5 20.8898C14.28 20.8898 16.01 20.3698 17.59 19.3998C19.17 18.4198 20.59 16.9898 21.75 15.1698C22.75 13.6098 22.75 11.0498 21.75 9.47977ZM12.5 16.3698C10.26 16.3698 8.46 14.5598 8.46 12.3298C8.46 10.0998 10.26 8.28977 12.5 8.28977C14.74 8.28977 16.54 10.0998 16.54 12.3298C16.54 14.5598 14.74 16.3698 12.5 16.3698Z"
+                  fill="#62646C"
+                />
+                <path
+                  d="M12.5004 9.46973C10.9304 9.46973 9.65039 10.7497 9.65039 12.3297C9.65039 13.8997 10.9304 15.1797 12.5004 15.1797C14.0704 15.1797 15.3604 13.8997 15.3604 12.3297C15.3604 10.7597 14.0704 9.46973 12.5004 9.46973Z"
+                  fill="#62646C"
+                />
+              </svg>
+              Активация
+            </button>
+            <button class="gamePage__requirements-right-btn"></button>
+          </div>
+          <div class="gamePage__requirements-info">
+            <p class="gamePage__requirements-title">Системные требования</p>
+            <ul class="gamePage__requirements-list">
+              <li class="gamePage__requirements-list-item-title">
+                Минимальные:
+              </li>
+              <li class="gamePage__requirements-list-item">
+                64-разрядные процессор и операционная система
+              </li>
+              <li class="gamePage__requirements-list-item">
+                ОС: 64-разрядная Windows® 10 (с последним обновлением)
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Процессор: Intel® Core™ i3-6100 / Core™ i5-2500K или AMD Ryzen™
+                3 1200
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Оперативная память: 8 GB ОЗУ
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Видеокарта: NVIDIA® GeForce® GTX 960 или AMD Radeon™ RX 470 -
+                конфигурация, совместимая с DirectX 12.0
+              </li>
+              <li class="gamePage__requirements-list-item">
+                DirectX: Версии 12
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Сеть: Широкополосное подключение к интернету
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Место на диске: 125 GB
+              </li>
+            </ul>
+            <ul class="gamePage__requirements-list">
+              <li class="gamePage__requirements-list-item-title">
+                Рекомендованные:
+              </li>
+              <li class="gamePage__requirements-list-item">
+                64-разрядные процессор и операционная система
+              </li>
+              <li class="gamePage__requirements-list-item">
+                ОС: 64-разрядная Windows® 10 (с последним обновлением) или
+                64-разрядная Windows® 11 (с последним обновлением)
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Процессор: Intel® Core™ i5-6600K / Core™ i7-4770 или AMD Ryzen™
+                5 1400
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Оперативная память: 12 GB ОЗУ
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Видеокарта: NVIDIA® GeForce® GTX 1060 или AMD Radeon™ RX 580 -
+                конфигурация, совместимая с DirectX 12.0
+              </li>
+              <li class="gamePage__requirements-list-item">
+                DirectX: Версии 12
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Сеть: Широкополосное подключение к интернету
+              </li>
+              <li class="gamePage__requirements-list-item">
+                Место на диске: 125 GB
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gamePage__buy-wrapper">
+        <p class="gamePage__buy-text"></p>
+        <div class="gamePage__buy-quantity">
+          <div class="gamePage__buy-quantity-info">
+            <p>Стоимость</p>
+            <p>₽4999</p>
+          </div>
+          <div class="gamePage__buy-quantity-info">
+            <p>Есть в наличии</p>
+            <p>1 шт.</p>
+          </div>
+          <div class="gamePage__buy-quantity-info">
+            <p>Всего продаж</p>
+            <p>43</p>
+          </div>
+        </div>
+
+        <div class="gamePage__buy-price">
+          <div class="gamePage__price">
+            <p class="gamePage__price-btn">К оплате</p>
+            <span>₽4999</span>
+          </div>
+
+          <div class="gamePage__buy-btns">
+            <div class="gamePage__buy-btn">Купить сразу</div>
+            <div class="gamePage__buy-btn">Добавить в корзину</div>
+          </div>
+
+          <div class="gamePage__buy-terms">
+            <label class="gamePage__buy-terms-btn">
+              <input type="checkbox" />
+              <span class="checkmark-title"></span>
+              Подтверждая заказ, я принимаю
+              <span>условия пользовательского соглашения</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="gamePage__buy-similar">
+          <p class="gamePage__buy-similar-text"></p>
+          <div class="gamePage__buy-similar-games-block">
+            <div class="gamePage__buy-similar-card">
+              <img
+                src="./images/discord.jpg"
+                class="gamePage__buy-similar-card-img"
+                alt="discord"
+              />
+              <div class="gamePage__buy-similar-card-info">
+                <div class="gamePage__buy-similar-card-text-block">
+                  <div class="gamePage__buy-similar-card-title">
+                    Discord Nitro Full 12 месяцев
+                  </div>
+                  <div class="gamePage__buy-similar-card-icons">
+                    <div class="games__buy-group-icons">
+                      <div class="gamePage__buy-similar-card-icon-info">
+                        Сервисы
+                      </div>
+                      <div class="gamePage__buy-similar-card-icon-discord">
+                        Discord
+                      </div>
+                    </div>
+                    <div class="gamePage__buy-similar-card-price"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gamePage__buy-similar-card">
+              <img
+                src="./images/discord.jpg"
+                class="gamePage__buy-similar-card-img"
+                alt="discord"
+              />
+              <div class="gamePage__buy-similar-card-info">
+                <div class="gamePage__buy-similar-card-text-block">
+                  <div class="gamePage__buy-similar-card-title">
+                    Discord Nitro Full 12 месяцев
+                  </div>
+                  <div class="gamePage__buy-similar-card-icons">
+                    <div class="games__buy-group-icons">
+                      <div class="gamePage__buy-similar-card-icon-info">
+                        Сервисы
+                      </div>
+                      <div class="gamePage__buy-similar-card-icon-discord">
+                        Discord
+                      </div>
+                    </div>
+                    <div class="gamePage__buy-similar-card-price"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gamePage__buy-similar-card">
+              <img
+                src="./images/metro.jpg"
+                class="gamePage__buy-similar-card-img"
+                alt="Metro Last Light Complete Edition"
+              />
+              <div class="gamePage__buy-similar-card-info">
+                <div class="gamePage__buy-similar-card-text-block">
+                  <div class="gamePage__buy-similar-card-title">
+                    Metro Last Light Complete Edition
+                  </div>
+                  <div class="gamePage__buy-similar-card-icons">
+                    <div class="games__buy-group-icons">
+                      <div class="gamePage__buy-similar-card-icon-info">
+                        Аккаунт
+                      </div>
+                      <div class="gamePage__buy-similar-card-icon-steam">
+                        Steam
+                      </div>
+                    </div>
+                    <div class="gamePage__buy-similar-card-price"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__info-container">
-                <a href="index.html" class="footer__logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="41" viewBox="0 0 76 41" fill="none">
-                        <path
-                            d="M13.3731 6.88916H0V16.8293H6.07869L0 23.0198V32.8892H13.3731L19.4518 26.7341V13.115L13.3731 6.88916ZM13.3731 26.7341H6.07869V13.115H13.3731V26.7341Z"
-                            fill="#F4F4F4" />
-                        <path
-                            d="M49.6269 6.88916L43.5482 13.115V16.8293L49.6269 16.7939V13.115H63V6.88916H49.6269ZM43.5482 22.9844H56.9213V26.6987H63V16.8293H49.6269L43.5482 22.9844ZM43.5482 32.8892H56.9213L63 26.6987H43.5482V32.8892Z"
-                            fill="#F4F4F4" />
-                        <path
-                            d="M27.7883 6.88916L21.7096 13.115V16.8293L27.7883 16.7939V13.115H55.8977V6.88916H27.7883ZM21.7096 22.9844H35.0827V26.6987H41.1614V16.8293H27.7883L21.7096 22.9844ZM4.6703 32.8892H35.0827L41.1614 26.6987H4.6703V32.8892Z"
-                            fill="#F4F4F4" />
-                    </svg>
+      <div class="footer__content">
+        <div class="footer__info-container">
+          <a href="#" class="footer__logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="76"
+              height="41"
+              viewBox="0 0 76 41"
+              fill="none"
+            >
+              <path
+                d="M13.3731 6.88916H0V16.8293H6.07869L0 23.0198V32.8892H13.3731L19.4518 26.7341V13.115L13.3731 6.88916ZM13.3731 26.7341H6.07869V13.115H13.3731V26.7341Z"
+                fill="#F4F4F4"
+              />
+              <path
+                d="M49.6269 6.88916L43.5482 13.115V16.8293L49.6269 16.7939V13.115H63V6.88916H49.6269ZM43.5482 22.9844H56.9213V26.6987H63V16.8293H49.6269L43.5482 22.9844ZM43.5482 32.8892H56.9213L63 26.6987H43.5482V32.8892Z"
+                fill="#F4F4F4"
+              />
+              <path
+                d="M27.7883 6.88916L21.7096 13.115V16.8293L27.7883 16.7939V13.115H55.8977V6.88916H27.7883ZM21.7096 22.9844H35.0827V26.6987H41.1614V16.8293H27.7883L21.7096 22.9844ZM4.6703 32.8892H35.0827L41.1614 26.6987H4.6703V32.8892Z"
+                fill="#F4F4F4"
+              />
+            </svg>
+          </a>
+          <p class="footer__info-text">
+            Один из лучших и надежных магазинов игровых цифровых товаров,
+            аккаунтов и ключей на территории СНГ
+          </p>
+
+          <div class="footer__payLogos">
+            <img
+              src="./images/icons/freekassa.svg"
+              alt="freekassa"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/mir.svg"
+              alt="mir"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/sbp.svg"
+              alt="sbp"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/umoney.svg"
+              alt="umoney"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/payeer.svg"
+              alt="payeer"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+            <img
+              src="./images/icons/lava.svg"
+              alt="lava"
+              width="20"
+              height="20"
+              class="footer__payLogo"
+            />
+          </div>
+        </div>
+        <div class="footer__questions-blocks">
+          <div class="footer__questions-block">
+            <div class="footer__questions-title">Навигация</div>
+            <ul class="footer__questions-list">
+              <li class="footer__questions-list-item">
+                <a href="index.html" class="footer__questions-list-item-link"
+                  >Главная</a
+                >
+              </li>
+              <li class="footer__questions-list-item">
+                <a href="faq.html" class="footer__questions-list-item-link"
+                  >Faq & помощь</a
+                >
+              </li>
+              <li class="footer__questions-list-item">
+                <a href="gamepage.html" class="footer__questions-list-item-link"
+                  >Корзина</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__questions-block">
+            <div class="footer__questions-title">Другое</div>
+            <ul class="footer__questions-list">
+              <li class="footer__questions-list-item">
+                <a
+                  href="guarantee.html"
+                  class="footer__questions-list-item-link"
+                  >Гарантии</a
+                >
+              </li>
+              <li class="footer__questions-list-item">
+                <a href="terms.html" class="footer__questions-list-item-link"
+                  >Условия использования</a
+                >
+              </li>
+              <li class="footer__questions-list-item">
+                <a href="contacts.html" class="footer__questions-list-item-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__questions-block">
+            <div class="footer__questions-title">Социальные сети</div>
+            <ul class="footer__questions-list">
+              <li class="footer__questions-list-icons">
+                <a href="#" class="footer__questions-list-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="15"
+                    viewBox="0 0 22 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9825 14.8892C4.466 14.8892 0.17864 9.63386 0 0.88916H3.7651C3.8888 7.30756 6.6646 10.0263 8.8632 10.5869V0.88916H12.4085V6.42466C14.5796 6.18646 16.8607 3.66396 17.6302 0.88916H21.1755C20.8855 2.32826 20.3075 3.69086 19.4776 4.89166C18.6477 6.09246 17.5837 7.10576 16.3523 7.86816C17.7269 8.56476 18.941 9.55066 19.9145 10.7609C20.888 11.9712 21.5988 13.3782 22 14.8892H18.0974C17.7373 13.5768 17.0054 12.402 15.9934 11.512C14.9814 10.622 13.7343 10.0565 12.4085 9.88616V14.8892H11.9825Z"
+                      fill="currentColor"
+                      fill-opacity="0.78"
+                    />
+                  </svg>
                 </a>
-                <p class="footer__info-text">
-                    Один из лучших и надежных магазинов игровых цифровых товаров, аккаунтов и ключей на территории СНГ
-                </p>
-
-                <div class="footer__payLogos">
-                    <img src="./images/icons/freekassa.svg" alt="freekassa" width="20" height="20"
-                        class="footer__payLogo">
-                    <img src="./images/icons/mir.svg" alt="mir" width="20" height="20" class="footer__payLogo">
-                    <img src="./images/icons/sbp.svg" alt="sbp" width="20" height="20" class="footer__payLogo">
-                    <img src="./images/icons/umoney.svg" alt="umoney" width="20" height="20" class="footer__payLogo">
-                    <img src="./images/icons/payeer.svg" alt="payeer" width="20" height="20" class="footer__payLogo">
-                    <img src="./images/icons/lava.svg" alt="lava" width="20" height="20" class="footer__payLogo">
-
-                </div>
-            </div>
-            <div class="footer__questions-blocks">
-                <div class="footer__questions-block">
-                    <div class="footer__questions-title">Навигация</div>
-                    <ul class="footer__questions-list">
-                        <li class="footer__questions-list-item">
-                            <a href="index.html" class="footer__questions-list-item-link">Главная</a>
-                        </li>
-                        <li class="footer__questions-list-item">
-                            <a href="faq.html" class="footer__questions-list-item-link">Faq & помощь</a>
-                        </li>
-                        <li class="footer__questions-list-item">
-                            <a href="gamepage.html" class="footer__questions-list-item-link">Корзина</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__questions-block">
-                    <div class="footer__questions-title">Другое</div>
-                    <ul class="footer__questions-list">
-                        <li class="footer__questions-list-item">
-                            <a href="guarantee.html" class="footer__questions-list-item-link">Гарантии</a>
-                        </li>
-                        <li class="footer__questions-list-item">
-                            <a href="terms.html" class="footer__questions-list-item-link">Условия использования</a>
-                        </li>
-                        <li class="footer__questions-list-item">
-                            <a href="contacts.html" class="footer__questions-list-item-link">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__questions-block">
-                    <div class="footer__questions-title">Социальные сети</div>
-                    <ul class="footer__questions-list">
-                        <li class="footer__questions-list-icons">
-                            <a href="#" class="footer__questions-list-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15"
-                                    fill="none">
-                                    <path
-                                        d="M11.9825 14.8892C4.466 14.8892 0.17864 9.63386 0 0.88916H3.7651C3.8888 7.30756 6.6646 10.0263 8.8632 10.5869V0.88916H12.4085V6.42466C14.5796 6.18646 16.8607 3.66396 17.6302 0.88916H21.1755C20.8855 2.32826 20.3075 3.69086 19.4776 4.89166C18.6477 6.09246 17.5837 7.10576 16.3523 7.86816C17.7269 8.56476 18.941 9.55066 19.9145 10.7609C20.888 11.9712 21.5988 13.3782 22 14.8892H18.0974C17.7373 13.5768 17.0054 12.402 15.9934 11.512C14.9814 10.622 13.7343 10.0565 12.4085 9.88616V14.8892H11.9825Z"
-                                        fill="#E4EDEF" fill-opacity="0.78" />
-                                </svg>
-                            </a>
-                            <a href="#" class="footer__questions-list-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
-                                    fill="none">
-                                    <path
-                                        d="M17.9576 0.949L1.12445 7.9962C0.447055 8.32438 0.217942 8.98158 0.960723 9.33826L5.27914 10.8282L15.7205 3.82249C16.2906 3.38269 16.8743 3.49997 16.3721 3.98378L7.40432 12.7989L7.12262 16.5294C7.38354 17.1054 7.86128 17.1081 8.16602 16.8218L10.6471 14.2731L14.8963 17.7276C15.8832 18.3619 16.4202 17.9525 16.6326 16.7899L19.4197 2.46232C19.709 1.03125 19.2156 0.400698 17.9576 0.949Z"
-                                        fill="#E4EDEF" fill-opacity="0.78" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <a href="#" class="footer__questions-list-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.9576 0.949L1.12445 7.9962C0.447055 8.32438 0.217942 8.98158 0.960723 9.33826L5.27914 10.8282L15.7205 3.82249C16.2906 3.38269 16.8743 3.49997 16.3721 3.98378L7.40432 12.7989L7.12262 16.5294C7.38354 17.1054 7.86128 17.1081 8.16602 16.8218L10.6471 14.2731L14.8963 17.7276C15.8832 18.3619 16.4202 17.9525 16.6326 16.7899L19.4197 2.46232C19.709 1.03125 19.2156 0.400698 17.9576 0.949Z"
+                      fill="currentColor"
+                      fill-opacity="0.78"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__about-container">
-            <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
-            <div class="footer__about-text-group">
-                <div class="footer__about-text">Система по созданию магазинов:
-                    <a href="#" class="footer__about-text-link">Lequeshop.com</a>
-                </div>
-                <div class="footer__about-text">Designed by:
-                    <a href="#" class="footer__about-text-link">Maxyao</a>
-                </div>
-            </div>
+      </div>
+      <div class="footer__about-container">
+        <p class="footer__about-text">diseased.ru @ 2021 All rights reserved</p>
+        <div class="footer__about-text-group">
+          <div class="footer__about-text">
+            Система по созданию магазинов:
+            <a href="#" class="footer__about-text-link">Lequeshop.com</a>
+          </div>
+          <div class="footer__about-text">
+            Designed by:
+            <a href="#" class="footer__about-text-link">Maxyao</a>
+          </div>
         </div>
+      </div>
     </footer>
-    <script src="js/script.js"></script>
-</body>
 
+    <script src="js/script.js"></script>
+  </body>
 </html>
