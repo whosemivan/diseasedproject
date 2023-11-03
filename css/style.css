@@ -213,7 +213,7 @@ body::after {
   z-index: 10;
   position: fixed;
   background-color: aliceblue;
-  top: 96%;
+  top: 82px;
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -2159,7 +2159,6 @@ ul li {
   width: 6px;
   height: 11px;
   padding: 2px;
-  left: 700px;
   top: 0px;
   justify-content: center;
   gap: 3px;
