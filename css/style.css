@@ -724,15 +724,24 @@ body::after {
   flex-direction: column;
   max-width: 1410px;
   width: 90%;
-  min-height: 600px;
   margin: 30px auto;
   border-radius: 0px 0px 8px 8px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(23, 25, 29, 0.48);
 }
 
+.filter__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__block--hidden {
+  display: none;
+}
+
 .filter__categories {
   display: flex;
+  width: calc(100% - 50px);
   padding: 25px;
   justify-content: space-between;
   align-items: center;
@@ -752,7 +761,18 @@ body::after {
   cursor: pointer;
 }
 
-.filter__categoryName:nth-child(1)::after {
+.filter__categoryName--active {
+  font-size: 15px;
+  background: linear-gradient(90deg,
+      #0cebeb -29.03%,
+      #20e3b2 31.64%,
+      #29ffc6 99.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.filter__categoryName--active::after {
   content: "";
   position: absolute;
   top: 49px;
@@ -765,16 +785,7 @@ body::after {
       #29ffc6 71.39%);
 }
 
-.filter__categoryName:nth-child(1) {
-  font-size: 15px;
-  background: linear-gradient(90deg,
-      #0cebeb -29.03%,
-      #20e3b2 31.64%,
-      #29ffc6 99.45%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .filter__dropdown-list {
   display: flex;
@@ -824,6 +835,7 @@ body::after {
 
 .filter__settings-dropdown {
   height: 48px;
+  position: relative;
 }
 
 .filter__settings-text {
@@ -856,16 +868,39 @@ input[type="number"] {
 }
 
 .filter__settings__dropdown-list {
-  visibility: hidden;
+  position: absolute;
+  z-index: 3;
+  top: 31px;
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
   border-radius: 0px 0px 8px 8px;
   background: #17191d;
-  width: 190px;
-  height: 160px;
+  width: 176px;
+}
+
+.filter__settings__dropdown-list--hidden {
+  display: none;
+}
+
+.filter__dropdown-item-btn {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 27px;
+  background: transparent;
+  display: flex;
+  flex: 1 1;
+  color: #95979F;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
 }
 
 .filter__settings__dropdown-selected {
@@ -1236,7 +1271,7 @@ ul li {
 }
 
 .games__card-price::after {
-  content: "₽350";
+  content: "";
   background: linear-gradient(90deg,
       #0cebeb 0.25%,
       #20e3b2 47.04%,
@@ -1295,6 +1330,17 @@ ul li {
   min-height: 20px;
   display: flex;
   justify-content: center;
+}
+
+.games__card-info-simple {
+  display: flex;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
 }
 
 .games__card-icon-discord {
@@ -2968,7 +3014,6 @@ ul li {
   }
 
   .filter__categories {
-    width: 95%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -3229,7 +3274,8 @@ ul li {
     padding: 29px 37px;
   }
 
-  .filter__categoryName:nth-child(1)::after {
+
+  .filter__categoryName--active::after {
     top: 60px;
   }
 
@@ -3431,6 +3477,10 @@ ul li {
   .filter__wrapper {
     max-width: 530px;
     width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .filter__block {
     flex-wrap: wrap;
   }
 
