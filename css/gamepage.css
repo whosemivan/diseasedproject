@@ -576,6 +576,7 @@ body::after {
 
 .gamePage__requirements-info {
   background: rgba(23, 25, 29, 0.48);
+  color: #62646c;
   margin: 0;
   width: 93%;
   padding: 30px;

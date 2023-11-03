@@ -37,7 +37,10 @@ let cards = [{
         isDonat: false,
         count: 1,
         buyers: 0,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Metro Last Light Complete Edition',
@@ -50,7 +53,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 10,
-        date: "2023-05-11"
+        date: "2023-05-11",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Metro Last Light Complete Edition',
@@ -63,7 +69,10 @@ let cards = [{
         isDonat: false,
         count: 1,
         buyers: 50,
-        date: "2022-01-23"
+        date: "2022-01-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Metro Last Light Complete Edition',
@@ -76,7 +85,10 @@ let cards = [{
         isDonat: true,
         count: 0,
         buyers: 2,
-        date: "2023-08-23"
+        date: "2023-08-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Metro Last Light Complete Edition',
@@ -89,7 +101,10 @@ let cards = [{
         isDonat: false,
         count: 1,
         buyers: 4,
-        date: "2022-04-23"
+        date: "2022-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -103,7 +118,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 11,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -118,7 +136,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 100,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -131,7 +152,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 2,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -145,7 +169,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 543,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -159,7 +186,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 1,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -173,7 +203,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -186,7 +219,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -213,7 +249,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -227,7 +266,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -240,7 +282,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -253,7 +298,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -267,7 +315,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -280,7 +331,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -294,7 +348,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -308,7 +365,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -322,7 +382,10 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
     {
         name: 'Lalal',
@@ -336,11 +399,15 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        description: 'Text',
+        systemText: 'Text',
+        activationText: 'Text'
     },
 
 ];
 
+localStorage.setItem('cards', JSON.stringify(cards));
 
 for (let i = 0; i < topFilterBtns.length; i++) {
     topFilterBtns[i].addEventListener('click', () => {
@@ -415,7 +482,7 @@ const renderCards = (arr) => {
     gamesWrapper.innerHTML = '';
     for (let card in arr) {
         const gameCard = `
-        <a href="gamepage.html?productName=${arr[card].name}&image=${arr[card].image}&price=${arr[card].price}" class="game__card">
+        <a href="gamepage.html?productName=${arr[card].name}&image=${arr[card].image}&price=${arr[card].price}&count=${arr[card].count}&buyers=${arr[card].buyers}&description=${arr[card].description}&systemText=${arr[card].systemText}&activation=${arr[card].activationText}&platform=${arr[card].platform}" class="game__card">
         <div
           class="game__card-img"
           style="background-image: url('${arr[card].image}')"
