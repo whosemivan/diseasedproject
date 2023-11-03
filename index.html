@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diseased</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="./Remodal-1.1.1/dist/remodal.css">
   <link rel="stylesheet" href="./Remodal-1.1.1/dist/remodal-default-theme.css">
   <script src="./Remodal-1.1.1/dist/remodal.js"></script>
@@ -39,7 +39,7 @@
             <a href="faq.html" class="header__nav-link">FAQ & помощь</a>
           </li>
           <li>
-            <a href="gamepage.html" class="header__nav-link">Корзина</a>
+            <a href="#" class="header__nav-link">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -82,7 +82,7 @@
             <a href="faq.html" class="header__adaptive-link">FAQ & помощь</a>
           </li>
           <li>
-            <a href="gamepage.html" class="header__adaptive-link">Корзина</a>
+            <a href="#" class="header__adaptive-link">Корзина</a>
           </li>
           <li>
             <a href="#" class="header__adaptive-nav-list-profile">
@@ -358,7 +358,19 @@
             <fieldset class="radio-group">
               <p class="filter__settings-text">Сетка товаров</p>
 
-              <div class="radio-group__block">
+
+              <div class="radio-group__block radio-group__block--tb">
+                <div class="radio-group__wrapper">
+                  <input id="gridfour" type="radio" name="radio-button-tb" class="radio-group__input" data-columnsCount="3" checked />
+                  <label for="gridfour" class="radio-group__label">3x1</label>
+                </div>
+                <div class="radio-group__wrapper">
+                  <input id="gridfour" type="radio" name="radio-button-tb" class="radio-group__input" data-columnsCount="2" />
+                  <label for="gridfour" class="radio-group__label">2x1</label>
+                </div>
+              </div>
+
+              <div class="radio-group__block radio-group__block--pc">
                 <div class="radio-group__wrapper">
                   <input id="gridfour" type="radio" name="radio-button" class="radio-group__input" checked />
                   <label for="gridfour" class="radio-group__label">4x1</label>
@@ -1344,7 +1356,7 @@
               <a href="faq.html" class="footer__questions-list-item-link">Faq & помощь</a>
             </li>
             <li class="footer__questions-list-item">
-              <a href="gamepage.html" class="footer__questions-list-item-link">Корзина</a>
+              <a href="#" class="footer__questions-list-item-link">Корзина</a>
             </li>
           </ul>
         </div>

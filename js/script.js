@@ -841,3 +841,21 @@ const doFilter = (cards) => {
 }
 
 doFilter(cards);
+
+
+
+
+let defaultChecked = false;
+const gridFilterRadio = document.querySelectorAll(".radio-group__input");
+
+function gridFilter(evt) {
+    gamesWrapper.style.gridTemplateColumns = `repeat(${evt.target?.getAttribute("data-columnsCount") || evt.getAttribute("data-columnsCount")}, minmax(100px, 1fr))`;
+}
+
+for (const radio of gridFilterRadio) {
+    if (!defaultChecked && radio.checked) {
+        defaultChecked = true;
+        gridFilter(radio);
+    }
+    radio.addEventListener("change", gridFilter);
+}

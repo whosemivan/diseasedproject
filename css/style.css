@@ -1198,8 +1198,7 @@ ul li {
 }
 
 .games__wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   max-width: 1410px;
   gap: 30px;
   width: 90%;
@@ -1262,7 +1261,7 @@ ul li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 270px;
+  box-sizing: border-box;
 }
 
 .games__card-price {
@@ -2194,6 +2193,18 @@ ul li {
 
 /* tablet */
 @media (max-width: 1550px) {
+  .games__card-info {
+    font-size: 10px;
+  }
+
+  .radio-group__block--pc {
+    display: none;
+  }
+
+  .radio-group__block--tb {
+    display: none;
+  }
+
   .header__content {
     max-width: 1105px;
   }
@@ -2470,6 +2481,11 @@ ul li {
 /* teblet 1 макет */
 
 @media (max-width: 990px) {
+
+  .radio-group {
+    display: none;
+  }
+
   .header__content {
     max-width: 680px;
     padding: 21px 60px;
@@ -2622,6 +2638,8 @@ ul li {
 
   .games__wrapper {
     max-width: 722px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .game__card {
