@@ -1385,7 +1385,7 @@ input[type="checkbox"]::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(17, 19, 23, 0.98);
+  /* background: rgba(17, 19, 23, 0.98); */
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   z-index: 3;
