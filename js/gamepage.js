@@ -11,6 +11,8 @@ const gamepageInfo = document.querySelector('.gamePage__requirements-info');
 const category = document.querySelector('.gamePage__gameplay-category');
 const gamesBlock = document.querySelector('.gamePage__buy-similar-games-block');
 
+const basketZone = document.querySelector('.shopping-cart__left-cards-block');
+
 const basketBtn = document.querySelector('.basket');
 
 let activeInfoPage = 'Описание';
@@ -69,7 +71,6 @@ for (let i = 0; i < gamepageBtns.length; i++) {
 
 const cards = JSON.parse(localStorage.getItem('cards'));
 
-console.log(cards);
 
 let cardsCopy = cards.slice();
 cardsCopy = cardsCopy.filter((it) => {
@@ -201,8 +202,45 @@ let card = basketCards.filter(it => {
 console.log(card);
 
 let basketDone = JSON.parse(localStorage.getItem("basket"));
-console.log(basketDone);
 
 basketBtn.addEventListener('click', () => {
-  localStorage.setItem("basket", JSON.stringify([...basketDone, card]));
+  if (basketDone.length === 0) {
+    localStorage.setItem("basket", JSON.stringify([...basketDone, ...card]));
+  } else {
+    for (let i = 0; i < basketDone.length; i++) {
+      if (basketDone[i].id !== id) {
+        localStorage.setItem("basket", JSON.stringify([...basketDone, ...card]));
+      }
+    }
+  }
+
+  renderBasket();
+
 });
+
+console.log(basketDone);
+
+const renderBasket = () => {
+  let basketDone = JSON.parse(localStorage.getItem("basket"));
+  for (card of basketDone) {
+    console.log(card);
+    basketZone.innerHTML += `
+  <div class="shopping-cart__card">
+  <div class="shopping-cart__card-block">
+    <div class="shopping-cart__card-text">
+      ${card.name}
+    </div>
+    <div class="shopping-cart__card-quantity">
+      <button class="shopping-cart__card-quantity-plus">+</button>
+      <p class="shopping-cart__card-quantity-number">1</p>
+      <button class="shopping-cart__card-quantity-minus">
+        -
+      </button>
+    </div>
+  </div>
+  </div>
+  `;
+  }
+};
+
+renderBasket();

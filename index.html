@@ -39,7 +39,7 @@
             <a href="faq.html" class="header__nav-link">FAQ & помощь</a>
           </li>
           <li>
-            <a href="#" class="header__nav-link">Корзина</a>
+            <a  data-remodal-target="basket" href="#" class="header__nav-link">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -82,7 +82,7 @@
             <a href="faq.html" class="header__adaptive-link">FAQ & помощь</a>
           </li>
           <li>
-            <a href="#" class="header__adaptive-link">Корзина</a>
+            <a data-remodal-target="basket" href="#" class="header__adaptive-link">Корзина</a>
           </li>
           <li>
             <a href="#" class="header__adaptive-nav-list-profile">
@@ -361,22 +361,26 @@
 
               <div class="radio-group__block radio-group__block--tb">
                 <div class="radio-group__wrapper">
-                  <input id="gridfour" type="radio" name="radio-button-tb" class="radio-group__input" data-columnsCount="3" checked />
+                  <input id="gridfour" type="radio" name="radio-button-tb" class="radio-group__input"
+                    data-columnsCount="3" checked />
                   <label for="gridfour" class="radio-group__label">3x1</label>
                 </div>
                 <div class="radio-group__wrapper">
-                  <input id="gridfour" type="radio" name="radio-button-tb" class="radio-group__input" data-columnsCount="2" />
+                  <input id="gridfour" type="radio" name="radio-button-tb" class="radio-group__input"
+                    data-columnsCount="2" />
                   <label for="gridfour" class="radio-group__label">2x1</label>
                 </div>
               </div>
 
               <div class="radio-group__block radio-group__block--pc">
                 <div class="radio-group__wrapper">
-                  <input id="gridfour" type="radio" name="radio-button" class="radio-group__input" checked data-columnsCount="4" />
+                  <input id="gridfour" type="radio" name="radio-button" class="radio-group__input" checked
+                    data-columnsCount="4" />
                   <label for="gridfour" class="radio-group__label">4x1</label>
                 </div>
                 <div class="radio-group__wrapper">
-                  <input id="gridfive" type="radio" name="radio-button" class="radio-group__input" data-columnsCount="5" />
+                  <input id="gridfive" type="radio" name="radio-button" class="radio-group__input"
+                    data-columnsCount="5" />
                   <label for="gridfive" class="radio-group__label">5x1</label>
                 </div>
               </div>
@@ -1356,7 +1360,7 @@
               <a href="faq.html" class="footer__questions-list-item-link">Faq & помощь</a>
             </li>
             <li class="footer__questions-list-item">
-              <a href="#" class="footer__questions-list-item-link">Корзина</a>
+              <a data-remodal-target="basket" href="#" class="footer__questions-list-item-link">Корзина</a>
             </li>
           </ul>
         </div>
@@ -1477,22 +1481,101 @@
   </div>
 
 
+  <div class="shopping-cart__container" data-remodal-id="basket">
+    <div class="shopping-cart__content">
+      <h2 class="shopping-cart-title">Корзина</h2>
+      <p class="shopping-cart-subtitle">
+        Ваши выбранные товары находяться здесь
+      </p>
+      <div class="shopping-cart__block">
+        <div class="shopping-cart__left-block">
+          <div class="shopping-cart__left-block-text">
+            <p class="shopping-cart__left-subtitle">
+              Окно просмотра выбранных товаров
+            </p>
+            <button data-remodal-action="close" class="shopping-cart__left-close "></button>
+          </div>
+          <h3 class="shopping-cart__left-title">Оплата товара</h3>
+          <p class="shopping-cart__left-text">Отмеченный товар</p>
+          <div class="shopping-cart__left-cards-block">
 
-  <!-- <div class="" > -->
-    <!-- <button  class=""></button> -->
-    <!-- Your modal content goes here -->
-  <!-- </div> -->
+          </div>
 
-  <!-- <button data-remodal-target="modal">Open Modal</button> -->
+          <div class="shopping-cart__total">
+            <div class="shopping-cart__total-price">
+              <p class="shopping-cart__text">К оплате</p>
+              <span class="shopping-cart__subtext">₽4999</span>
+            </div>
+            <div class="shopping-cart__total-block">
+              <div class="shopping-cart__total-promocode">
+                <button class="shopping-cart__input-btn"></button>
+                <input type="text" placeholder="Введите запрос" class="shopping-cart__input" />
+              </div>
+              <button class="shopping-cart__total-btn">Оплатить</button>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-cart__right-block">
+          <p class="shopping-cart__right-subtitle">
+            Популярные платежные системы:
+          </p>
+          <div class="shopping-cart__right-btns-block">
+            <div class="shopping-cart__right-btn-qiwi shopping-cart__right-btn--active">
+              <div class="shopping-cart__btn-title-img-qiwi"></div>
+            </div>
+            <div class="shopping-cart__right-btn-freekassa">
+              <div class="shopping-cart__btn-title-img-freekassa"></div>
+            </div>
+            <div class="shopping-cart__right-btn-visa">
+              <div class="shopping-cart__btn-title-img-visa"></div>
+            </div>
+            <div class="shopping-cart__right-btn-walletKz">
+              <div class="shopping-cart__btn-title-img-walletKz"></div>
+            </div>
+            <div class="shopping-cart__right-btn-walletUkr">
+              <div class="shopping-cart__btn-title-img-walletUkr"></div>
+            </div>
+            <div class="shopping-cart__right-btn-bitcoin">
+              <div class="shopping-cart__btn-title-img-bitcoin"></div>
+            </div>
+            <div class="shopping-cart__right-btn-sbp">
+              <div class="shopping-cart__btn-title-img-sbp"></div>
+              <div class="shopping-cart__btn-title-img-sbp-text"></div>
+            </div>
+            <div class="shopping-cart__right-btn-steam">
+              <div class="shopping-cart__btn-title-img-steam"></div>
+            </div>
+          </div>
 
+          <div class="shopping-cart__right-input-mail">
+            <button class="shopping-cart__right-input-btn"></button>
+            <input type="text" placeholder="Введите email" class="shopping-cart__right-input" />
+          </div>
+          <div class="shopping-cart__right-info-block">
+            <p class="shopping-cart__right-block-text">
+              Будьте внимательны! Указывайте только ту почту, к которой имеете
+              постоянный доступ.
+            </p>
+            <p class="shopping-cart__right-block-text">
+              На указанную почту приходит чек, а также содержимое цифрового
+              товара. В случае какой либо ошибки, в тикете обращения в
+              поддержку указывайте номер заказа, который придет на почту
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     $(document).ready(function () {
       $('[data-remodal-id=modal]').remodal();
+      $('[data-remodal-id=basket]').remodal();
     });
   </script>
   <script src="js/script.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/basket.js"></script>
 </body>
 
 </html>

@@ -432,7 +432,8 @@ let cards = [{
 
 localStorage.setItem('cards', JSON.stringify(cards));
 
-localStorage.setItem('basket', JSON.stringify([]));
+localStorage.getItem('basket') ? '' : localStorage.setItem('basket', JSON.stringify([]));
+
 
 for (let i = 0; i < topFilterBtns.length; i++) {
     topFilterBtns[i].addEventListener('click', () => {
