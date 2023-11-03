@@ -2188,6 +2188,9 @@ ul li {
   justify-content: center;
 }
 
+.radio-group__block--tb {
+  display: none;
+}
 
 /* Адаптив */
 
@@ -2197,11 +2200,11 @@ ul li {
     font-size: 10px;
   }
 
-  .radio-group__block--pc {
-    display: none;
+  .radio-group__block--tb {
+    display: flex;
   }
 
-  .radio-group__block--tb {
+  .radio-group__block--pc {
     display: none;
   }
 
