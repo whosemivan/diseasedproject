@@ -11,11 +11,13 @@ const gamepageInfo = document.querySelector('.gamePage__requirements-info');
 const category = document.querySelector('.gamePage__gameplay-category');
 const gamesBlock = document.querySelector('.gamePage__buy-similar-games-block');
 
+const basketBtn = document.querySelector('.basket');
+
 let activeInfoPage = 'Описание';
 
 function getQueryParams() {
-    var params = new URLSearchParams(window.location.search);
-    return Object.fromEntries(params.entries());
+  var params = new URLSearchParams(window.location.search);
+  return Object.fromEntries(params.entries());
 }
 
 const queryParams = getQueryParams();
@@ -28,6 +30,7 @@ const description = queryParams.description;
 const systemText = queryParams.systemText;
 const activation = queryParams.activation;
 const platform = queryParams.platform;
+const id = queryParams.id;
 
 previewLink[1].innerText = productName;
 title.innerText = `Купить ${productName}`;
@@ -41,26 +44,26 @@ gamepageInfo.innerText = `${description}`;
 category.innerText = platform;
 
 for (let i = 0; i < gamepageBtns.length; i++) {
-    gamepageBtns[i].addEventListener('click', () => {
-        for (let j = 0; j < gamepageBtns.length; j++) {
-            gamepageBtns[j].classList.remove('gamePage__requirements-btn--active');
-            activeInfoPage = '';
-        }
+  gamepageBtns[i].addEventListener('click', () => {
+    for (let j = 0; j < gamepageBtns.length; j++) {
+      gamepageBtns[j].classList.remove('gamePage__requirements-btn--active');
+      activeInfoPage = '';
+    }
 
-        gamepageBtns[i].classList.add('gamePage__requirements-btn--active');
-        activeInfoPage = gamepageBtns[i].innerText;
+    gamepageBtns[i].classList.add('gamePage__requirements-btn--active');
+    activeInfoPage = gamepageBtns[i].innerText;
 
-        console.log(activeInfoPage);
-        console.log(description);
+    console.log(activeInfoPage);
+    console.log(description);
 
-        if (activeInfoPage === 'Описание') {
-            gamepageInfo.innerText = `${description}`;
-        } else if (activeInfoPage === 'Системные требования') {
-            gamepageInfo.innerText = `${systemText}`;
-        } else if (activeInfoPage === 'Активация') {
-            gamepageInfo.innerText = `${activation}`;
-        }
-    });
+    if (activeInfoPage === 'Описание') {
+      gamepageInfo.innerText = `${description}`;
+    } else if (activeInfoPage === 'Системные требования') {
+      gamepageInfo.innerText = `${systemText}`;
+    } else if (activeInfoPage === 'Активация') {
+      gamepageInfo.innerText = `${activation}`;
+    }
+  });
 }
 
 
@@ -70,7 +73,7 @@ console.log(cards);
 
 let cardsCopy = cards.slice();
 cardsCopy = cardsCopy.filter((it) => {
-    return it.platform === platform;
+  return it.platform === platform;
 })
 cardsCopy = cardsCopy.slice(0, 3)
 gamesBlock.innerHTML = `
@@ -108,7 +111,7 @@ gamesBlock.innerHTML = `
                     item.platform === "steam" ? `<div class="games__card-icon-steam">Steam</div>` : ``
                   }
                   ${
-                    item.platform === "mojang" || arr[card].platform === "Minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
+                    item.platform === "mojang" || item.platform === "Minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
                   }
     
                   ${
@@ -188,3 +191,18 @@ gamesBlock.innerHTML = `
         ))
     }
 `;
+
+
+let basketCards = cards.slice();
+let card = basketCards.filter(it => {
+  return it.id.toString() === id;
+})
+
+console.log(card);
+
+let basketDone = JSON.parse(localStorage.getItem("basket"));
+console.log(basketDone);
+
+basketBtn.addEventListener('click', () => {
+  localStorage.setItem("basket", JSON.stringify([...basketDone, card]));
+});

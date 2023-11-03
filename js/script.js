@@ -26,6 +26,7 @@ let maxValue = 10000;
 let sortBtnActive;
 
 let cards = [{
+        id: 1,
         name: 'Metro Last Light Complete Edition',
         image: './images/metro.jpg',
         price: 1000,
@@ -43,6 +44,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 2,
         name: 'Metro Last Light Complete Edition',
         image: './images/spotify.jpg',
         price: 5000,
@@ -59,6 +61,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 3,
         name: 'Metro Last Light Complete Edition',
         image: './images/minecraft.jpg',
         price: 340,
@@ -75,6 +78,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 4,
         name: 'Metro Last Light Complete Edition',
         image: './images/spotify.jpg',
         price: 340,
@@ -91,6 +95,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 5,
         name: 'Metro Last Light Complete Edition',
         image: './images/minecraft.jpg',
         price: 340,
@@ -107,6 +112,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 6,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -124,6 +130,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 7,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -142,6 +149,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 8,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -158,6 +166,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 9,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -175,6 +184,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 10,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -192,6 +202,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 11,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -209,6 +220,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 12,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -225,6 +237,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 13,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -238,6 +251,7 @@ let cards = [{
         date: "2023-04-23"
     },
     {
+        id: 14,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -255,6 +269,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 15,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -272,6 +287,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 16,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -288,6 +304,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 17,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -304,6 +321,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 18,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -321,6 +339,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 19,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -337,6 +356,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 20,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -354,6 +374,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 21,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -371,6 +392,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 22,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -388,6 +410,7 @@ let cards = [{
         activationText: 'Text'
     },
     {
+        id: 23,
         name: 'Lalal',
         image: './images/metro.jpg',
         price: 340,
@@ -408,6 +431,8 @@ let cards = [{
 ];
 
 localStorage.setItem('cards', JSON.stringify(cards));
+
+localStorage.setItem('basket', JSON.stringify([]));
 
 for (let i = 0; i < topFilterBtns.length; i++) {
     topFilterBtns[i].addEventListener('click', () => {
@@ -482,7 +507,7 @@ const renderCards = (arr) => {
     gamesWrapper.innerHTML = '';
     for (let card in arr) {
         const gameCard = `
-        <a href="gamepage.html?productName=${arr[card].name}&image=${arr[card].image}&price=${arr[card].price}&count=${arr[card].count}&buyers=${arr[card].buyers}&description=${arr[card].description}&systemText=${arr[card].systemText}&activation=${arr[card].activationText}&platform=${arr[card].platform}" class="game__card">
+        <a href="gamepage.html?productName=${arr[card].name}&image=${arr[card].image}&price=${arr[card].price}&count=${arr[card].count}&buyers=${arr[card].buyers}&description=${arr[card].description}&systemText=${arr[card].systemText}&activation=${arr[card].activationText}&platform=${arr[card].platform}&id=${arr[card].id}" class="game__card">
         <div
           class="game__card-img"
           style="background-image: url('${arr[card].image}')"
