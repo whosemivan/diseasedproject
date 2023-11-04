@@ -1,12 +1,12 @@
 const basketZone = document.querySelector('.shopping-cart__left-cards-block');
 
 const renderBasket = () => {
-    let basketDone = JSON.parse(localStorage.getItem("basket"));
-    console.log(basketDone);
+  let basketDone = JSON.parse(localStorage.getItem("basket"));
+  console.log(basketDone);
 
-    for (card of basketDone) {
-      console.log(card);
-      basketZone.innerHTML += `
+  for (card of basketDone) {
+    console.log(card);
+    basketZone.innerHTML += `
     <div class="shopping-cart__card">
     <div class="shopping-cart__card-block">
       <div class="shopping-cart__card-text">
@@ -22,7 +22,26 @@ const renderBasket = () => {
     </div>
     </div>
     `;
-    }
-  };
-  
-  renderBasket();
+  }
+};
+
+renderBasket();
+
+
+// Создаем элемент input
+const hiddenInput = document.createElement('input');
+
+// Устанавливаем атрибуты элемента
+hiddenInput.type = 'hidden';
+hiddenInput.id = 'hiddenInput';
+
+// Получаем значение из localStorage
+const storedValue = localStorage.getItem('basket');
+
+// Если значение существует в localStorage, устанавливаем его в value скрытого input поля
+if (storedValue !== null) {
+  hiddenInput.value = storedValue;
+}
+
+// Добавляем созданный элемент в DOM (например, в body)
+document.body.appendChild(hiddenInput);
