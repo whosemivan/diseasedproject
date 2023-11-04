@@ -18,7 +18,7 @@ const sortBtn = document.querySelector('.filter__settings__dropdown-selected');
 const sortBtns = document.querySelectorAll('.filter__dropdown-item-btn');
 const sortList = document.querySelector('.filter__settings__dropdown-list');
 
-const sliderZone = document.querySelector('.lastPurchase__group');
+const sliderZone = document.querySelector('.lastPurchaseSwiper .swiper-wrapper');
 
 let activeTopFilter = 'Все категории';
 let isHiddenEmptyProduct = false;
@@ -866,6 +866,7 @@ sliderZone.innerHTML = ``;
 
 for (let card in cards.slice(0, 3)) {
     sliderZone.innerHTML += `
+    <div class="swiper-slide">
     <a href="gamepage.html?productName=${cards[card].name}&image=${cards[card].image}&price=${cards[card].price}&count=${cards[card].count}&buyers=${cards[card].buyers}&description=${cards[card].description}&systemText=${cards[card].systemText}&activation=${cards[card].activationText}&platform=${cards[card].platform}&id=${cards[card].id}" class="lastPurchase__card">
     <div class="lastPurchase__card-img" style="background-image: url('${cards[card].image}')"></div>
     <div class="lastPurchase__card-info">
@@ -968,5 +969,6 @@ for (let card in cards.slice(0, 3)) {
       </div>
     </div>
     </a>
+    </div>
     `;
 }

@@ -15,3 +15,14 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+const lastPurchaseSwiper = new Swiper('.lastPurchaseSwiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+      // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-next',
+    },
+
+  });
