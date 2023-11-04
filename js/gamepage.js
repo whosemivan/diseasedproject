@@ -10,6 +10,7 @@ const gamepageBtns = document.querySelectorAll('.gamePage__requirements-btn');
 const gamepageInfo = document.querySelector('.gamePage__requirements-info');
 const category = document.querySelector('.gamePage__gameplay-category');
 const gamesBlock = document.querySelector('.gamePage__buy-similar-games-block');
+const priceEl = document.querySelector('.shopping-cart__subtext');
 
 const basketZone = document.querySelector('.shopping-cart__left-cards-block');
 
@@ -194,34 +195,41 @@ gamesBlock.innerHTML = `
 `;
 
 
-let basketCards = cards.slice();
-let card = basketCards.filter(it => {
-  return it.id.toString() === id;
-})
-
-console.log(card);
-
-let basketDone = JSON.parse(localStorage.getItem("basket"));
 
 basketBtn.addEventListener('click', () => {
+  let basketCards = cards.slice();
+  let card = basketCards.filter(it => {
+    return it.id.toString() === id;
+  })
+  console.log(card[0]);
+  let basketDone = JSON.parse(localStorage.getItem("basket"));
+
   if (basketDone.length === 0) {
-    localStorage.setItem("basket", JSON.stringify([...basketDone, ...card]));
+    localStorage.setItem("basket", JSON.stringify([...basketDone, card[0]]));
   } else {
     for (let i = 0; i < basketDone.length; i++) {
-      if (basketDone[i].id !== id) {
-        localStorage.setItem("basket", JSON.stringify([...basketDone, ...card]));
+      if (basketDone[i].id.toString() !== id) {
+        localStorage.setItem("basket", JSON.stringify([...basketDone, card[0]]));
       }
     }
   }
 
   renderBasket();
-
 });
 
-console.log(basketDone);
 
 const renderBasket = () => {
   let basketDone = JSON.parse(localStorage.getItem("basket"));
+
+  let priceNumber = 0;
+
+  for (let i = 0; i < basketDone.length; i++) {
+    priceNumber += basketDone[i].price;
+  }
+
+  priceEl.innerText = `₽${priceNumber}`;
+  basketZone.innerHTML = ``;
+
   for (card of basketDone) {
     console.log(card);
     basketZone.innerHTML += `

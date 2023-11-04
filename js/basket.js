@@ -1,8 +1,16 @@
 const basketZone = document.querySelector('.shopping-cart__left-cards-block');
+const price = document.querySelector('.shopping-cart__subtext');
 
 const renderBasket = () => {
   let basketDone = JSON.parse(localStorage.getItem("basket"));
   console.log(basketDone);
+  let priceNumber = 0;
+
+  for (let i = 0; i < basketDone.length; i++) {
+    priceNumber += basketDone[i].price;
+  }
+  
+  price.innerText = `₽${priceNumber}`;
 
   for (card of basketDone) {
     console.log(card);
