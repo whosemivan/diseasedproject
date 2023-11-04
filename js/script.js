@@ -879,6 +879,9 @@ function gridFilter(evt) {
 
 for (const radio of gridFilterRadio) {
     if (!defaultChecked && radio.checked) {
+      // if (window.innerWidth > ) {
+        
+      // }
         defaultChecked = true;
         gridFilter(radio);
     }

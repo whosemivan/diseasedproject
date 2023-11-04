@@ -3,9 +3,11 @@ function searchItems() {
     const cards = JSON.parse(localStorage.getItem("cards"));
     const searchTerm = document.querySelector('.search-popup__input').value.toLowerCase();
     const searchResults = cards.filter(card => card.name.toLowerCase().includes(searchTerm));
+    const resultBlock = document.querySelector('.search-popup__results-container');
 
+    resultBlock.classList.remove('search-popup__results-container--hidden');
     const searchResultsDiv = document.querySelector('.search-popup__results-cards');
-    searchResultsDiv.innerHTML = '';
+    // searchResultsDiv.innerHTML = '';
 
     if (searchResults.length === 0) {
         searchResultsDiv.innerHTML = 'No matching items found.';

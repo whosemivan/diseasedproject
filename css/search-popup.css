@@ -127,6 +127,10 @@
     overflow: scroll;
 }
 
+.search-popup__results-container--hidden {
+    display: none;
+}
+
 .search-popup__results-text {
     color: #62646c;
     font-size: 12px;
@@ -364,11 +368,6 @@
     display: flex;
     justify-content: center;
 }
-
-.radio-group__block--tb {
-    display: none;
-}
-
 
 
 
