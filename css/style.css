@@ -1525,6 +1525,7 @@ ul li {
 
 .lastPurchase__card {
   display: flex;
+  text-decoration: none;
   flex: 1 1;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(17, 19, 23, 0.86);
