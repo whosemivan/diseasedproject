@@ -484,6 +484,7 @@ body::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .slider__img::after {
@@ -515,7 +516,7 @@ body::after {
 }
 
 .slider__logo {
-  background-image: url("../images/icons/gamename.svg");
+  /* background-image: url("../images/icons/gamename.svg"); */
   width: 40px;
   height: 40px;
   background-position: center;
@@ -748,6 +749,16 @@ body::after {
   display: flex;
   width: calc(100% - 50px);
   padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  background: #171b20;
+}
+
+
+.filter__block-container {
+  display: flex;
+  width: 100%;
+  /* padding: 25px; */
   justify-content: space-between;
   align-items: center;
   background: #171b20;
@@ -2633,8 +2644,8 @@ ul li {
   }
 
   .slider__logo {
-    width: 95px;
-    height: 35px;
+    /* width: 95px;
+    height: 35px; */
     background-size: cover;
   }
 
@@ -2666,6 +2677,11 @@ ul li {
   }
 
   .filter__categories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__block-container{
     display: flex;
     flex-wrap: wrap;
   }
@@ -2925,6 +2941,16 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter__block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
   }
 
   .filter__categoryName {

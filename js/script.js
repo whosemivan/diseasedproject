@@ -42,7 +42,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 2,
@@ -59,7 +60,8 @@ let cards = [{
         date: "2023-05-11",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 3,
@@ -76,7 +78,8 @@ let cards = [{
         date: "2022-01-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 4,
@@ -93,7 +96,8 @@ let cards = [{
         date: "2023-08-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 5,
@@ -110,7 +114,8 @@ let cards = [{
         date: "2022-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 6,
@@ -128,7 +133,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 7,
@@ -147,7 +153,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 8,
@@ -164,7 +171,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 9,
@@ -182,7 +190,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 10,
@@ -200,7 +209,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 11,
@@ -218,7 +228,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 12,
@@ -235,7 +246,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 13,
@@ -249,7 +261,8 @@ let cards = [{
         isDonat: false,
         count: 0,
         buyers: 8,
-        date: "2023-04-23"
+        date: "2023-04-23",
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 14,
@@ -267,7 +280,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 15,
@@ -285,7 +299,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 16,
@@ -302,7 +317,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 17,
@@ -319,7 +335,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 18,
@@ -337,7 +354,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 19,
@@ -354,7 +372,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 20,
@@ -372,7 +391,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 21,
@@ -390,7 +410,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 22,
@@ -408,7 +429,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
     {
         id: 23,
@@ -426,7 +448,8 @@ let cards = [{
         date: "2023-04-23",
         description: 'Text',
         systemText: 'Text',
-        activationText: 'Text'
+        activationText: 'Text',
+        sliderLogo: './images/icons/gamename.svg'
     },
 
 ];
@@ -980,7 +1003,7 @@ for (let card in cards.slice(0, 3)) {
     <a href="gamepage.html?productName=${cards[card].name}&image=${cards[card].image}&price=${cards[card].price}&count=${cards[card].count}&buyers=${cards[card].buyers}&description=${cards[card].description}&systemText=${cards[card].systemText}&activation=${cards[card].activationText}&platform=${cards[card].platform}&id=${cards[card].id}">
       <img src="${cards[card].image}" class="slider__img"></img>
       <div class="slider__text">
-        <div class="slider__logo"></div>
+        <img src="${cards[card].sliderLogo}" class="slider__logo"></img>
         <div class="game__info">
           <a class="rightArrow"></a>
           <div class="slider__title">${cards[card].name}</div>
