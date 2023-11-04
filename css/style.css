@@ -1891,8 +1891,8 @@ ul li {
 }
 
 .shopping-cart__block {
-  width: 875px;
-  height: 601px;
+  /* width: 875px; */
+  /* height: 601px; */
   display: flex;
 }
 
