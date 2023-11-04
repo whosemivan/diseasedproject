@@ -751,7 +751,7 @@
     }
 
     .shopping-cart__right-input-mail {
-        margin: 30px 0 20px 0;
+        margin: 103px 0 20px 0;
         width: 100%;
     }
 
@@ -780,7 +780,18 @@
     }
 
     .shopping-cart__input-btn {
-        left: 0%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .shopping-cart__total-promocode {
+        position: relative;
+    }
+
+    .shopping-cart__input-btn::before {
+        left: 0;
     }
 
     .shopping-cart__total-block {
