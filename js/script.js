@@ -17,7 +17,7 @@ const filters = document.querySelector('.filter__block');
 const sortBtn = document.querySelector('.filter__settings__dropdown-selected');
 const sortBtns = document.querySelectorAll('.filter__dropdown-item-btn');
 const sortList = document.querySelector('.filter__settings__dropdown-list');
-
+const firstScreenSlider = document.querySelector('.first-screen__slider .swiper-wrapper');
 const sliderZone = document.querySelector('.lastPurchaseSwiper .swiper-wrapper');
 
 let activeTopFilter = 'Все категории';
@@ -970,5 +970,113 @@ for (let card in cards.slice(0, 3)) {
     </div>
     </a>
     </div>
+    `;
+}
+
+
+for (let card in cards.slice(0, 3)) {
+    firstScreenSlider.innerHTML += `
+    <div class="swiper-slide">
+    <a href="gamepage.html?productName=${cards[card].name}&image=${cards[card].image}&price=${cards[card].price}&count=${cards[card].count}&buyers=${cards[card].buyers}&description=${cards[card].description}&systemText=${cards[card].systemText}&activation=${cards[card].activationText}&platform=${cards[card].platform}&id=${cards[card].id}">
+      <img src="${cards[card].image}" class="slider__img"></img>
+      <div class="slider__text">
+        <div class="slider__logo"></div>
+        <div class="game__info">
+          <a class="rightArrow"></a>
+          <div class="slider__title">${cards[card].name}</div>
+          <div class="game__info-items">
+            ${
+                cards[card].isGameAcc ? `<div class="game__info-item">Аккаунты</div>` : ``
+              }
+              ${
+                cards[card].isDonat ? `<div class="game__info-item">Донат</div>`: ``
+              }
+              ${
+                cards[card].isKey ? `<div class="game__info-item">Ключ</div>` : ``
+              }
+              ${
+                cards[card].isService ? `<div class="game__info-item">Сервисы</div>` : ``
+              }
+            
+              
+              ${
+                cards[card].platform === "steam" ? `<div class="game__info-item">Steam</div>` : ``
+              }
+              ${
+                cards[card].platform === "mojang" || cards[card].platform === "Minecraft" ? `<div class="game__info-item">Mojang</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "epic games" ? `<div class="game__info-item">Epic Games</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "random steam" ? `<div class="game__info-item">Random Steam</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "ubisoft" ? `<div class="game__info-item">Ubisoft</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "ea play" ? `<div class="game__info-item">EA play</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "rockstar" ? `<div class="game__info-item">Rockstar</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "riot" ? `<div class="game__info-item">Riot</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "fortnite" ? `<div class="game__info-item">Fortnite</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "genshin impact" ? `<div class="game__info-item">Genshin impact</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "vk play" ? `<div class="game__info-item">VK Play</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "gog" ? `<div class="game__info-item">GOG</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "xbox" ? `<div class="game__info-item">Xbox</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "playstation" ? `<div class="game__info-item">Playstation</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "nintendo" ? `<div class="game__info-item">Nintendo</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "mobile" ? `<div class="game__info-item">Mobile</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "roblox" ? `<div class="game__info-item">Roblox</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "software" ? `<div class="game__info-item">Software</div>` : ``
+              }
+    
+              ${
+                cards[card].platform === "сервисы" ? `<div class="game__info-item">Сервисы</div>` : ``
+              }
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
     `;
 }
