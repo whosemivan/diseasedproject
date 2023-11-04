@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="css/terms.css" />
     <link rel="stylesheet" href="css/search-popup.css" />
@@ -11,7 +12,6 @@
     <link rel="stylesheet" href="./Remodal-1.1.1/dist/remodal.css">
     <link rel="stylesheet" href="./Remodal-1.1.1/dist/remodal-default-theme.css">
     <script src="./Remodal-1.1.1/dist/remodal.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
@@ -91,7 +91,7 @@
         </button>
       </div>
 
-      <div class="header__adaptive__block">
+      <div class="header__adaptive__block header__adaptive__block--hidden">
         <nav class="header__adaptive-nav">
           <ul class="header__adaptive-nav-list">
             <li>
@@ -443,6 +443,23 @@
                 поддержку указывайте номер заказа, который придет на почту
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-popup__container" data-remodal-id="modal">
+      <div class="search-popup__content">
+        <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
+        <p class="search-popup-subtitle">
+          Введите название игры, сервиса или любого товара
+        </p>
+        <button class="search-popup__input-btn"></button>
+        <input type="text" placeholder="Введите запрос" class="search-popup__input" />
+        <div class="search-popup__results-container">
+          <p class="search-popup__results-text">Результаты поиска</p>
+          <div class="search-popup__results-cards">
+  
           </div>
         </div>
       </div>
