@@ -624,7 +624,7 @@ body::after {
 /* Каталог */
 .catalog {
   color: white;
-  margin: 290px 0;
+  margin: 83px 0;
 }
 
 .catalog__wrapper {
@@ -1380,6 +1380,138 @@ ul li {
   height: 15px;
 }
 
+.games__card-icon-epicgames {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-epicgames::before {
+  content: "";
+  background-image: url("../images/icons/epicgamesIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-uplay {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-uplay::before {
+  content: "";
+  background-image: url("../images/icons/ubisoft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-account {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-account::before {
+  content: "";
+  background-image: url("../images/icons/account.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-random {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-random::before {
+  content: "";
+  background-image: url("../images/icons/randomIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-service {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-service::before {
+  content: "";
+  background-image: url("../images/icons/services.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-serviceSettings {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-serviceSettings::before {
+  content: "";
+  background-image: url("../images/icons/serviceSettings.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
 .games__card-icon-key {
   display: flex;
   position: relative;
@@ -1394,7 +1526,7 @@ ul li {
 
 .games__card-icon-key::before {
   content: "";
-  background-image: url("../images/icons/key.svg");
+  background-image: url("../images/icons/keyIconGradient.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2530,9 +2662,9 @@ ul li {
     display: none;
   }
 
-  .header__content {
+  /* .header__content {
     max-width: 1105px;
-  }
+  } */
 
   .header__nav {
     padding: 30px 0 30px 15px;
@@ -2589,7 +2721,7 @@ ul li {
   }
 
   .first-screen__banner {
-    width: 96%;
+    width: 100%;
   }
 
   .first-screen__banner-subtitle-text {
@@ -2662,12 +2794,12 @@ ul li {
   }
 
   .first-screen__btns {
-    width: 121%;
+    width: 116%;
     justify-content: space-between;
   }
 
   .first-screen__btn {
-    width: 461px;
+    width: 550px;
   }
 
   .first-screen__subtext {
@@ -2977,7 +3109,7 @@ ul li {
   }
 
   .games__wrapper {
-    max-width: 722px;
+    max-width: 550px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -3162,7 +3294,7 @@ ul li {
 }
 
 /* mobile */
-@media (max-width: 660px) {
+@media (max-width: 800px) {
   .nav__logo {
     width: 60px;
     height: 30px;

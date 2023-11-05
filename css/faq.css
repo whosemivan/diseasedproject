@@ -755,7 +755,7 @@ body::after {
     flex-direction: column;
   }
   .faq-help__text-block {
-    height: 10%;
+    height: 13%;
   }
   .faq-help__questions-cards {
     width: 100%;

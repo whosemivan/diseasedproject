@@ -406,7 +406,7 @@ body::after {
 }
 
 .gamePage__info-img {
-  height: 340px;
+  height: 326px;
   width: 171px;
   background-size: contain;
   background-position: center;
@@ -2457,7 +2457,7 @@ input[type="checkbox"]::before {
   }
 
   .gamePage__gameplay-img {
-    height: 100%;
+    height: 97%;
     object-fit: cover;
   }
 
@@ -2493,7 +2493,7 @@ input[type="checkbox"]::before {
     margin: 0 0 19px 0;
     width: 100%;
     height: 14%;
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .gamePage__gameplay-category {
@@ -2627,7 +2627,7 @@ input[type="checkbox"]::before {
 
   .gamePage__info {
     width: 89%;
-    height: 27%;
+    height: 23%;
   }
 
   .gamePage__requirements {
