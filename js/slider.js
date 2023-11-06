@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.first-screen__slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -15,17 +15,18 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
 const lastPurchaseSwiper = new Swiper('.lastPurchaseSwiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  allowTouchMove: false,
   breakpoints: {
-    // when window width is >= 480px
     1104: {
       slidesPerView: 1,
       spaceBetween: 50
     },
-    // when window width is >= 640px
     1410: {
       slidesPerView: 3,
       spaceBetween: 30
@@ -33,8 +34,8 @@ const lastPurchaseSwiper = new Swiper('.lastPurchaseSwiper', {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-prev',
-    prevEl: '.swiper-button-next',
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
   },
 
 });

@@ -892,7 +892,7 @@ for (const radio of gridFilterRadio) {
 
 sliderZone.innerHTML = ``;
 
-for (let card in cards.slice(0, 3)) {
+for (let card in cards.slice(0, 6)) {
     sliderZone.innerHTML += `
     <div class="swiper-slide">
     <a href="gamepage.html?productName=${cards[card].name}&image=${cards[card].image}&price=${cards[card].price}&count=${cards[card].count}&buyers=${cards[card].buyers}&description=${cards[card].description}&systemText=${cards[card].systemText}&activation=${cards[card].activationText}&platform=${cards[card].platform}&id=${cards[card].id}" class="lastPurchase__card">
