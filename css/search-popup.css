@@ -64,6 +64,38 @@
     font-variant: small-caps;
 }
 
+.search-popup__input-group {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.search-popup__input-group .search-popup__input__btn {
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    display: block;
+    background-image: url("../images/icons/BtnSearch.svg");
+    text-align: center;
+    pointer-events: none;
+}
+
+.search-popup__input__btn:before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/BtnSearch.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+    width: 16px;
+    height: 16px;
+}
+
 .search-popup__input {
     display: flex;
     align-items: center;
@@ -72,7 +104,7 @@
     background: #181b20;
     color: #dbdbdb;
     border: none;
-    width: 75%;
+    width: calc(100% - 144px);
     max-width: 1319px;
     padding: 0 65px 0px 79px;
     text-align: left;
@@ -85,6 +117,7 @@
     line-height: 73.5px;
     font-variant: small-caps;
 }
+
 
 .search-popup__input:focus {
     color: #dbdbdb;
@@ -103,26 +136,10 @@
     margin: 0 46px 5px 0;
 }
 
-/* 
-.search-popup__input-btn::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/icons/BtnSearch.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-size: contain;
-    width: 16px;
-    height: 16px;
-    top: 42px;
-    left: 270px;
-    left: 500px;
-} */
-
 .search-popup__results-container {
-    width: 81%;
+    width: calc(100% - 60px);
     /* height: 400px; */
-    margin: 26px 0 0 0;
+    margin: 60px 0 0 0;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.03);
     background: #171b20;
@@ -143,14 +160,14 @@
     text-transform: uppercase;
 }
 
-.search-popup__input-container {
+/* .search-popup__input-container {
     width: 84%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     background: #181b20;
-}
+} */
 
 .search-popup__results-cards {
     display: flex;
@@ -176,7 +193,7 @@
     background-image: url("./images/spotify.jpg");
     width: 64px;
     height: 56px;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,12 +224,8 @@
     gap: 5px;
 }
 
-.results-card-group-icons {
-    display: flex;
-}
-
 .results-card-info {
-    width: 81%;
+    width: calc(100% - 40px);
 }
 
 .results-card-icon-info {
@@ -278,7 +291,8 @@
     content: "";
     background: rgba(255, 255, 255, 0.03);
     position: absolute;
-    left: 150px;
+    top: 15%;
+    left: 135%;
     min-height: 20px;
     width: 1px;
 }
@@ -359,7 +373,7 @@
     height: 11px;
     padding: 2px;
     top: 0px;
-    left: 450px;
+    left: 680px;
     justify-content: center;
     gap: 3px;
     border-radius: 8px;
@@ -377,7 +391,7 @@
 .results-card-btn::before {
     content: "";
     position: absolute;
-    background-image: url("../images/icons/rightArrow.svg");
+    background-image: url("../images/icons/linkbtnIcon.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -389,7 +403,7 @@
 
 
 
-@media (max-width: 660px) {
+@media (max-width: 990px) {
     /* Search popup */
 
     .search-popup__content {
@@ -413,10 +427,11 @@
 
     .search-popup__input {
         /* width: 50%; */
-        width: calc(100% - 73px);
-        padding: 0 20px 0 53px;
+        width: calc(100% - 81px);
+        padding: 0 0px 0 81px;
         font-size: 16px;
     }
+
 
     .search-popup__input-container {
         width: 90%;
@@ -426,13 +441,18 @@
         background: #181b20;
     }
 
+    .search-popup__input-group .search-popup__input__btn {
+        top: 27px;
+        left: 49px;
+    }
+
     .search-popup__results-container {
-        width: 80%;
+        width: 90%;
     }
 
     .results-card-img {
-        width: 50px;
-        height: 50px;
+        width: 64px;
+        height: 56px;
     }
 
     .results-card-icon-info,
@@ -442,11 +462,17 @@
         width: 30px;
     }
 
+    .results-card-price {
+        border-radius: 20px;
+    }
+
     .results-card-price::before {
         display: none;
     }
-
+    .results-card-info {
+        width: 70%;
+    }
     .results-card-icons {
-        gap: 5px;
+        gap: 24px;
     }
 }
