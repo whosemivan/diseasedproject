@@ -35,6 +35,36 @@ body::after {
   filter: alpha(opacity=25);
 }
 
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  bottom: 116px;
+  left: 0;
+  background: transparent;
+  width: 100%;
+}
+
+.swiper-scrollbar-drag {
+  background: rgba(118, 219, 161, 1);
+  height: 6px;
+  border-radius: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: auto;
+  bottom: 135px;
+}
+
+.swiper-button-prev {
+  left: auto;
+  right: 50px;
+}
+
 /* header */
 
 .header {
@@ -472,7 +502,7 @@ body::after {
 
 .first-screen__slider {
   width: 41%;
-  height: auto;
+  height: 845px;
   flex-direction: column;
   z-index: 10;
 }
@@ -2650,6 +2680,22 @@ ul li {
 
 /* tablet */
 @media (max-width: 1550px) {
+
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 31%;
+    left: 0;
+    background: transparent;
+    width: 100%;
+  }
+
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: auto;
+    bottom: 355px;
+  }
+
   .games__card-info {
     font-size: 10px;
   }
@@ -2940,10 +2986,22 @@ ul li {
   }
 }
 
-/* teblet 1 макет */
+/* tablet 1 макет */
+
+@media (max-width: 1000px) {
+
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 110px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 135px;
+  }
+}
 
 @media (max-width: 990px) {
-
   .radio-group {
     display: none;
   }
@@ -3295,6 +3353,17 @@ ul li {
 
 /* mobile */
 @media (max-width: 800px) {
+
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 110px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 115px;
+  }
+
   .nav__logo {
     width: 60px;
     height: 30px;
