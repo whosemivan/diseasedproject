@@ -35,59 +35,6 @@ body::after {
   filter: alpha(opacity=25);
 }
 
-.swiper-horizontal>.swiper-scrollbar,
-.swiper-scrollbar.swiper-scrollbar-horizontal {
-  bottom: 116px;
-  left: 0;
-  background: transparent;
-  width: 100%;
-}
-
-.swiper-scrollbar-drag {
-  background: rgba(118, 219, 161, 1);
-  height: 6px;
-  border-radius: 0;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: "";
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  top: auto;
-  bottom: 135px;
-}
-
-.swiper-button-prev {
-  left: auto;
-  right: 50px;
-}
-
-.slider-button-prev {
-  display: flex;
-  width: 15px;
-  height: auto;
-  position: absolute;
-  top: 56%;
-  transform: translate(0, -50%);
-  left: -30px;
-  z-index: 100;
-  cursor: pointer;
-}
-.slider-button-next {
-  display: flex;
-  width: 15px;
-  height: auto;
-  position: absolute;
-  top: 56%;
-  transform: translate(0, -50%);
-  right: -30px;
-  z-index: 100;
-  cursor: pointer;
-}
-
 /* header */
 
 .header {
@@ -337,6 +284,7 @@ body::after {
   letter-spacing: 0.28px;
 }
 
+
 /* first-screen */
 
 .first-screen__wrapper {
@@ -361,14 +309,26 @@ body::after {
   flex-wrap: wrap;
 }
 
-.first-screen__pageName {
-  text-transform: uppercase;
-  color: rgba(229, 229, 229, 0.8);
-  font-weight: bold;
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
   margin: 30px 0;
-  width: 30%;
 }
 
+.breadcrumb li a{
+  color: rgba(229, 229, 229, 0.5);
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
 .first-screen__subtext {
   display: flex;
   align-items: center;
@@ -525,7 +485,7 @@ body::after {
 
 .first-screen__slider {
   width: 41%;
-  height: 845px;
+  height: auto;
   flex-direction: column;
   z-index: 10;
 }
@@ -2703,22 +2663,6 @@ ul li {
 
 /* tablet */
 @media (max-width: 1550px) {
-
-  .swiper-horizontal>.swiper-scrollbar,
-  .swiper-scrollbar.swiper-scrollbar-horizontal {
-    bottom: 31%;
-    left: 0;
-    background: transparent;
-    width: 100%;
-  }
-
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: auto;
-    bottom: 355px;
-  }
-
   .games__card-info {
     font-size: 10px;
   }
@@ -3009,22 +2953,10 @@ ul li {
   }
 }
 
-/* tablet 1 макет */
-
-@media (max-width: 1000px) {
-
-  .swiper-horizontal>.swiper-scrollbar,
-  .swiper-scrollbar.swiper-scrollbar-horizontal {
-    bottom: 110px;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    bottom: 135px;
-  }
-}
+/* teblet 1 макет */
 
 @media (max-width: 990px) {
+
   .radio-group {
     display: none;
   }
@@ -3254,6 +3186,7 @@ ul li {
   .footer__about-container {
     flex-direction: column;
     max-width: 722px;
+    width: 80%;
     padding: 0 0 30px 0;
   }
 
@@ -3376,17 +3309,6 @@ ul li {
 
 /* mobile */
 @media (max-width: 800px) {
-
-  .swiper-horizontal>.swiper-scrollbar,
-  .swiper-scrollbar.swiper-scrollbar-horizontal {
-    bottom: 110px;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    bottom: 115px;
-  }
-
   .nav__logo {
     width: 60px;
     height: 30px;

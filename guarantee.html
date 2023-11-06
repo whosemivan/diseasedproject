@@ -121,10 +121,18 @@
   <section class="quarantee">
     <h2 class="visually-hidden">Faq & помощь</h2>
     <div class="quarantee__wrapper">
-      <div class="quarantee__links">
-        <a href="index.html" class="quarantee-link">Главная</a>
-        <a href="guarantee.html" class="quarantee-link">Гарантии</a>
-      </div>
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="index.html">
+            <span itemprop="home">Главная</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="guarantee.html">
+            <span itemprop="guarantee">Гарантии</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
       <div class="quarantee__text-block">
         <div class="quarantee__title-block">
           <p class="quarantee__subtitle">Diseased</p>
@@ -399,6 +407,28 @@
       </div>
     </div>
   </footer>
+
+  <div class="search-popup__container" data-remodal-id="modal">
+    <div class="search-popup__content">
+      <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
+      <p class="search-popup-subtitle">
+        Введите название игры, сервиса или любого товара
+      </p>
+      <div class="search-popup__input-group"> 
+        <span class="search-popup__input__btn"></span>
+        <input type="text" placeholder="Введите запрос" class="search-popup__input" />
+      </div>
+      
+      <div class="search-popup__results-container search-popup__results-container--hidden">
+        <p class="search-popup__results-text">Результаты поиска</p>
+        <div class="search-popup__results-cards">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="shopping-cart__container" data-remodal-id="basket">
     <div class="shopping-cart__content">
       <h2 class="shopping-cart-title">Корзина</h2>
@@ -485,69 +515,6 @@
     </div>
   </div>
 
-  <div class="search-popup__container" data-remodal-id="modal">
-    <div class="search-popup__content">
-      <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
-      <p class="search-popup-subtitle">
-        Введите название игры, сервиса или любого товара
-      </p>
-      <button class="search-popup__input-btn"></button>
-      <input type="text" placeholder="Введите запрос" class="search-popup__input" />
-      <div class="search-popup__results-container">
-        <p class="search-popup__results-text">Результаты поиска</p>
-        <div class="search-popup__results-cards">
-          <div class="results-card">
-            <div class="results-card-img" style="background-image: url('./images/spotify.jpg')"></div>
-            <div class="results-card-info">
-              <div class="results-card-text-block">
-                <div class="results-card-title">Spotify 12 месяцев</div>
-                <div class="results-card-icons">
-                  <div class="results-card-group-icons">
-                    <div class="results-card-icon-info">Сервисы</div>
-                    <div class="results-card-icon-spotify">Spotify</div>
-                  </div>
-                  <div class="results-card-price"></div>
-                  <button class="results-card-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <div class="results-card-img" style="background-image: url('./images/spotify.jpg')"></div>
-            <div class="results-card-info">
-              <div class="results-card-text-block">
-                <div class="results-card-title">Spotify 6 месяцев</div>
-                <div class="results-card-icons">
-                  <div class="results-card-group-icons">
-                    <div class="results-card-icon-info">Сервисы</div>
-                    <div class="results-card-icon-spotify">Spotify</div>
-                  </div>
-                  <div class="results-card-price"></div>
-                  <button class="results-card-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <div class="results-card-img" style="background-image: url('./images/sonsOfForest.jpg')"></div>
-            <div class="results-card-info">
-              <div class="results-card-text-block">
-                <div class="results-card-title">Sons Of The Forest</div>
-                <div class="results-card-icons">
-                  <div class="results-card-group-icons">
-                    <div class="results-card-icon-info">Аккаунт</div>
-                    <div class="results-card-steam">Steam</div>
-                  </div>
-                  <div class="results-card-price"></div>
-                  <button class="results-card-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script>
     $(document).ready(function () {

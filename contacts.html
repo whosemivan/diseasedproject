@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diseased</title>
-  <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./css/contacts.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./fonts.css" />
+  <link rel="stylesheet" href="./css/contacts.css" />
   <link rel="stylesheet" href="css/search-popup.css" />
   <link rel="stylesheet" href="css/basket.css" />
   <link rel="stylesheet" href="./Remodal-1.1.1/dist/remodal.css">
   <link rel="stylesheet" href="./Remodal-1.1.1/dist/remodal-default-theme.css">
   <script src="./Remodal-1.1.1/dist/remodal.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -122,14 +123,18 @@
     <h2 class="visually-hidden">Контакты</h2>
     <div class="contacts__wrapper">
       <div class="first-block">
-        <div class="contacts__links">
-          <a href="index.html" class="contacts-link">
-            Главная
-          </a>
-          <a href="contacts.html" class="contacts-link">
-            Контакты
-          </a>
-        </div>
+        <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="index.html">
+              <span itemprop="home">Главная</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="faq.html">
+              <span itemprop="contacts">Контакты</span></a>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
         <div class="contacts-block">
           <h1 class="contacts-title">Контакты</h1>
           <p class="contacts-text">По вопросам сотрудничества или любой другой информации вы можете
@@ -298,6 +303,27 @@
       </div>
     </div>
   </footer>
+  <div class="search-popup__container" data-remodal-id="modal">
+    <div class="search-popup__content">
+      <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
+      <p class="search-popup-subtitle">
+        Введите название игры, сервиса или любого товара
+      </p>
+      <div class="search-popup__input-group">
+        <span class="search-popup__input__btn"></span>
+        <input type="text" placeholder="Введите запрос" class="search-popup__input" />
+      </div>
+
+      <div class="search-popup__results-container search-popup__results-container--hidden">
+        <p class="search-popup__results-text">Результаты поиска</p>
+        <div class="search-popup__results-cards">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="shopping-cart__container" data-remodal-id="basket">
     <div class="shopping-cart__content">
       <h2 class="shopping-cart-title">Корзина</h2>
@@ -378,71 +404,6 @@
               товара. В случае какой либо ошибки, в тикете обращения в
               поддержку указывайте номер заказа, который придет на почту
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="search-popup__container" data-remodal-id="modal">
-    <div class="search-popup__content">
-      <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
-      <p class="search-popup-subtitle">
-        Введите название игры, сервиса или любого товара
-      </p>
-      <button class="search-popup__input-btn"></button>
-      <input type="text" placeholder="Введите запрос" class="search-popup__input" />
-      <div class="search-popup__results-container">
-        <p class="search-popup__results-text">Результаты поиска</p>
-        <div class="search-popup__results-cards">
-          <div class="results-card">
-            <div class="results-card-img" style="background-image: url('./images/spotify.jpg')"></div>
-            <div class="results-card-info">
-              <div class="results-card-text-block">
-                <div class="results-card-title">Spotify 12 месяцев</div>
-                <div class="results-card-icons">
-                  <div class="results-card-group-icons">
-                    <div class="results-card-icon-info">Сервисы</div>
-                    <div class="results-card-icon-spotify">Spotify</div>
-                  </div>
-                  <div class="results-card-price"></div>
-                  <button class="results-card-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <div class="results-card-img" style="background-image: url('./images/spotify.jpg')"></div>
-            <div class="results-card-info">
-              <div class="results-card-text-block">
-                <div class="results-card-title">Spotify 6 месяцев</div>
-                <div class="results-card-icons">
-                  <div class="results-card-group-icons">
-                    <div class="results-card-icon-info">Сервисы</div>
-                    <div class="results-card-icon-spotify">Spotify</div>
-                  </div>
-                  <div class="results-card-price"></div>
-                  <button class="results-card-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <div class="results-card-img" style="background-image: url('./images/sonsOfForest.jpg')"></div>
-            <div class="results-card-info">
-              <div class="results-card-text-block">
-                <div class="results-card-title">Sons Of The Forest</div>
-                <div class="results-card-icons">
-                  <div class="results-card-group-icons">
-                    <div class="results-card-icon-info">Аккаунт</div>
-                    <div class="results-card-steam">Steam</div>
-                  </div>
-                  <div class="results-card-price"></div>
-                  <button class="results-card-btn"></button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
