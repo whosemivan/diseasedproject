@@ -770,7 +770,6 @@ body::after {
   font-size: 90px;
   font-weight: 700;
   line-height: 73.5px;
-  font-variant: small-caps;
 }
 
 .shopping-cart-subtitle {
@@ -782,7 +781,6 @@ body::after {
   font-size: 23px;
   font-weight: 500;
   line-height: 73.5px;
-  font-variant: small-caps;
 }
 
 .shopping-cart__block {
@@ -1337,7 +1335,6 @@ body::after {
   font-size: 18px;
   font-weight: 500;
   line-height: 73.5px;
-  font-variant: small-caps;
 }
 
 .shopping-cart__right-input:focus {
