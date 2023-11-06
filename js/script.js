@@ -879,9 +879,11 @@ function gridFilter(evt) {
 
 for (const radio of gridFilterRadio) {
     if (!defaultChecked && radio.checked) {
-      // if (window.innerWidth > ) {
-        
-      // }
+      console.log(window.innerWidth);
+      console.log(+radio.dataset.columnscount >= 3);
+      if (window.innerWidth > 1550 && +radio.dataset.columnscount < 4) {
+        continue;
+      }
         defaultChecked = true;
         gridFilter(radio);
     }

@@ -1,19 +1,22 @@
-
 function searchItems() {
-    const cards = JSON.parse(localStorage.getItem("cards"));
-    const searchTerm = document.querySelector('.search-popup__input').value.toLowerCase();
-    const searchResults = cards.filter(card => card.name.toLowerCase().includes(searchTerm));
-    const resultBlock = document.querySelector('.search-popup__results-container');
+  const cards = JSON.parse(localStorage.getItem("cards"));
+  const searchTerm = document.querySelector('.search-popup__input').value.toLowerCase();
+  const searchResults = cards.filter(card => card.name.toLowerCase().includes(searchTerm));
+  const resultBlock = document.querySelector('.search-popup__results-container');
 
-    resultBlock.classList.remove('search-popup__results-container--hidden');
-    const searchResultsDiv = document.querySelector('.search-popup__results-cards');
-    // searchResultsDiv.innerHTML = '';
+  resultBlock.classList.remove('search-popup__results-container--hidden');
+  const searchResultsDiv = document.querySelector('.search-popup__results-cards');
+  // searchResultsDiv.innerHTML = '';
 
+  if (searchTerm.length === 0) {
+    searchResultsDiv.innerHTML = 'No matching items found.';
+  } else {
     if (searchResults.length === 0) {
-        searchResultsDiv.innerHTML = 'No matching items found.';
+      searchResultsDiv.innerHTML = 'No matching items found.';
     } else {
-        searchResults.forEach(item => {
-            searchResultsDiv.innerHTML += `
+      searchResultsDiv.innerHTML = '';
+      searchResults.forEach(item => {
+        searchResultsDiv.innerHTML += `
             <a href="gamepage.html?productName=${item.name}&image=${item.image}&price=${item.price}&count=${item.count}&buyers=${item.buyers}&description=${item.description}&systemText=${item.systemText}&activation=${item.activationText}&platform=${item.platform}&id=${item.id}" class="results-card">
             <div class="results-card-img" style="background-image: url('${item.image}')"></div>
             <div class="results-card-info">
@@ -31,8 +34,9 @@ function searchItems() {
             </div>
           </a>
           `;
-        });
+      });
     }
+  }
 }
 
 // Attach event listener to input field for live search
