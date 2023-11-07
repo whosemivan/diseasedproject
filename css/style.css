@@ -3383,10 +3383,10 @@ ul li {
   .shopping-cart__card-quantity {
     display: none;
   }
-
+/* 
   .shopping-cart__card {
     width: 92%;
-  }
+  } */
 
   .shopping-cart__total-price {
     width: 285px;

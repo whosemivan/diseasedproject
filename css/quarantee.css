@@ -1441,7 +1441,7 @@ body::after {
 
   .quarantee-block {
     flex-direction: row;
-    height: 56%;
+    height: 48%;
   }
 
   .quarantee-cards {
@@ -1573,7 +1573,7 @@ body::after {
 
   .quarantee__left-cards {
     width: 100%;
-    height: 12%;
+    height: 17%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1585,7 +1585,7 @@ body::after {
 
   .quarantee__middle-cards {
     width: 100%;
-    height: 21%;
+    height: 26%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1603,7 +1603,7 @@ body::after {
 
   .quarantee__right-cards {
     width: 100%;
-    height: 18%;
+    height: 24%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

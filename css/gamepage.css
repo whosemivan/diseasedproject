@@ -1180,6 +1180,305 @@ input[type="checkbox"]::before {
   text-transform: uppercase;
 }
 
+
+
+.games__card-icon-info {
+  display: flex;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-info::before {
+  content: "";
+  background-image: url("../images/icons/infoIcon1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  min-height: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.games__card-info-simple {
+  display: flex;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-discord {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-discord::before {
+  content: "";
+  background-image: url("../images/icons/discord.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-epicgames {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-epicgames::before {
+  content: "";
+  background-image: url("../images/icons/epicgamesIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-uplay {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-uplay::before {
+  content: "";
+  background-image: url("../images/icons/ubisoft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-account {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-account::before {
+  content: "";
+  background-image: url("../images/icons/account.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-random {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-random::before {
+  content: "";
+  background-image: url("../images/icons/randomIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-service {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-service::before {
+  content: "";
+  background-image: url("../images/icons/services.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-serviceSettings {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-serviceSettings::before {
+  content: "";
+  background-image: url("../images/icons/serviceSettings.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-key {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-key::before {
+  content: "";
+  background-image: url("../images/icons/keyIconGradient.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-steam {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-steam::before {
+  content: "";
+  background-image: url("../images/icons/steam.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 12px;
+}
+
+.games__card-icon-minecraft {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-minecraft::before {
+  content: "";
+  background-image: url("../images/icons/minecraft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.games__card-icon-spotify {
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(118, 219, 161, 0.12);
+}
+
+.games__card-icon-spotify::before {
+  content: "";
+  background-image: url("../images/icons/spotify.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.showMore {
+  max-width: 1410px;
+  width: 90%;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+  background: none;
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  color: #dbdbdb;
+  cursor: pointer;
+}
+
+
+
+
+
 .gamePage__buy-similar-card-info {
   width: 76%;
 }
@@ -1196,9 +1495,9 @@ input[type="checkbox"]::before {
 
 .gamePage__buy-similar-card-price {
   display: flex;
-  height: 20px;
+  height: 7px;
   padding: 6px 17px;
-  font-size: 10px;
+  font-size: 7px;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -1319,7 +1618,7 @@ input[type="checkbox"]::before {
       #29ffc6 99.32%);
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /* Footer */
@@ -2126,6 +2425,27 @@ input[type="checkbox"]::before {
 /* tablet */
 @media (max-width: 1195px) {
 
+  .header__nav {
+    padding: 30px 0 30px 15px;
+  }
+
+  .header__nav-list {
+    font-size: 8px;
+    gap: 8px;
+  }
+
+  .header__center-btn {
+    padding: 0 40px;
+  }
+
+  .header__side-panel {
+    gap: 10px;
+  }
+
+  .header__side-panel-link:nth-child(3) {
+    font-size: 13px;
+  }
+
   .gamePage__preview-wrapper::before,
   .gamePage__preview-wrapper::after,
   .gamePage__buy-wrapper::before,
@@ -2225,16 +2545,23 @@ input[type="checkbox"]::before {
     margin: 0 0 16px 0;
   }
 
-  .gamePage__buy-similar-card-icon-discord,
-  .gamePage__buy-similar-card-icon-info,
-  .gamePage__buy-similar-card-icon-steam,
-  .gamePage__buy-similar-card-price {
-    padding: 2px 10px;
+
+  .games__card-icon-info,
+  .games__card-icon-discord,
+  .games__card-icon-key,
+  .games__card-icon-steam,
+  .games__card-icon-minecraft,
+  .games__card-icon-spotify {
+    position: relative;
+    justify-content: left;
     font-size: 7px;
+    height: 40%;
   }
+
 
   .gamePage__buy-similar-card-text-block {
     padding: 10px;
+    width: 100%;
   }
 
   .gamePage__buy-similar-card {
@@ -2304,6 +2631,38 @@ input[type="checkbox"]::before {
   .header__side-panel-link:nth-child(2),
   .header__side-panel-link:nth-child(3) {
     display: none;
+  }
+
+  .games__card-icon-info,
+  .games__card-icon-steam,
+  .games__card-icon-key,
+  .games__card-icon-minecraft,
+  .games__card-icon-spotify,
+  .games__card-price,
+  .games__card-icon-discord {
+    padding: 2px 10px;
+    font-size: 7px;
+  }
+
+  .games__card-icon-steam,
+  .games__card-icon-minecraft,
+  .games__card-icon-discord {
+    margin: 0 20px 0 0;
+  }
+
+  .games__card-price::after {
+    font-size: 10px;
+  }
+
+  .game__card-info-block {
+    padding: 0 10px 0px 10px;
+  }
+
+  .games__card-icon-info::before,
+  .games__card-icon-discord::before,
+  .games__card-icon-key::before,
+  .games__card-icon-steam::before {
+    width: 13px;
   }
 
   .gamePage__buy-similar-text {
