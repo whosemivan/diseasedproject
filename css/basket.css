@@ -698,7 +698,6 @@
 @media (max-width:1020px) {
     .shopping-cart__right-block {
         width: 83%;
-        border-radius: 12px 12px 0 0;
     }
 
     .shopping-cart__block {
@@ -777,7 +776,6 @@
     .shopping-cart__left-block {
         padding: 0 30px 30px 30px;
         width: 83%;
-        border-radius: 0 0 12px 12px;
         height: 45%;
     }
 

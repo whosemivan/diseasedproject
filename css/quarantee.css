@@ -1441,12 +1441,12 @@ body::after {
 
   .quarantee-block {
     flex-direction: row;
-    height: 67%;
+    height: 48%;
   }
 
   .quarantee-cards {
     width: 100%;
-    height: 100%;
+    height: 130%;
   }
 
   .quarantee__left-cards {
@@ -1558,7 +1558,7 @@ body::after {
   }
 
   .quarantee-block {
-    height: 78%;
+    height: 87%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     flex-wrap: wrap;
   }
@@ -1585,7 +1585,7 @@ body::after {
 
   .quarantee__middle-cards {
     width: 100%;
-    height: 30%;
+    height: 26%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1616,7 +1616,7 @@ body::after {
   }
 
   .quarantee__right-card:nth-child(2) {
-    width: 50%;
+    width: 46%;
     height: 100%;
   }
 
@@ -1747,7 +1747,7 @@ body::after {
 
   .quarantee-cards {
     width: 100%;
-    height: 100%;
+    height: 95%;
   }
 
   .quarantee__right-cards {

@@ -1184,11 +1184,13 @@ input[type="checkbox"]::before {
 
 .games__card-icon-info {
   display: flex;
+  position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   border-radius: 8px;
   background: rgba(118, 219, 161, 0.12);
 }
@@ -1207,11 +1209,13 @@ input[type="checkbox"]::before {
 
 .games__card-info-simple {
   display: flex;
+  position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   border-radius: 8px;
   background: rgba(118, 219, 161, 0.12);
 }
@@ -1221,6 +1225,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1235,7 +1240,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-epicgames {
@@ -1243,6 +1248,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1257,7 +1263,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-uplay {
@@ -1265,6 +1271,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1279,7 +1286,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-account {
@@ -1287,6 +1294,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1301,7 +1309,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-random {
@@ -1309,6 +1317,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1323,7 +1332,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-service {
@@ -1331,6 +1340,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1345,7 +1355,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-serviceSettings {
@@ -1353,6 +1363,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1367,7 +1378,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-key {
@@ -1375,6 +1386,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1389,7 +1401,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-steam {
@@ -1397,6 +1409,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1411,7 +1424,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 12px;
+  height: 20px;
 }
 
 .games__card-icon-minecraft {
@@ -1419,6 +1432,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1433,7 +1447,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .games__card-icon-spotify {
@@ -1441,6 +1455,7 @@ input[type="checkbox"]::before {
   position: relative;
   height: 20px;
   padding: 5px;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -1455,7 +1470,7 @@ input[type="checkbox"]::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
-  height: 15px;
+  height: 20px;
 }
 
 .showMore {
@@ -1495,14 +1510,15 @@ input[type="checkbox"]::before {
 
 .gamePage__buy-similar-card-price {
   display: flex;
-  height: 7px;
-  padding: 6px 17px;
+  height: 17px;
+  padding: 6px 10px;
   font-size: 7px;
   align-items: center;
   justify-content: center;
   gap: 5px;
   border-radius: 8px;
   background: rgba(118, 219, 161, 0.12);
+
 }
 
 .gamePage__buy-similar-card-price::before {
@@ -2554,8 +2570,8 @@ input[type="checkbox"]::before {
   .games__card-icon-spotify {
     position: relative;
     justify-content: left;
-    font-size: 7px;
-    height: 40%;
+    font-size: 10px;
+    height: 48%;
   }
 
 
