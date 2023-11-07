@@ -27,6 +27,7 @@ let maxValue = 10000;
 let sortBtnActive;
 
 let cards = [];
+console.log('test');
 
 fetch('https://whosemivan.github.io/diseasedproject/cards.json')
   .then(response => {
