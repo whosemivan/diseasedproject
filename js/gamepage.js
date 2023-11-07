@@ -16,6 +16,9 @@ const basketZone = document.querySelector('.shopping-cart__left-cards-block');
 
 const basketBtns = document.querySelectorAll('.gamePage__buy-btn');
 
+const categoryLink = document.querySelector('.categoryLink');
+const categoryLinkText = document.querySelector('.categoryLink span');
+
 let activeInfoPage = 'Описание';
 
 function getQueryParams() {
@@ -45,6 +48,9 @@ countElement.innerText = `${count} шт.`;
 countBuyers.innerText = `${buyers}`;
 gamepageInfo.innerText = `${description}`;
 category.innerText = platform;
+
+categoryLinkText.innerText = platform;
+categoryLink.href = `index.html?category=${platform}#gamesCatalog`;
 
 for (let i = 0; i < gamepageBtns.length; i++) {
   gamepageBtns[i].addEventListener('click', () => {
@@ -82,6 +88,7 @@ gamesBlock.innerHTML = `
     ${
         cardsCopy.map((item) => (
             `
+            <a href="gamepage.html?productName=${item.name}&image=${item.image}&price=${item.price}&count=${item.count}&buyers=${item.buyers}&description=${item.description}&systemText=${item.systemText}&activation=${item.activationText}&platform=${item.platform}&id=${item.id}" class="game__card">
             <div class="gamePage__buy-similar-card">
             <img
               src=${item.image}
@@ -189,6 +196,7 @@ gamesBlock.innerHTML = `
               </div>
             </div>
           </div>
+          </a>
             `
         ))
     }

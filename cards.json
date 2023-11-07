@@ -23,7 +23,7 @@
         "name": "Metro Last Light Complete Edition",
         "image": "./images/spotify.jpg",
         "price": 5000,
-        "platform": "mojang",
+        "platform": "minecraft",
         "isKey": false,
         "isGameAcc": true,
         "isService": false,

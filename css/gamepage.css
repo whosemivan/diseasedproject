@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+.game__card {
+  text-decoration: none;
+}
+
 body::after {
   content: "";
   background-image: url("../images/pattern.png");
@@ -2768,6 +2772,7 @@ input[type="checkbox"]::before {
   .gamePage__buy-similar-card-price::after {
     font-size: 10px;
   }
+
 
   .game__card-info-block {
     padding: 0 10px 0px 10px;

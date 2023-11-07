@@ -49,6 +49,25 @@ fetch('../cards.json')
 
 const doLogic = () => {
 
+  function getQueryParams() {
+    var params = new URLSearchParams(window.location.search);
+    return Object.fromEntries(params.entries());
+  }
+  
+
+  const queryParams = getQueryParams();
+  const categoryName = queryParams.category;
+  console.log(categoryName);
+
+  if (categoryName) {
+    for (let i = 0; i < platformsInputs.length; i++) {
+      if (categoryName.toLowerCase().replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '')) {
+        console.log(platforms[i].innerText);
+        platformsInputs[i].checked = true;
+      }
+    }
+  }
+
   localStorage.getItem('basket') ? '' : localStorage.setItem('basket', JSON.stringify([]));
 
 
@@ -153,7 +172,7 @@ const doLogic = () => {
                   arr[card].platform === "steam" ? `<div class="games__card-icon-steam">Steam</div>` : ``
                 }
                 ${
-                  arr[card].platform === "mojang" || arr[card].platform === "Minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
+                  arr[card].platform === "mojang" || arr[card].platform === "minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
                 }
   
                 ${
@@ -288,9 +307,10 @@ const doLogic = () => {
 
     for (let i = 0; i < platformsInputs.length; i++) {
       if (platformsInputs[i].checked) {
+
         console.log(platforms[i].innerText);
         cardsCopy = cardsCopy.filter((it) => {
-          return it.platform === platforms[i].innerText.toLowerCase();
+          return it.platform.replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '');
         })
       }
     }
@@ -514,7 +534,7 @@ const doLogic = () => {
               cards[card].platform === "steam" ? `<div class="games__card-icon-steam">Steam</div>` : ``
             }
             ${
-              cards[card].platform === "mojang" || cards[card].platform === "Minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
+              cards[card].platform === "mojang" || cards[card].platform === "minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
             }
   
             ${
@@ -624,7 +644,7 @@ const doLogic = () => {
                   cards[card].platform === "steam" ? `<div class="game__info-item">Steam</div>` : ``
                 }
                 ${
-                  cards[card].platform === "mojang" || cards[card].platform === "Minecraft" ? `<div class="game__info-item">Mojang</div>` : ``
+                  cards[card].platform === "mojang" || cards[card].platform === "minecraft" ? `<div class="game__info-item">Mojang</div>` : ``
                 }
       
                 ${
