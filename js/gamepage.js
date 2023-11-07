@@ -1,4 +1,4 @@
-const previewLink = document.querySelectorAll('.gamePage__preview-link');
+// const previewLink = document.querySelectorAll('.gamePage__preview-link');
 const title = document.querySelector('.gamePage__gameplay-title');
 const image = document.querySelector('.gamePage__gameplay-img');
 const infoImg = document.querySelector('.gamePage__info-img');
@@ -14,7 +14,7 @@ const priceEl = document.querySelector('.shopping-cart__subtext');
 
 const basketZone = document.querySelector('.shopping-cart__left-cards-block');
 
-const basketBtn = document.querySelector('.basket');
+const basketBtns = document.querySelectorAll('.gamePage__buy-btn');
 
 let activeInfoPage = 'Описание';
 
@@ -35,7 +35,7 @@ const activation = queryParams.activation;
 const platform = queryParams.platform;
 const id = queryParams.id;
 
-previewLink[1].innerText = productName;
+// previewLink[1].innerText = productName;
 title.innerText = `Купить ${productName}`;
 image.src = productImage;
 infoImg.src = productImage;
@@ -195,27 +195,29 @@ gamesBlock.innerHTML = `
 `;
 
 
+for (let i = 0; i < basketBtns.length; i++) {
+  basketBtns[i].addEventListener('click', () => {
+    let basketCards = cards.slice();
+    let card = basketCards.filter(it => {
+      return it.id.toString() === id;
+    })
+    console.log(card[0]);
+    let basketDone = JSON.parse(localStorage.getItem("basket"));
 
-basketBtn.addEventListener('click', () => {
-  let basketCards = cards.slice();
-  let card = basketCards.filter(it => {
-    return it.id.toString() === id;
-  })
-  console.log(card[0]);
-  let basketDone = JSON.parse(localStorage.getItem("basket"));
-
-  if (basketDone.length === 0) {
-    localStorage.setItem("basket", JSON.stringify([...basketDone, card[0]]));
-  } else {
-    for (let i = 0; i < basketDone.length; i++) {
-      if (basketDone[i].id.toString() !== id) {
-        localStorage.setItem("basket", JSON.stringify([...basketDone, card[0]]));
+    if (basketDone.length === 0) {
+      localStorage.setItem("basket", JSON.stringify([...basketDone, card[0]]));
+    } else {
+      for (let i = 0; i < basketDone.length; i++) {
+        if (basketDone[i].id.toString() !== id) {
+          localStorage.setItem("basket", JSON.stringify([...basketDone, card[0]]));
+        }
       }
     }
-  }
 
-  renderBasket();
-});
+    renderBasket();
+  });
+}
+
 
 
 const renderBasket = () => {
