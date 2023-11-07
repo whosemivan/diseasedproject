@@ -543,11 +543,11 @@ const doLogic = () => {
             }
   
             ${
-              cards[card].platform === "random steam" ? `<div class="games__card-info-simple">Random Steam</div>` : ``
+              cards[card].platform === "random steam" ? `<div class="games__card-icon-random">Random Steam</div>` : ``
             }
   
             ${
-              cards[card].platform === "ubisoft" ? `<div class="games__card-info-simple">Ubisoft</div>` : ``
+              cards[card].platform === "ubisoft" ? `<div class="games__card-icon-uplay">Ubisoft</div>` : ``
             }
   
             ${
@@ -603,7 +603,7 @@ const doLogic = () => {
             }
   
             ${
-              cards[card].platform === "сервисы" ? `<div class="games__card-info-simple">Сервисы</div>` : ``
+              cards[card].platform === "сервисы" ? `<div class="games__card-icon-service">Сервисы</div>` : ``
             }
             <div class="games__card-price">₽${cards[card].price}</div>
   

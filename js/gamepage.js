@@ -128,11 +128,11 @@ gamesBlock.innerHTML = `
                   }
     
                   ${
-                    item.platform === "random steam" ? `<div class="games__card-info-simple">Random Steam</div>` : ``
+                    item.platform === "random steam" ? `<div class="games__card-icon-random">Random Steam</div>` : ``
                   }
     
                   ${
-                    item.platform === "ubisoft" ? `<div class="games__card-info-simple">Ubisoft</div>` : ``
+                    item.platform === "ubisoft" ? `<div class="games__card-icon-uplay">Ubisoft</div>` : ``
                   }
     
                   ${
@@ -188,7 +188,7 @@ gamesBlock.innerHTML = `
                   }
     
                   ${
-                    item.platform === "сервисы" ? `<div class="games__card-info-simple">Сервисы</div>` : ``
+                    item.platform === "сервисы" ? `<div class="games__card-icon-service">Сервисы</div>` : ``
                   }
                   </div>
                   <div class="gamePage__buy-similar-card-price"></div>
