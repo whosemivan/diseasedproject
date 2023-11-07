@@ -375,8 +375,20 @@ body::after {
   flex-wrap: wrap;
 }
 
+.breadcrumb li {
+  position: relative;
+}
+
 .breadcrumb li a {
+  color: rgba(229, 229, 229, 0.5);
+  background-repeat: no-repeat;
+  text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  align-items: center;
+  margin: 30px 0 0 0;
 }
 
 .breadcrumb li a .link-name {
@@ -386,7 +398,6 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 0 0;
   color: rgba(229, 229, 229, 0.50);
   font-size: 12px;
   font-weight: 700;
@@ -394,6 +405,20 @@ body::after {
   /* 200% */
   letter-spacing: 0.18px;
   text-transform: uppercase;
+}
+
+.breadcrumb li:nth-child(1)::after {
+  content: ">";
+  position: absolute;
+  background-position: center;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  left: 100%;
+  top: 32%;
+  color: rgba(229, 229, 229, 0.50);
 }
 
 .breadcrumb li:nth-child(2)::after {
@@ -405,24 +430,11 @@ body::after {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.18px;
-  left: 62px;
-  top: 34px;
+  left: 100%;
+  top: 32%;
   color: rgba(229, 229, 229, 0.50);
 }
 
-.breadcrumb li:nth-child(3)::after {
-  content: ">";
-  position: absolute;
-  background-position: center;
-  padding: 10px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.18px;
-  left: 168px;
-  top: 34px;
-  color: rgba(229, 229, 229, 0.50);
-}
 
 .gamePage__gameplay-img-block {
   width: 105%;
@@ -2364,16 +2376,19 @@ input[type="checkbox"]::before {
   .gamePage__buy-similar-games-block {
     width: 100%;
   }
+
   .breadcrumb li a .link-name {
     margin: 0;
   }
-  .breadcrumb li:nth-child(2)::after{
-    left: 62px;
-    top: 5px;
+
+  .breadcrumb li:nth-child(2)::after {
+    left: 100%;
+    top: 32%;
   }
-  .breadcrumb li:nth-child(3)::after{
-    left: 168px;
-    top: 4px;
+
+  .breadcrumb li:nth-child(3)::after {
+    left: 100%;
+    top: 32%;
   }
 
   .footer {
@@ -2408,9 +2423,10 @@ input[type="checkbox"]::before {
 
 /* mobile */
 @media (max-width: 500px) {
-  .breadcrumb{
+  .breadcrumb {
     width: 96%;
   }
+
   /* Shopping cart popup */
 
   .shopping-cart__container {

@@ -336,7 +336,12 @@ body::after {
   width: 100%;
   flex-wrap: wrap;
 }
-.breadcrumb li a{
+
+.breadcrumb li {
+  position: relative;
+}
+
+.breadcrumb li a {
   color: rgba(229, 229, 229, 0.5);
   background-repeat: no-repeat;
   text-transform: uppercase;
@@ -348,19 +353,36 @@ body::after {
   margin: 30px 0 0 0;
 }
 
+.breadcrumb li a .link-name {
+  color: rgba(229, 229, 229, 0.5);
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(229, 229, 229, 0.50);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  /* 200% */
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+
 .breadcrumb li:nth-child(1)::after {
   content: ">";
-    position: absolute;
-    background-position: center;
-    padding: 10px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.18px;
-    left: 84px;
-    top: 34px;
-    color: rgba(229, 229, 229, 0.50);
+  position: absolute;
+  background-position: center;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  left: 100%;
+  top: 35%;
+  color: rgba(229, 229, 229, 0.50);
 }
+
 
 
 .quarantee__subtitle {
@@ -1506,10 +1528,11 @@ body::after {
   }
 }
 
-/* @media (max-width: 990px) {
+@media (max-width: 990px) {
   .header__content {
-    max-width: 680px;
-    padding: 21px 60px;
+    max-width: 722px;
+    padding: 21px 26px;
+    width: 90%;
   }
 
   .header__adaptive-btn {
@@ -1608,6 +1631,8 @@ body::after {
 
   .footer__content {
     max-width: 722px;
+    padding: 21px 26px;
+    width: 90%;
   }
 
   .footer__questions-blocks {
@@ -1630,7 +1655,7 @@ body::after {
   .footer__about-text-group {
     padding: 40px 0 0 0;
   }
-} */
+}
 
 @media (max-width: 562px) {
 
@@ -1652,7 +1677,8 @@ body::after {
   }
 
   .header__content {
-    padding: 21px 17px;
+    max-width: 350px;
+    width: 80%;
   }
 
   .header__adaptive-btn {
@@ -1802,7 +1828,8 @@ body::after {
 
   .footer__about-container {
     flex-direction: column;
-    padding: 0 0 20px 0;
+    max-width: 350px;
+    width: 80%;
   }
 
   .footer__questions-blocks {
@@ -1815,114 +1842,4 @@ body::after {
     width: 80%;
     flex-direction: column;
   }
-}
-
-@media (max-width: 990px) {
-
-  .shopping-cart__container {
-    position: absolute;
-  }
-
-  .shopping-cart__block {
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 1434px;
-  }
-
-  .shopping-cart-title {
-    font-size: 30px;
-    margin: 0 0 103px 0;
-  }
-
-  .shopping-cart-subtitle {
-    display: none;
-  }
-
-  .shopping-cart__right-block {
-    width: 86%;
-    border-radius: 12px 12px 0 0;
-  }
-
-  .shopping-cart__left-block {
-    width: 86%;
-    border-radius: 0 0 12px 12px;
-  }
-
-  .shopping-cart__left-cards-block {
-    width: 100%;
-  }
-
-  .shopping-cart__total-promocode {
-    width: 100%;
-  }
-
-  .shopping-cart__right-btn-qiwi,
-  .shopping-cart__right-btn-freekassa,
-  .shopping-cart__right-btn-visa,
-  .shopping-cart__right-btn-walletKz,
-  .shopping-cart__right-btn-walletUkr,
-  .shopping-cart__right-btn-bitcoin,
-  .shopping-cart__right-btn-sbp,
-  .shopping-cart__right-btn-steam {
-    width: 24%;
-    height: 18%;
-  }
-
-  .shopping-cart__btn-title-img-qiwi,
-  .shopping-cart__btn-title-img-freekassa,
-  .shopping-cart__btn-title-img-visa,
-  .shopping-cart__btn-title-img-walletKz,
-  .shopping-cart__btn-title-img-walletUkr,
-  .shopping-cart__btn-title-img-bitcoin,
-  .shopping-cart__btn-title-img-sbp,
-  .shopping-cart__btn-title-img-steam {
-    height: 30px;
-  }
-
-  .shopping-cart__btn-title-img-sbp-text {
-    width: 86px;
-  }
-
-  .shopping-cart__right-subtitle {
-    width: 287px;
-  }
-
-  .shopping-cart__right-input-mail {
-    margin: 30px 0 20px 0;
-    width: 100%;
-  }
-
-  .shopping-cart__right-info-block {
-    width: 93%;
-  }
-
-  .shopping-cart__card-quantity {
-    display: none;
-  }
-
-  .shopping-cart__card {
-    width: 92%;
-  }
-
-  .shopping-cart__total-price {
-    width: 285px;
-  }
-
-  .shopping-cart__input {
-    width: 90%;
-    padding: 0 1px 0 40px;
-  }
-
-  .shopping-cart__input-btn {
-    left: 0%;
-  }
-
-  .shopping-cart__total-block {
-    width: 100%;
-  }
-
-  .shopping-cart__total-btn {
-    width: 100%;
-  }
-
 }

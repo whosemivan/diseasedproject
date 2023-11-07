@@ -343,7 +343,6 @@ body::after {
   line-height: 24px;
   letter-spacing: 0.28px;
 }
-
 .breadcrumb {
   display: flex;
   list-style: none;
@@ -352,7 +351,12 @@ body::after {
   width: 100%;
   flex-wrap: wrap;
 }
-.breadcrumb li a{
+
+.breadcrumb li {
+  position: relative;
+}
+
+.breadcrumb li a {
   color: rgba(229, 229, 229, 0.5);
   background-repeat: no-repeat;
   text-transform: uppercase;
@@ -364,18 +368,34 @@ body::after {
   margin: 30px 0 0 0;
 }
 
+.breadcrumb li a .link-name {
+  color: rgba(229, 229, 229, 0.5);
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(229, 229, 229, 0.50);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  /* 200% */
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+
 .breadcrumb li:nth-child(1)::after {
   content: ">";
-    position: absolute;
-    background-position: center;
-    padding: 10px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.18px;
-    left: 80px;
-    top: 31px;
-    color: rgba(229, 229, 229, 0.50);
+  position: absolute;
+  background-position: center;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  left: 100%;
+  top: 32%;
+  color: rgba(229, 229, 229, 0.50);
 }
 
 .faq-help__subtitle {
@@ -1651,8 +1671,8 @@ body::after {
   }
 
   .footer__content {
-    max-width: 350px;
-    width: 80%;
+    max-width: 600px;
+    width: 82%;
     flex-direction: column;
   }
 }

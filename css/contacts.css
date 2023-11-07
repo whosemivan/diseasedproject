@@ -347,6 +347,7 @@ body::after {
 }
 
 
+
 .breadcrumb {
   display: flex;
   list-style: none;
@@ -354,6 +355,10 @@ body::after {
   gap: 30px;
   width: 100%;
   flex-wrap: wrap;
+}
+
+.breadcrumb li {
+  position: relative;
 }
 
 .breadcrumb li a {
@@ -368,6 +373,22 @@ body::after {
   margin: 30px 0 0 0;
 }
 
+.breadcrumb li a .link-name {
+  color: rgba(229, 229, 229, 0.5);
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(229, 229, 229, 0.50);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  /* 200% */
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+
 .breadcrumb li:nth-child(1)::after {
   content: ">";
   position: absolute;
@@ -377,8 +398,8 @@ body::after {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.18px;
-  left: 80px;
-  top: 31px;
+  left: 100%;
+  top: 32%;
   color: rgba(229, 229, 229, 0.50);
 }
 
@@ -504,6 +525,8 @@ body::after {
 
 /* Footer */
 
+/* Footer */
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -623,7 +646,6 @@ body::after {
   display: flex;
   gap: 20px;
 }
-
 /* Shopping Cart Popup */
 
 .shopping-cart__container {
@@ -1377,8 +1399,8 @@ body::after {
 @media (max-width: 890px) {
 
   .header__content {
+    width: 80%;
     max-width: 722px;
-    width: 78%;
     padding: 21px 60px;
   }
 
@@ -1394,6 +1416,7 @@ body::after {
   .header__side-panel-link:nth-child(3) {
     display: none;
   }
+
 
   .contacts-main-title-block {
     display: flex;
@@ -1442,24 +1465,31 @@ body::after {
     width: 96%;
   }
 
-  .footer__about-text {
-    flex-direction: column;
-  }
-
-  .footer__about-text-group {
-    flex-direction: column;
-    padding: 10px 0 0 0;
-  }
-
+  
   .footer__content {
+    width: 80%;
     max-width: 722px;
-    width: 78%;
-    flex-direction: column;
   }
 
   .footer__questions-blocks {
-    gap: 15px;
     flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer__info-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .footer__about-container {
+    flex-direction: column;
+    max-width: 722px;
+    padding: 0 0 30px 0;
+  }
+
+  .footer__about-text-group {
+    padding: 40px 0 0 0;
   }
 }
 
