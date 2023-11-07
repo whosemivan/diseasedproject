@@ -367,21 +367,32 @@ body::after {
   list-style: none;
   padding: 0;
   gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .breadcrumb li a {
+  text-decoration: none;
+}
+
+.breadcrumb li a .link-name {
   color: rgba(229, 229, 229, 0.5);
   background-repeat: no-repeat;
   text-transform: uppercase;
-  text-decoration: none;
   display: flex;
   justify-content: center;
-  font-weight: 700;
   align-items: center;
   margin: 30px 0 0 0;
+  color: rgba(229, 229, 229, 0.50);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  /* 200% */
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
 }
 
-.breadcrumb li:nth-child(1)::after {
+.breadcrumb li:nth-child(2)::after {
   content: ">";
   position: absolute;
   background-position: center;
@@ -390,11 +401,24 @@ body::after {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.18px;
-  left: 80px;
-  top: 31px;
+  left: 62px;
+  top: 34px;
   color: rgba(229, 229, 229, 0.50);
 }
 
+.breadcrumb li:nth-child(3)::after {
+  content: ">";
+  position: absolute;
+  background-position: center;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  left: 168px;
+  top: 34px;
+  color: rgba(229, 229, 229, 0.50);
+}
 
 .gamePage__gameplay-img-block {
   width: 105%;
@@ -901,6 +925,7 @@ span {
   line-height: 34px;
   letter-spacing: 0.56px;
 }
+
 
 .gamePage__buy-btn {
   color: #111317;
@@ -2335,6 +2360,17 @@ input[type="checkbox"]::before {
   .gamePage__buy-similar-games-block {
     width: 100%;
   }
+  .breadcrumb li a .link-name {
+    margin: 0;
+  }
+  .breadcrumb li:nth-child(2)::after{
+    left: 62px;
+    top: 5px;
+  }
+  .breadcrumb li:nth-child(3)::after{
+    left: 168px;
+    top: 4px;
+  }
 
   .footer {
     margin: 300px 0 0 0;
@@ -2368,7 +2404,9 @@ input[type="checkbox"]::before {
 
 /* mobile */
 @media (max-width: 500px) {
-
+  .breadcrumb{
+    width: 96%;
+  }
   /* Shopping cart popup */
 
   .shopping-cart__container {

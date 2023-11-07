@@ -314,8 +314,9 @@ body::after {
   list-style: none;
   padding: 0;
   gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
 }
-
 .breadcrumb li a {
   color: rgba(229, 229, 229, 0.5);
   background-repeat: no-repeat;
