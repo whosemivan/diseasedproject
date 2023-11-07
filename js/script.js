@@ -177,15 +177,15 @@ const doLogic = () => {
                 }
   
                 ${
-                  arr[card].platform === "epic games" ? `<div class="games__card-info-simple">Epic Games</div>` : ``
+                  arr[card].platform === "epic games" ? `<div class="games__card-icon-epicgames">Epic Games</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "random steam" ? `<div class="games__card-info-simple">Random Steam</div>` : ``
+                  arr[card].platform === "random steam" ? `<div class="games__card-icon-random">Random Steam</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "ubisoft" ? `<div class="games__card-info-simple">Ubisoft</div>` : ``
+                  arr[card].platform === "ubisoft" ? `<div class="games__card-icon-uplay">Ubisoft</div>` : ``
                 }
   
                 ${
@@ -241,7 +241,7 @@ const doLogic = () => {
                 }
   
                 ${
-                  arr[card].platform === "сервисы" ? `<div class="games__card-info-simple">Сервисы</div>` : ``
+                  arr[card].platform === "сервисы" ? `<div class="games__card-icon-service">Сервисы</div>` : ``
                 }
   
                 </div>
