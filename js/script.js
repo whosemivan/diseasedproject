@@ -19,6 +19,7 @@ const sortBtns = document.querySelectorAll('.filter__dropdown-item-btn');
 const sortList = document.querySelector('.filter__settings__dropdown-list');
 const firstScreenSlider = document.querySelector('.first-screen__slider .swiper-wrapper');
 const sliderZone = document.querySelector('.lastPurchaseSwiper .swiper-wrapper');
+const showMoreBtn = document.querySelector('.showMore');
 
 let activeTopFilter = 'Все категории';
 let isHiddenEmptyProduct = false;
@@ -54,7 +55,7 @@ const doLogic = () => {
     var params = new URLSearchParams(window.location.search);
     return Object.fromEntries(params.entries());
   }
-  
+
 
   const queryParams = getQueryParams();
   const categoryName = queryParams.category;
@@ -139,11 +140,14 @@ const doLogic = () => {
 
 
   // render
+  let cardsToShow = 20;
 
   const renderCards = (arr) => {
     console.log('rerender');
     gamesWrapper.innerHTML = '';
-    for (let card in arr) {
+    for (let i = 0; i < cardsToShow && i < arr.length; i++) {
+      const card = i;
+
       const gameCard = `
           <a href="gamepage.html?productName=${arr[card].name}&image=${arr[card].image}&price=${arr[card].price}&count=${arr[card].count}&buyers=${arr[card].buyers}&description=${arr[card].description}&systemText=${arr[card].systemText}&activation=${arr[card].activationText}&platform=${arr[card].platform}&id=${arr[card].id}" class="game__card">
           <div
@@ -251,6 +255,15 @@ const doLogic = () => {
           </div>
         </a>
           `;
+
+      if (cardsToShow < arr.length) {
+        showMoreBtn.addEventListener('click', () => {
+          cardsToShow += 6; 
+          renderCards(arr); 
+        });
+      } else {
+        showMoreBtn.remove();
+      }
 
       gamesWrapper.innerHTML += gameCard;
     }
