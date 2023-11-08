@@ -27,128 +27,104 @@ let minValue = 0;
 let maxValue = 10000;
 let sortBtnActive;
 
-let cards = [];
-console.log('test');
-
-fetch('https://whosemivan.github.io/diseasedproject/cards.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    cards = data;
-    console.log(data);
-    localStorage.setItem('cards', JSON.stringify(data));
-
-    doLogic();
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+const cards = JSON.parse(document.getElementById('cards').innerHTML);
+localStorage.setItem('cards', JSON.stringify(cards));
 
 
-const doLogic = () => {
-
-  function getQueryParams() {
-    var params = new URLSearchParams(window.location.search);
-    return Object.fromEntries(params.entries());
-  }
+function getQueryParams() {
+  var params = new URLSearchParams(window.location.search);
+  return Object.fromEntries(params.entries());
+}
 
 
-  const queryParams = getQueryParams();
-  const categoryName = queryParams.category;
-  console.log(categoryName);
+const queryParams = getQueryParams();
+const categoryName = queryParams.category;
 
-  if (categoryName) {
-    for (let i = 0; i < platformsInputs.length; i++) {
-      if (categoryName.toLowerCase().replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '')) {
-        console.log(platforms[i].innerText);
-        platformsInputs[i].checked = true;
-      }
-    }
-  }
-
-  localStorage.getItem('basket') ? '' : localStorage.setItem('basket', JSON.stringify([]));
-
-
-  for (let i = 0; i < topFilterBtns.length; i++) {
-    topFilterBtns[i].addEventListener('click', () => {
-
-      // delete last active filter
-      for (let j in topFilterBtns) {
-        if (topFilterBtns[j].innerText === activeTopFilter) {
-          topFilterBtns[j].classList.remove('filter__categoryName--active');
-        }
-      }
-
-      // set new
-      topFilterBtns[i].classList.add('filter__categoryName--active');
-      activeTopFilter = topFilterBtns[i].innerText;
-      doFilter(cards);
-    });
-  }
-
-
-  hiddenProductFilter.addEventListener('click', () => {
-    isHiddenEmptyProduct = !isHiddenEmptyProduct;
-    doFilter(cards);
-  });
-
-
-  inputMinPrice.addEventListener('input', (evt) => {
-    minValue = evt.target.value
-    doFilter(cards);
-  });
-
-  inputMaxPrice.addEventListener('input', (evt) => {
-    maxValue = evt.target.value
-    doFilter(cards);
-  });
-
+if (categoryName) {
   for (let i = 0; i < platformsInputs.length; i++) {
-    platformsInputs[i].addEventListener('click', () => {
-      doFilter(cards);
-    });
+    if (categoryName.toLowerCase().replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '')) {
+      platformsInputs[i].checked = true;
+    }
   }
+}
 
-  for (let i = 0; i < supFiltersInputs.length; i++) {
-    supFiltersInputs[i].addEventListener('click', () => {
-      doFilter(cards);
-    });
-  }
+localStorage.getItem('basket') ? '' : localStorage.setItem('basket', JSON.stringify([]));
 
-  filterBtn.addEventListener('click', () => {
-    filters.classList.toggle('filter__block--hidden');
+
+for (let i = 0; i < topFilterBtns.length; i++) {
+  topFilterBtns[i].addEventListener('click', () => {
+
+    // delete last active filter
+    for (let j in topFilterBtns) {
+      if (topFilterBtns[j].innerText === activeTopFilter) {
+        topFilterBtns[j].classList.remove('filter__categoryName--active');
+      }
+    }
+
+    // set new
+    topFilterBtns[i].classList.add('filter__categoryName--active');
+    activeTopFilter = topFilterBtns[i].innerText;
+    doFilter(cards);
   });
+}
 
-  sortBtn.addEventListener('click', () => {
-    sortList.classList.toggle('filter__settings__dropdown-list--hidden');
+
+hiddenProductFilter.addEventListener('click', () => {
+  isHiddenEmptyProduct = !isHiddenEmptyProduct;
+  doFilter(cards);
+});
+
+
+inputMinPrice.addEventListener('input', (evt) => {
+  minValue = evt.target.value
+  doFilter(cards);
+});
+
+inputMaxPrice.addEventListener('input', (evt) => {
+  maxValue = evt.target.value
+  doFilter(cards);
+});
+
+for (let i = 0; i < platformsInputs.length; i++) {
+  platformsInputs[i].addEventListener('click', () => {
+    doFilter(cards);
   });
+}
+
+for (let i = 0; i < supFiltersInputs.length; i++) {
+  supFiltersInputs[i].addEventListener('click', () => {
+    doFilter(cards);
+  });
+}
+
+filterBtn.addEventListener('click', () => {
+  filters.classList.toggle('filter__block--hidden');
+});
+
+sortBtn.addEventListener('click', () => {
+  sortList.classList.toggle('filter__settings__dropdown-list--hidden');
+});
 
 
-  for (let i = 0; i < sortBtns.length; i++) {
-    sortBtns[i].addEventListener('click', () => {
-      console.log(sortBtns[i].innerText);
-      sortBtnActive = sortBtns[i].innerText;
-      sortList.classList.add('filter__settings__dropdown-list--hidden');
-      sortBtn.innerText = sortBtns[i].innerText;
-      doFilter(cards);
-    });
-  }
+for (let i = 0; i < sortBtns.length; i++) {
+  sortBtns[i].addEventListener('click', () => {
+    sortBtnActive = sortBtns[i].innerText;
+    sortList.classList.add('filter__settings__dropdown-list--hidden');
+    sortBtn.innerText = sortBtns[i].innerText;
+    doFilter(cards);
+  });
+}
 
 
-  // render
-  let cardsToShow = 20;
+// render
+let cardsToShow = 20;
 
-  const renderCards = (arr) => {
-    console.log('rerender');
-    gamesWrapper.innerHTML = '';
-    for (let i = 0; i < cardsToShow && i < arr.length; i++) {
-      const card = i;
+const renderCards = (arr) => {
+  gamesWrapper.innerHTML = '';
+  for (let i = 0; i < cardsToShow && i < arr.length; i++) {
+    const card = i;
 
-      const gameCard = `
+    const gameCard = `
           <a href="gamepage.html?productName=${arr[card].name}&image=${arr[card].image}&price=${arr[card].price}&count=${arr[card].count}&buyers=${arr[card].buyers}&description=${arr[card].description}&systemText=${arr[card].systemText}&activation=${arr[card].activationText}&platform=${arr[card].platform}&id=${arr[card].id}" class="game__card">
           <div
             class="game__card-img"
@@ -256,271 +232,267 @@ const doLogic = () => {
         </a>
           `;
 
-      if (cardsToShow < arr.length) {
-        showMoreBtn.addEventListener('click', () => {
-          cardsToShow += 20; 
-          renderCards(arr); 
-        });
-      } else {
-        showMoreBtn.remove();
+    if (cardsToShow < arr.length) {
+      showMoreBtn.addEventListener('click', () => {
+        cardsToShow += 20;
+        renderCards(arr);
+      });
+    } else {
+      showMoreBtn.remove();
+    }
+
+    gamesWrapper.innerHTML += gameCard;
+  }
+};
+
+//   <div class="games__card-icon-spotify">Spotify</div>
+// <div class="games__card-icon-discord">Discord</div>
+// filters
+
+
+const doFilter = (cards) => {
+  let cardsCopy = cards.slice();
+
+  switch (activeTopFilter) {
+    case 'Ключи':
+      cardsCopy = cardsCopy.filter((it) => {
+        return it.isKey === true;
+      })
+      break;
+    case 'Игровые аккаунты':
+      cardsCopy = cardsCopy.filter((it) => {
+        return it.isGameAcc === true;
+      })
+      break;
+    case 'Сервисы':
+      cardsCopy = cardsCopy.filter((it) => {
+        return it.isService === true;
+      })
+      break;
+    case 'Донат':
+      cardsCopy = cardsCopy.filter((it) => {
+        return it.isDonat === true;
+      })
+      break;
+    default:
+      cardsCopy = cardsCopy.filter((it) => {
+        return it;
+      })
+  }
+
+
+  if (isHiddenEmptyProduct === true) {
+    cardsCopy = cardsCopy.filter((it) => {
+      if (it.count > 0) {
+        return it;
+      }
+    })
+  }
+
+  cardsCopy = cardsCopy.filter((card) => {
+    return card.price >= minValue && card.price <= maxValue;
+  })
+
+
+
+  for (let i = 0; i < platformsInputs.length; i++) {
+    if (platformsInputs[i].checked) {
+
+      cardsCopy = cardsCopy.filter((it) => {
+        return it.platform.replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '');
+      })
+    }
+  }
+
+
+  for (let i = 0; i < supFiltersInputs.length; i++) {
+
+    if (supFiltersInputs[i].checked) {
+
+      if (supFilters[i].innerText === 'ИГРЫ ОТ ₽150') {
+        cardsCopy = cardsCopy.filter((card) => {
+          return card.price >= 150;
+        })
       }
 
-      gamesWrapper.innerHTML += gameCard;
-    }
-  };
+      if (supFilters[i].innerText === 'ИГРЫ ОТ ₽700') {
+        cardsCopy = cardsCopy.filter((card) => {
+          return card.price >= 700;
+        })
+      }
 
-  //   <div class="games__card-icon-spotify">Spotify</div>
-  // <div class="games__card-icon-discord">Discord</div>
-  // filters
+      if (supFilters[i].innerText === 'ИГРЫ ОТ ₽900') {
+        cardsCopy = cardsCopy.filter((card) => {
+          return card.price >= 900;
+        })
+      }
 
-
-  const doFilter = (cards) => {
-    let cardsCopy = cards.slice();
-
-    switch (activeTopFilter) {
-      case 'Ключи':
+      if (supFilters[i].innerText === 'КЛЮЧИ') {
         cardsCopy = cardsCopy.filter((it) => {
           return it.isKey === true;
         })
-        break;
-      case 'Игровые аккаунты':
+      }
+
+      if (supFilters[i].innerText === 'АККАУНТЫ') {
         cardsCopy = cardsCopy.filter((it) => {
           return it.isGameAcc === true;
         })
-        break;
-      case 'Сервисы':
-        cardsCopy = cardsCopy.filter((it) => {
-          return it.isService === true;
-        })
-        break;
-      case 'Донат':
+      }
+
+      if (supFilters[i].innerText === 'ДОНАТ') {
         cardsCopy = cardsCopy.filter((it) => {
           return it.isDonat === true;
         })
-        break;
-      default:
+      }
+
+      if (supFilters[i].innerText === 'STEAM POINTS') {
         cardsCopy = cardsCopy.filter((it) => {
-          return it;
-        })
-    }
-
-
-    if (isHiddenEmptyProduct === true) {
-      cardsCopy = cardsCopy.filter((it) => {
-        if (it.count > 0) {
-          return it;
-        }
-      })
-    }
-
-    cardsCopy = cardsCopy.filter((card) => {
-      return card.price >= minValue && card.price <= maxValue;
-    })
-
-
-
-    for (let i = 0; i < platformsInputs.length; i++) {
-      if (platformsInputs[i].checked) {
-
-        console.log(platforms[i].innerText);
-        cardsCopy = cardsCopy.filter((it) => {
-          return it.platform.replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '');
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
         })
       }
-    }
 
-
-    for (let i = 0; i < supFiltersInputs.length; i++) {
-
-      if (supFiltersInputs[i].checked) {
-        console.log(supFilters[i].innerText);
-
-        if (supFilters[i].innerText === 'ИГРЫ ОТ ₽150') {
-          cardsCopy = cardsCopy.filter((card) => {
-            return card.price >= 150;
-          })
-        }
-
-        if (supFilters[i].innerText === 'ИГРЫ ОТ ₽700') {
-          cardsCopy = cardsCopy.filter((card) => {
-            return card.price >= 700;
-          })
-        }
-
-        if (supFilters[i].innerText === 'ИГРЫ ОТ ₽900') {
-          cardsCopy = cardsCopy.filter((card) => {
-            return card.price >= 900;
-          })
-        }
-
-        if (supFilters[i].innerText === 'КЛЮЧИ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.isKey === true;
-          })
-        }
-
-        if (supFilters[i].innerText === 'АККАУНТЫ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.isGameAcc === true;
-          })
-        }
-
-        if (supFilters[i].innerText === 'ДОНАТ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.isDonat === true;
-          })
-        }
-
-        if (supFilters[i].innerText === 'STEAM POINTS') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'STEAM POINTS') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'APEX LEGENDS') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'НАКРУТКА') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.cheating;
-          })
-        }
-
-        if (supFilters[i].innerText === 'БУСТ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.bust;
-          })
-        }
-
-        if (supFilters[i].innerText === 'B-БАКСЫ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'HYPIXEL') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'HYPIXEL') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'ПРИМОГЕМЫ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'XBOX GAMEPASS') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'ПОДПИСКА') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'РОБУКСЫ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'МУЗЫКА') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'КИНО') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'ПРОМОКОДЫ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
-
-        if (supFilters[i].innerText === 'БАЛЛЫ') {
-          cardsCopy = cardsCopy.filter((it) => {
-            return it.ownCoins === supFilters[i].innerText.toLowerCase();
-          })
-        }
+      if (supFilters[i].innerText === 'STEAM POINTS') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
       }
 
-      if (sortBtnActive === 'По популярности') {
-        cardsCopy = cardsCopy.sort((a, b) => b.buyers - a.buyers);
+      if (supFilters[i].innerText === 'APEX LEGENDS') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
       }
 
-      if (sortBtnActive === 'Сначала дешевые') {
-        cardsCopy = cardsCopy.sort((a, b) => a.price - b.price);
+      if (supFilters[i].innerText === 'НАКРУТКА') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.cheating;
+        })
       }
 
-      if (sortBtnActive === 'Сначала дорогие') {
-        cardsCopy = cardsCopy.sort((a, b) => b.price - a.price);
+      if (supFilters[i].innerText === 'БУСТ') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.bust;
+        })
       }
 
-      if (sortBtnActive === 'Новые') {
-        cardsCopy = cardsCopy.sort((a, b) => {
-          const dateA = new Date(a.date);
-          const dateB = new Date(b.date);
-          return dateB - dateA;
-        });
+      if (supFilters[i].innerText === 'B-БАКСЫ') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'HYPIXEL') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'HYPIXEL') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'ПРИМОГЕМЫ') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'XBOX GAMEPASS') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'ПОДПИСКА') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'РОБУКСЫ') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'МУЗЫКА') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'КИНО') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'ПРОМОКОДЫ') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
+      }
+
+      if (supFilters[i].innerText === 'БАЛЛЫ') {
+        cardsCopy = cardsCopy.filter((it) => {
+          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+        })
       }
     }
 
-    renderCards(cardsCopy);
-  }
-
-  doFilter(cards);
-
-
-
-
-  let defaultChecked = false;
-  const gridFilterRadio = document.querySelectorAll(".radio-group__input");
-
-  function gridFilter(evt) {
-    gamesWrapper.style.gridTemplateColumns = `repeat(${evt.target?.getAttribute("data-columnsCount") || evt.getAttribute("data-columnsCount")}, minmax(100px, 1fr))`;
-  }
-
-  for (const radio of gridFilterRadio) {
-    if (!defaultChecked && radio.checked) {
-      console.log(window.innerWidth);
-      console.log(+radio.dataset.columnscount >= 3);
-      if (window.innerWidth > 1550 && +radio.dataset.columnscount < 4) {
-        continue;
-      }
-      defaultChecked = true;
-      gridFilter(radio);
+    if (sortBtnActive === 'По популярности') {
+      cardsCopy = cardsCopy.sort((a, b) => b.buyers - a.buyers);
     }
-    radio.addEventListener("change", gridFilter);
+
+    if (sortBtnActive === 'Сначала дешевые') {
+      cardsCopy = cardsCopy.sort((a, b) => a.price - b.price);
+    }
+
+    if (sortBtnActive === 'Сначала дорогие') {
+      cardsCopy = cardsCopy.sort((a, b) => b.price - a.price);
+    }
+
+    if (sortBtnActive === 'Новые') {
+      cardsCopy = cardsCopy.sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateB - dateA;
+      });
+    }
   }
 
-  sliderZone.innerHTML = ``;
+  renderCards(cardsCopy);
+}
 
-  for (let card in cards.slice(0, 6)) {
-    sliderZone.innerHTML += `
+doFilter(cards);
+
+
+
+
+let defaultChecked = false;
+const gridFilterRadio = document.querySelectorAll(".radio-group__input");
+
+function gridFilter(evt) {
+  gamesWrapper.style.gridTemplateColumns = `repeat(${evt.target?.getAttribute("data-columnsCount") || evt.getAttribute("data-columnsCount")}, minmax(100px, 1fr))`;
+}
+
+for (const radio of gridFilterRadio) {
+  if (!defaultChecked && radio.checked) {
+    if (window.innerWidth > 1550 && +radio.dataset.columnscount < 4) {
+      continue;
+    }
+    defaultChecked = true;
+    gridFilter(radio);
+  }
+  radio.addEventListener("change", gridFilter);
+}
+
+sliderZone.innerHTML = ``;
+
+for (let card in cards.slice(0, 6)) {
+  sliderZone.innerHTML += `
       <div class="swiper-slide">
       <a href="gamepage.html?productName=${cards[card].name}&image=${cards[card].image}&price=${cards[card].price}&count=${cards[card].count}&buyers=${cards[card].buyers}&description=${cards[card].description}&systemText=${cards[card].systemText}&activation=${cards[card].activationText}&platform=${cards[card].platform}&id=${cards[card].id}" class="lastPurchase__card">
       <div class="lastPurchase__card-img" style="background-image: url('${cards[card].image}')"></div>
@@ -626,11 +598,11 @@ const doLogic = () => {
       </a>
       </div>
       `;
-  }
+}
 
 
-  for (let card in cards.slice(0, 3)) {
-    firstScreenSlider.innerHTML += `
+for (let card in cards.slice(0, 3)) {
+  firstScreenSlider.innerHTML += `
       <div class="swiper-slide">
       <a href="gamepage.html?productName=${cards[card].name}&image=${cards[card].image}&price=${cards[card].price}&count=${cards[card].count}&buyers=${cards[card].buyers}&description=${cards[card].description}&systemText=${cards[card].systemText}&activation=${cards[card].activationText}&platform=${cards[card].platform}&id=${cards[card].id}">
         <img src="${cards[card].image}" class="slider__img"></img>
@@ -734,5 +706,4 @@ const doLogic = () => {
       </a>
     </div>
       `;
-  }
-};
+}

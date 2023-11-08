@@ -83,8 +83,6 @@ for (let i = 0; i < gamepageBtns.length; i++) {
     gamepageBtns[i].classList.add('gamePage__requirements-btn--active');
     activeInfoPage = gamepageBtns[i].innerText;
 
-    console.log(activeInfoPage);
-    console.log(description);
 
     if (activeInfoPage === 'Описание') {
       gamepageInfo.innerText = `${description}`;
@@ -230,7 +228,6 @@ for (let i = 0; i < basketBtns.length; i++) {
     let card = basketCards.filter(it => {
       return it.id.toString() === id;
     })
-    console.log(card[0]);
     let basketDone = JSON.parse(localStorage.getItem("basket"));
 
     if (basketDone.length === 0) {
@@ -261,7 +258,6 @@ const renderBasket = () => {
   const payBtn = document.querySelector('.shopping-cart__total-btn');
 
   payBtn.addEventListener('click', () => {
-    console.log(document.getElementById("hiddenInput"));
     if (document.getElementById("hiddenInput") === null) {
       const hiddenInput = document.createElement('input');
       hiddenInput.type = 'hidden';
@@ -273,7 +269,6 @@ const renderBasket = () => {
         result.push({[storedValue[i].id]: storedValue[i].basketCount ? storedValue[i].basketCount : 1});
       }
   
-      console.log(JSON.stringify(result));
   
       if (storedValue !== null) {
         hiddenInput.value = JSON.stringify(result);
@@ -289,7 +284,6 @@ const renderBasket = () => {
         result.push({[storedValue[i].id]: storedValue[i].basketCount ? storedValue[i].basketCount : 1});
       }
   
-      console.log(JSON.stringify(result));
   
       if (storedValue !== null) {
         input.value = JSON.stringify(result);
@@ -350,7 +344,6 @@ const renderBasket = () => {
 
         for (let j = 0; j < basketDone.length; j++) {
           if (basketDone[i].id === basketDone[j].id) {
-            console.log(priceNumber);
             priceNumber = priceNumber - basketDone[j].price;
           }
         }
