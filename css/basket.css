@@ -380,18 +380,6 @@
     flex-wrap: wrap;
 }
 
-.shopping-cart__right-btn--active {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 13px;
-    width: 22%;
-    height: 15%;
-    border-radius: 6px;
-    border: 2px solid #0cebeb;
-    cursor: pointer;
-}
 
 .shopping-cart__btn-title-img-qiwi {
     background-image: url("../images/icons/qiwi.svg");
@@ -422,7 +410,8 @@
 .shopping-cart__right-btn-walletUkr,
 .shopping-cart__right-btn-bitcoin,
 .shopping-cart__right-btn-sbp,
-.shopping-cart__right-btn-steam {
+.shopping-cart__right-btn-steam,
+.shopping-cart__right-btn-qiwi {
     position: relative;
     display: flex;
     align-items: center;
@@ -432,6 +421,19 @@
     height: 18%;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
+}
+
+.shopping-cart__right-btn--active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    width: 22%;
+    height: 16%;
+    border-radius: 6px;
+    border: 2px solid #0cebeb;
     cursor: pointer;
 }
 
@@ -720,6 +722,10 @@
     .shopping-cart__right-btn-steam {
         width: 20%;
         height: 15%;
+    }
+
+    .shopping-cart__right-btn--active {
+        height: 13%;
     }
 
     .shopping-cart__right-btns-block {

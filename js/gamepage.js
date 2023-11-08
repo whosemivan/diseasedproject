@@ -240,24 +240,42 @@ const renderBasket = () => {
   const payBtn = document.querySelector('.shopping-cart__total-btn');
 
   payBtn.addEventListener('click', () => {
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.id = 'hiddenInput';
-    const storedValue = JSON.parse(localStorage.getItem('basket'));
-    // <input type="hidden" value="[{"id":1442248,"count":2},{"id":1441508,"count":1}]" name="cartItems">
-
-    let result = [];
-    for (let i = 0; i < storedValue.length; i++) {
-      result.push({[storedValue[i].id]: storedValue[i].basketCount ? storedValue[i].basketCount : 1});
+    console.log(document.getElementById("hiddenInput"));
+    if (document.getElementById("hiddenInput") === null) {
+      const hiddenInput = document.createElement('input');
+      hiddenInput.type = 'hidden';
+      hiddenInput.id = 'hiddenInput';
+      const storedValue = JSON.parse(localStorage.getItem('basket'));
+  
+      let result = [];
+      for (let i = 0; i < storedValue.length; i++) {
+        result.push({[storedValue[i].id]: storedValue[i].basketCount ? storedValue[i].basketCount : 1});
+      }
+  
+      console.log(JSON.stringify(result));
+  
+      if (storedValue !== null) {
+        hiddenInput.value = JSON.stringify(result);
+      }
+  
+      document.body.appendChild(hiddenInput);
+    } else {
+      const storedValue = JSON.parse(localStorage.getItem('basket'));
+      const input = document.getElementById("hiddenInput");
+  
+      let result = [];
+      for (let i = 0; i < storedValue.length; i++) {
+        result.push({[storedValue[i].id]: storedValue[i].basketCount ? storedValue[i].basketCount : 1});
+      }
+  
+      console.log(JSON.stringify(result));
+  
+      if (storedValue !== null) {
+        input.value = JSON.stringify(result);
+      }
+  
     }
 
-    console.log(JSON.stringify(result));
-
-    if (storedValue !== null) {
-      hiddenInput.value = JSON.stringify(result);
-    }
-
-    document.body.appendChild(hiddenInput);
   });
 
   for (let i = 0; i < basketDone.length; i++) {
@@ -299,22 +317,7 @@ const renderBasket = () => {
   for (let i = 0; i < deleteBtns.length; i++) {
     deleteBtns[i].addEventListener('click', () => {
       if (!basketDone[i]?.basketCount || basketDone[i].basketCount === 1) {
-        const cardElement = deleteBtns[i].closest('.shopping-cart__card');
-        cardElement.remove();
-
-        const itemId = basketDone[i].id;
-        basketDone = basketDone.filter(item => item.id !== itemId);
-        localStorage.setItem("basket", JSON.stringify(basketDone));
-
-
-        priceNumber = 0;
-        for (let j = 0; j < basketDone.length; j++) {
-            priceNumber += basketDone[j].price * basketDone[j].basketCount;
-        }
-
-        priceEl.innerText = `₽${priceNumber}`;
-
-
+        return;
       } else {
         const elementCount = addBtns[i].parentElement.querySelector('.shopping-cart__card-quantity-number');
         basketDone[i].basketCount -= 1;
