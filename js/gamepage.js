@@ -19,6 +19,27 @@ const basketBtns = document.querySelectorAll('.gamePage__buy-btn');
 const categoryLink = document.querySelector('.categoryLink');
 const categoryLinkText = document.querySelector('.categoryLink span');
 
+const paySystemsBtns = document.querySelectorAll('.shopping-cart__right-btn');
+
+const deleteClass = () => {
+  for (let i = 0; i < paySystemsBtns.length; i++) {
+    if (paySystemsBtns[i].classList.contains('shopping-cart__right-btn--active')) {
+      paySystemsBtns[i].classList.remove('shopping-cart__right-btn--active');
+    } 
+  }
+};
+
+for (let i = 0; i < paySystemsBtns.length; i++) {
+  paySystemsBtns[i].addEventListener('click', () => {
+    if (paySystemsBtns[i].classList.contains('shopping-cart__right-btn--active')) {
+      return;
+    } else {
+      deleteClass();
+      paySystemsBtns[i].classList.add('shopping-cart__right-btn--active')
+    }
+  });
+}
+
 let activeInfoPage = 'Описание';
 
 function getQueryParams() {

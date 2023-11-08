@@ -1,6 +1,27 @@
 const basketZone = document.querySelector('.shopping-cart__left-cards-block');
 const price = document.querySelector('.shopping-cart__subtext');
 
+const paySystemsBtns = document.querySelectorAll('.shopping-cart__right-btn');
+
+const deleteClass = () => {
+  for (let i = 0; i < paySystemsBtns.length; i++) {
+    if (paySystemsBtns[i].classList.contains('shopping-cart__right-btn--active')) {
+      paySystemsBtns[i].classList.remove('shopping-cart__right-btn--active');
+    } 
+  }
+};
+
+for (let i = 0; i < paySystemsBtns.length; i++) {
+  paySystemsBtns[i].addEventListener('click', () => {
+    if (paySystemsBtns[i].classList.contains('shopping-cart__right-btn--active')) {
+      return;
+    } else {
+      deleteClass();
+      paySystemsBtns[i].classList.add('shopping-cart__right-btn--active')
+    }
+  });
+}
+
 const renderBasket = () => {
   let basketDone = JSON.parse(localStorage.getItem("basket"));
   let priceNumber = 0;
