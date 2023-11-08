@@ -258,7 +258,7 @@ const doLogic = () => {
 
       if (cardsToShow < arr.length) {
         showMoreBtn.addEventListener('click', () => {
-          cardsToShow += 6; 
+          cardsToShow += 20; 
           renderCards(arr); 
         });
       } else {
