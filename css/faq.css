@@ -42,7 +42,7 @@ body::after {
 .faq-help__wrapper {
   position: relative;
   max-width: 1410px;
-  height: 2000px;
+  /* height: 2000px; */
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1434,9 +1434,9 @@ body::after {
     text-align: left;
   }
 
-  .faq-help__wrapper {
+  /* .faq-help__wrapper {
     height: 2800px;
-  }
+  } */
 
   .footer__about-text-group {
     padding: 10px 0 0 0;
@@ -1508,9 +1508,9 @@ body::after {
     width: 92%;
   }
 
-  .faq-help {
-    height: 3890px;
-  }
+  /* .faq-help { */
+    /* height: 3890px; */
+  /* } */
 
   .faq-help__questions-card-text {
     width: 85%;
@@ -1602,7 +1602,7 @@ body::after {
 
   .faq-help__wrapper {
     width: 90%;
-    height: 2200px;
+    /* height: 2200px; */
   }
 
   .faq-help__subtext {
