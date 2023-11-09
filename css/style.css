@@ -1,7 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #111317;
-  min-width: 390px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -3528,7 +3527,7 @@ ul li {
   }
 
   .filter__categories {
-    width: 91%;
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
