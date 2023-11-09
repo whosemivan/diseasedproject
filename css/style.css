@@ -1,7 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #111317;
-  min-width: 390px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -76,6 +75,7 @@ body::after {
   z-index: 100;
   cursor: pointer;
 }
+
 .slider-button-next {
   display: flex;
   width: 15px;
@@ -3383,7 +3383,8 @@ ul li {
   .shopping-cart__card-quantity {
     display: none;
   }
-/* 
+
+  /* 
   .shopping-cart__card {
     width: 92%;
   } */
@@ -3412,6 +3413,10 @@ ul li {
 
 /* mobile */
 @media (max-width: 800px) {
+
+  .filter__block-container {
+    flex-direction: column;
+  }
 
   .swiper-horizontal>.swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
