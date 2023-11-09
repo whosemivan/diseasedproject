@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #111317;
+  min-width: 390px;
   position: relative;
   margin: 0;
   padding: 0;
