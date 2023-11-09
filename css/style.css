@@ -3527,7 +3527,7 @@ ul li {
   }
 
   .filter__categories {
-    width: 90%;
+    width: calc(100% - 50px);
     display: flex;
     flex-direction: column;
   }
