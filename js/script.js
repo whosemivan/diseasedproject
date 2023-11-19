@@ -20,6 +20,7 @@ const sortList = document.querySelector('.filter__settings__dropdown-list');
 const firstScreenSlider = document.querySelector('.first-screen__slider .swiper-wrapper');
 const sliderZone = document.querySelector('.lastPurchaseSwiper .swiper-wrapper');
 const showMoreBtn = document.querySelector('.showMore');
+let isText = true;
 
 let activeTopFilter = 'Все категории';
 let isHiddenEmptyProduct = false;
@@ -117,7 +118,7 @@ for (let i = 0; i < sortBtns.length; i++) {
 
 
 // render
-let cardsToShow = 20;
+let cardsToShow = 10;
 
 const renderCards = (arr) => {
   gamesWrapper.innerHTML = '';
@@ -136,92 +137,92 @@ const renderCards = (arr) => {
               <div class="games__card-icons">
                 <div class="games__card-group-icons">
                 ${
-                  arr[card].isGameAcc ? `<div class="games__card-icon-info">Аккаунты</div>` : ``
+                  arr[card].isGameAcc ? `<div class="games__card-icon-info">${isText ? 'Аккаунты' : ''}</div>` : ``
                 }
                 ${
-                  arr[card].isDonat ? `<div class="games__card-icon-info">Донат</div>`: ``
+                  arr[card].isDonat ? `<div class="games__card-icon-info">${isText ? 'Донат' : ''}</div>`: ``
                 }
                 ${
-                  arr[card].isKey ? `<div class="games__card-icon-key">Ключ</div>` : ``
+                  arr[card].isKey ? `<div class="games__card-icon-key">${isText ? 'Ключ' : ''}</div>` : ``
                 }
                 ${
-                  arr[card].isService ? `<div class="results-card-icon-info">Сервисы</div>` : ``
+                  arr[card].isService ? `<div class="results-card-icon-info">${isText ? 'Сервисы' : ''}</div>` : ``
                 }
               
                 
                 ${
-                  arr[card].platform === "steam" ? `<div class="games__card-icon-steam">Steam</div>` : ``
+                  arr[card].platform === "steam" ? `<div class="games__card-icon-steam">${isText ? 'Steam' : ''}</div>` : ``
                 }
                 ${
-                  arr[card].platform === "mojang" || arr[card].platform === "minecraft" ? `<div class="games__card-icon-minecraft">Mojang</div>` : ``
-                }
-  
-                ${
-                  arr[card].platform === "epic games" ? `<div class="games__card-icon-epicgames">Epic Games</div>` : ``
+                  arr[card].platform === "mojang" || arr[card].platform === "minecraft" ? `<div class="games__card-icon-minecraft">${isText ? 'Mojang' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "random steam" ? `<div class="games__card-icon-random">Random Steam</div>` : ``
+                  arr[card].platform === "epic games" ? `<div class="games__card-icon-epicgames">${isText ? 'Epic Games' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "ubisoft" ? `<div class="games__card-icon-uplay">Ubisoft</div>` : ``
+                  arr[card].platform === "random steam" ? `<div class="games__card-icon-random">${isText ? 'Random Steam' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "ea play" ? `<div class="games__card-info-simple">EA play</div>` : ``
+                  arr[card].platform === "ubisoft" ? `<div class="games__card-icon-uplay">${isText ? 'Ubisoft' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "rockstar" ? `<div class="games__card-info-simple">Rockstar</div>` : ``
+                  arr[card].platform === "ea play" ? `<div class="games__card-info-simple">${isText ? 'EA play' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "riot" ? `<div class="games__card-info-simple">Riot</div>` : ``
+                  arr[card].platform === "rockstar" ? `<div class="games__card-info-simple">${isText ? 'Rockstar' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "fortnite" ? `<div class="games__card-info-simple">Fortnite</div>` : ``
+                  arr[card].platform === "riot" ? `<div class="games__card-info-simple">${isText ? 'Riot' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "genshin impact" ? `<div class="games__card-info-simple">Genshin impact</div>` : ``
+                  arr[card].platform === "fortnite" ? `<div class="games__card-info-simple">${isText ? 'Fortnite' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "vk play" ? `<div class="games__card-info-simple">VK Play</div>` : ``
+                  arr[card].platform === "genshin impact" ? `<div class="games__card-info-simple">${isText ? 'Genshin impact' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "gog" ? `<div class="games__card-info-simple">GOG</div>` : ``
+                  arr[card].platform === "vk play" ? `<div class="games__card-info-simple">${isText ? 'VK Play' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "xbox" ? `<div class="games__card-info-simple">Xbox</div>` : ``
+                  arr[card].platform === "gog" ? `<div class="games__card-info-simple">${isText ? 'GOG' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "playstation" ? `<div class="games__card-info-simple">Playstation</div>` : ``
+                  arr[card].platform === "xbox" ? `<div class="games__card-info-simple">${isText ? 'Xbox' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "nintendo" ? `<div class="games__card-info-simple">Nintendo</div>` : ``
+                  arr[card].platform === "playstation" ? `<div class="games__card-info-simple">${isText ? 'Playstation' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "mobile" ? `<div class="games__card-info-simple">Mobile</div>` : ``
+                  arr[card].platform === "nintendo" ? `<div class="games__card-info-simple">${isText ? 'Nintendo' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "roblox" ? `<div class="games__card-info-simple">Roblox</div>` : ``
+                  arr[card].platform === "mobile" ? `<div class="games__card-info-simple">${isText ? 'Mobile' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "software" ? `<div class="games__card-info-simple">Software</div>` : ``
+                  arr[card].platform === "roblox" ? `<div class="games__card-info-simple">${isText ? 'Roblox' : ''}</div>` : ``
                 }
   
                 ${
-                  arr[card].platform === "сервисы" ? `<div class="games__card-icon-service">Сервисы</div>` : ``
+                  arr[card].platform === "software" ? `<div class="games__card-info-simple">${isText ? 'Software' : ''}</div>` : ``
+                }
+  
+                ${
+                  arr[card].platform === "сервисы" ? `<div class="games__card-icon-service">${isText ? 'Сервисы' : ''}</div>` : ``
                 }
   
                 </div>
@@ -234,7 +235,7 @@ const renderCards = (arr) => {
 
     if (cardsToShow < arr.length) {
       showMoreBtn.addEventListener('click', () => {
-        cardsToShow += 20;
+        cardsToShow += 10;
         renderCards(arr);
       });
     } else {
@@ -297,7 +298,6 @@ const doFilter = (cards) => {
 
   for (let i = 0; i < platformsInputs.length; i++) {
     if (platformsInputs[i].checked) {
-
       cardsCopy = cardsCopy.filter((it) => {
         return it.platform.replace(/\s/g, '') === platforms[i].innerText.toLowerCase().replace(/\s/g, '');
       })
@@ -310,134 +310,223 @@ const doFilter = (cards) => {
     if (supFiltersInputs[i].checked) {
 
       if (supFilters[i].innerText === 'ИГРЫ ОТ ₽150') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((card) => {
-          return card.price >= 150;
+          return card.price >= 150 && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'ИГРЫ ОТ ₽700') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((card) => {
-          return card.price >= 700;
+          return card.price >= 700 && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'ИГРЫ ОТ ₽900') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((card) => {
-          return card.price >= 900;
+          return card.price >= 900 && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'КЛЮЧИ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+
+        parentElement.checked = true;        
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.isKey === true;
+          return it.isKey === true && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'АККАУНТЫ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.isGameAcc === true;
+          return it.isGameAcc === true && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'ДОНАТ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.isDonat === true;
+          return it.isDonat === true && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'STEAM POINTS') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'STEAM POINTS') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'APEX LEGENDS') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'НАКРУТКА') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.cheating;
+          return it.cheating && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'БУСТ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.bust;
+          return it.bust && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'B-БАКСЫ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'HYPIXEL') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'HYPIXEL') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'ПРИМОГЕМЫ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'XBOX GAMEPASS') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'ПОДПИСКА') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'РОБУКСЫ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'МУЗЫКА') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'КИНО') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'ПРОМОКОДЫ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
 
       if (supFilters[i].innerText === 'БАЛЛЫ') {
+        let parentElement = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title input');
+        let parentElementName = supFilters[i].parentElement.parentElement.querySelector('.filter-checkbox__container-title').innerText;
+        parentElement.checked = true;
+        
         cardsCopy = cardsCopy.filter((it) => {
-          return it.ownCoins === supFilters[i].innerText.toLowerCase();
+          return it.ownCoins === supFilters[i].innerText.toLowerCase() && it.platform.replace(/\s/g, '') === parentElementName.toLowerCase().replace(/\s/g, '');
         })
       }
     }
@@ -474,7 +563,17 @@ doFilter(cards);
 let defaultChecked = false;
 const gridFilterRadio = document.querySelectorAll(".radio-group__input");
 
+
 function gridFilter(evt) {
+  if (+evt.target?.getAttribute("data-columnsCount") === 5) {
+    isText = false;
+  } else {
+    isText = true;
+  }
+  console.log(isText);
+  console.log(evt.target?.getAttribute("data-columnsCount"));
+
+  doFilter(cards);
   gamesWrapper.style.gridTemplateColumns = `repeat(${evt.target?.getAttribute("data-columnsCount") || evt.getAttribute("data-columnsCount")}, minmax(100px, 1fr))`;
 }
 
@@ -486,6 +585,7 @@ for (const radio of gridFilterRadio) {
     defaultChecked = true;
     gridFilter(radio);
   }
+
   radio.addEventListener("change", gridFilter);
 }
 

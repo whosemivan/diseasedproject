@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diseased</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./fonts.css" />
   <link rel="stylesheet" href="./css/gamepage.css" />
   <link rel="stylesheet" href="css/search-popup.css" />
@@ -174,12 +176,28 @@
             </h2>
           </div>
 
-          <div class="gamePage__gameplay-img-block">
-            <img src="./images/gameGameplay.jpg" alt="Call of Duty®: Modern Warfare® II"
-              class="gamePage__gameplay-img" />
-            <img src="./images/sliderImg2.png" alt="Call of Duty®: Modern Warfare® II" class="gamePage__gameplay-img" />
-            <img src="./images/sliderImg3.png" alt="Call of Duty®: Modern Warfare® II" class="gamePage__gameplay-img" />
-            <img src="./images/sliderImg4.png" alt="Call of Duty®: Modern Warfare® II" class="gamePage__gameplay-img" />
+          <div class="swiper gamePage__gameplay-img-block">
+            <div class=" swiper-wrapper">
+
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.67426 16.4073C9.77753 16.5119 9.85945 16.6361 9.91534 16.7727C9.97123 16.9094 10 17.0558 10 17.2037C10 17.3516 9.97123 17.4981 9.91534 17.6347C9.85945 17.7713 9.77753 17.8955 9.67426 18.0001C9.57099 18.1047 9.44839 18.1876 9.31346 18.2442C9.17853 18.3008 9.03391 18.33 8.88786 18.33C8.74181 18.33 8.5972 18.3008 8.46227 18.2442C8.32733 18.1876 8.20473 18.1047 8.10146 18.0001L0.326319 10.1263C0.222881 10.0218 0.140812 9.89772 0.0848167 9.76106C0.0288218 9.62441 7.73871e-07 9.47791 7.86805e-07 9.32996C7.99739e-07 9.182 0.0288218 9.0355 0.0848168 8.89885C0.140812 8.76219 0.222881 8.63807 0.32632 8.53358L8.10146 0.659824C8.20473 0.555244 8.32734 0.472286 8.46227 0.415686C8.5972 0.359087 8.74182 0.329956 8.88786 0.329956C9.03391 0.329956 9.17853 0.359087 9.31346 0.415686C9.44839 0.472286 9.57099 0.555244 9.67426 0.659824C9.77754 0.764406 9.85945 0.888563 9.91534 1.0252C9.97124 1.16185 10 1.3083 10 1.4562C10 1.6041 9.97124 1.75055 9.91534 1.8872C9.85945 2.02384 9.77754 2.14799 9.67426 2.25257L2.6833 9.32996L9.67426 16.4073Z"
+                  fill="white" fill-opacity="0.65" />
+              </svg>
+
+
+            </div>
+            <div class="swiper-button-next">
+              <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.325737 2.25263C0.222466 2.14805 0.140547 2.0239 0.0846565 1.88725C0.0287664 1.75061 1.08814e-09 1.60416 0 1.45626C-1.08814e-09 1.30836 0.0287664 1.16191 0.0846565 1.02527C0.140547 0.888624 0.222466 0.764467 0.325737 0.659886C0.429009 0.555304 0.55161 0.472346 0.686541 0.415747C0.821472 0.359148 0.96609 0.330017 1.11214 0.330017C1.25819 0.330017 1.4028 0.359148 1.53773 0.415747C1.67267 0.472346 1.79527 0.555304 1.89854 0.659886L9.67368 8.53364C9.77712 8.63813 9.85919 8.76225 9.91518 8.89891C9.97118 9.03556 10 9.18206 10 9.33002C10 9.47797 9.97118 9.62447 9.91518 9.76113C9.85919 9.89778 9.77712 10.0219 9.67368 10.1264L1.89854 18.0001C1.79527 18.1047 1.67267 18.1877 1.53773 18.2443C1.4028 18.3009 1.25819 18.33 1.11214 18.33C0.96609 18.33 0.821472 18.3009 0.686541 18.2443C0.55161 18.1877 0.429009 18.1047 0.325737 18.0001C0.222466 17.8956 0.140547 17.7714 0.0846565 17.6348C0.0287664 17.4981 0 17.3517 0 17.2038C0 17.0559 0.0287664 16.9094 0.0846565 16.7728C0.140547 16.6361 0.222466 16.512 0.325737 16.4074L7.3167 9.33002L0.325737 2.25263Z"
+                  fill="white" fill-opacity="0.65" />
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -436,7 +454,7 @@
   </footer>
 
 
-  
+
   <div class="search-popup__container" data-remodal-id="modal">
     <div class="search-popup__content">
       <h2 class="search-popup-title">Поиск <span>товаров</span></h2>
@@ -544,6 +562,435 @@
     </div>
   </div>
 
+  <script type="application/json" id="cards">
+    [{
+        "id": 1,
+        "name": "Metro Last Light Complete Edition",
+        "image": "./images/metro.jpg",
+        "price": 1000,
+        "platform": "steam",
+        "ownCoins": "steam points",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 10,
+        "buyers": 0,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg",
+        "sliderImages": ["./images/gamePoster.jpg", "./images/gamePoster.jpg", "./images/gamePoster.jpg"]
+      },
+      {
+        "id": 2,
+        "name": "Metro Last Light Complete Edition",
+        "image": "./images/spotify.jpg",
+        "price": 5000,
+        "platform": "minecraft",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 10,
+        "date": "2023-05-11",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 3,
+        "name": "Metro Last Light Complete Edition",
+        "image": "./images/minecraft.jpg",
+        "price": 340,
+        "platform": "epic games",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 1,
+        "buyers": 50,
+        "date": "2022-01-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 4,
+        "name": "Metro Last Light Complete Edition",
+        "image": "./images/spotify.jpg",
+        "price": 340,
+        "platform": "random steam",
+        "isKey": false,
+        "isGameAcc": false,
+        "isService": false,
+        "isDonat": true,
+        "count": 0,
+        "buyers": 2,
+        "date": "2023-08-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 5,
+        "name": "Metro Last Light Complete Edition",
+        "image": "./images/minecraft.jpg",
+        "price": 340,
+        "platform": "ubisoft",
+        "isKey": true,
+        "isGameAcc": false,
+        "isService": false,
+        "isDonat": false,
+        "count": 1,
+        "buyers": 4,
+        "date": "2022-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 6,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "ea play",
+        "ownCoins": "apex legends",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 11,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 7,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "rockstar",
+        "cheating": true,
+        "bust": true,
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 100,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 8,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "riot",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 2,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 9,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "fortnite",
+        "ownCoins": "B-БАКСЫ",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 543,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 10,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "minecraft",
+        "ownCoins": "hypixel",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 1,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 11,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "genshin impact",
+        "ownCoins": "примогемы",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 12,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "vk play",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 13,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "gog",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 14,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "xbox",
+        "ownCoins": "xbox gamepass",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 15,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "playstation",
+        "ownCoins": "подписка",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 16,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "nintendo",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 17,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "mobile",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 18,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "roblox",
+        "ownCoins": "РОБУКСЫ",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 19,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "software",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 20,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "сервисы",
+        "ownCoins": "музыка",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 21,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "сервисы",
+        "ownCoins": "кино",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 22,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "сервисы",
+        "ownCoins": "промокоды",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      },
+      {
+        "id": 23,
+        "name": "Lalal",
+        "image": "./images/metro.jpg",
+        "price": 340,
+        "platform": "сервисы",
+        "ownCoins": "баллы",
+        "isKey": false,
+        "isGameAcc": true,
+        "isService": false,
+        "isDonat": false,
+        "count": 0,
+        "buyers": 8,
+        "date": "2023-04-23",
+        "description": "Text",
+        "systemText": "Text",
+        "activationText": "Text",
+        "sliderLogo": "./images/icons/gamename.svg"
+      }
+    ]
+  </script>
   <script>
     $(document).ready(function () {
       $('[data-remodal-id=modal]').remodal();
@@ -553,6 +1000,7 @@
   <script src="js/gamepage.js"></script>
   <script src="js/header.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/gamePageSlider.js"></script>
 </body>
 
 </html>

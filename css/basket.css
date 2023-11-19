@@ -90,7 +90,7 @@
 .shopping-cart__left-close::before {
     content: "";
     position: absolute;
-    background-image: url("../images/icons/closeModal.svg");
+    background-image: url("images/icons/closeModal.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -207,7 +207,7 @@
 .shopping-cart__card-quantity-plus::after {
     content: "";
     position: absolute;
-    background-image: url("../images/icons/plusIcon.svg");
+    background-image: url("images/icons/plusIcon.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@
 .shopping-cart__card-quantity-minus::after {
     content: "";
     position: absolute;
-    background-image: url("../images/icons/minus.svg");
+    background-image: url("images/icons/minus.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -343,14 +343,14 @@
 .shopping-cart__input-btn::before {
     content: "";
     position: absolute;
-    background-image: url("../images/icons/promocode.svg");
+    background-image: url("images/icons/promocode.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 39px;
     height: 24px;
     top: 0px;
-    left: -175px;
+    left: -153px;
 }
 
 .shopping-cart__right-block {
@@ -375,14 +375,14 @@
 .shopping-cart__right-btns-block {
     display: flex;
     gap: 14px;
-    height: 42%;
+    /* height: 42%; */
     width: 100%;
     flex-wrap: wrap;
 }
 
 
 .shopping-cart__btn-title-img-qiwi {
-    background-image: url("../images/icons/qiwi.svg");
+    background-image: url("images/icons/qiwi.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -390,7 +390,7 @@
     height: 66px;
 }
 
-.shopping-cart__btn-title-img-qiwi::before {
+/* .shopping-cart__btn-title-img-qiwi::before {
     content: "qiwi";
     position: absolute;
     text-transform: uppercase;
@@ -402,7 +402,7 @@
     text-transform: uppercase;
     top: 0;
     left: 10px;
-}
+} */
 
 .shopping-cart__right-btn-freekassa,
 .shopping-cart__right-btn-visa,
@@ -422,23 +422,15 @@
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.03);
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .shopping-cart__right-btn--active {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 13px;
-    width: 22%;
-    height: 16%;
-    border-radius: 6px;
-    border: 2px solid #0cebeb;
-    cursor: pointer;
+    /* border: 1px solid #0cebeb; */
 }
 
 .shopping-cart__btn-title-img-freekassa {
-    background-image: url("../images/icons/freekassaIcon.svg");
+    background-image: url("images/icons/freekassaIcon.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -461,7 +453,7 @@
 }
 
 .shopping-cart__btn-title-img-visa {
-    background-image: url("../images/icons/visa.svg");
+    background-image: url("images/icons/visa.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -484,7 +476,7 @@
 }
 
 .shopping-cart__btn-title-img-walletKz {
-    background-image: url("../images/icons/kzFlag.svg");
+    background-image: url("images/icons/kzFlag.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -507,7 +499,7 @@
 }
 
 .shopping-cart__btn-title-img-walletUkr {
-    background-image: url("../images/icons/Group.svg");
+    background-image: url("images/icons/Group.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -530,7 +522,7 @@
 }
 
 .shopping-cart__btn-title-img-bitcoin {
-    background-image: url("../images/icons/bitcoin.svg");
+    background-image: url("images/icons/bitcoin.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -553,7 +545,7 @@
 }
 
 .shopping-cart__btn-title-img-sbp {
-    background-image: url("../images/icons/sbp.svg");
+    background-image: url("images/icons/sbp.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -561,7 +553,7 @@
 }
 
 .shopping-cart__btn-title-img-sbp-text {
-    background-image: url("../images/icons/sbpIcon.svg");
+    background-image: url("images/icons/sbpIcon.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -585,7 +577,7 @@
 }
 
 .shopping-cart__btn-title-img-steam {
-    background-image: url("../images/icons/steamIcon.svg");
+    background-image: url("images/icons/steamIcon.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -638,7 +630,7 @@
 
 .shopping-cart__right-input-mail {
     position: relative;
-    margin: 20px 0 20px 0;
+    margin: 5px 0 20px 0;
     width: 98%;
     height: 65px;
     border-radius: 8px;
@@ -668,7 +660,7 @@
 .shopping-cart__right-input-btn::before {
     content: "";
     position: absolute;
-    background-image: url("../images/icons/mail.svg");
+    background-image: url("images/icons/mail.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

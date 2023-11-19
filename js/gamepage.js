@@ -61,7 +61,7 @@ const id = queryParams.id;
 
 // previewLink[1].innerText = productName;
 title.innerText = `Купить ${productName}`;
-image.src = productImage;
+// image.src = productImage;
 infoImg.src = productImage;
 price.innerText = `₽${productPrice}`;
 mainPrice.innerText = `₽${productPrice}`;
