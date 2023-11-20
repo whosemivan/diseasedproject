@@ -91,11 +91,10 @@ body::after {
 /* header */
 
 .header {
-  position: fixed;
   width: 100%;
   background: rgba(23, 25, 29, 0.48);
   backdrop-filter: blur(53.5px);
-  -webkit-backdrop-filter: blur(53.5px);
+  position: relative;
   z-index: 10;
 }
 
@@ -238,8 +237,8 @@ body::after {
   content: "";
   background: rgba(255, 255, 255, 0.22);
   position: absolute;
-  bottom: 15px;
-  left: 120px;
+  bottom: 12px;
+  left: 122px;
   height: 20px;
   width: 1px;
 }
@@ -338,6 +337,7 @@ body::after {
   letter-spacing: 0.28px;
 }
 
+
 /* first-screen */
 
 .first-screen__wrapper {
@@ -346,64 +346,6 @@ body::after {
   width: 90%;
   margin: 0 auto;
   z-index: 1;
-}
-
-.first-screen__wrapper::after {
-  content: "Лучшие предложения";
-  position: absolute;
-  top: 42%;
-  width: 365px;
-  left: 90%;
-  text-transform: uppercase;
-  color: #62646c;
-  transform: rotate(-90deg);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 6.44px;
-}
-
-.first-screen__content::before {
-  content: "";
-  position: absolute;
-  bottom: 400px;
-  width: 311.88px;
-  height: 908.818px;
-  z-index: -1;
-  transform: rotate(-31.418deg);
-  border-radius: 908.818px;
-  opacity: 0.15;
-  -moz-opacity: 0.15;
-  -webkit-opacity: 0.15;
-  filter: alpha(opacity=15);
-  background: #6c48ff;
-  filter: blur(90px);
-  display: inline-block;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-image: url("../images/icons/gradientEllipse2.svg");
-}
-
-.first-screen__content::after {
-  content: "";
-  position: absolute;
-  left: 10%;
-  top: 0;
-  width: 311.88px;
-  height: 620.818px;
-  z-index: -1;
-  transform: rotate(-31.418deg);
-  border-radius: 908.818px;
-  opacity: 0.15;
-  -moz-opacity: 0.15;
-  -webkit-opacity: 0.15;
-  filter: alpha(opacity=15);
-  background: #48ffd3;
-  filter: blur(85px);
-  display: inline-block;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-image: url("../images/icons/gradientEllipse1.svg");
 }
 
 .first-screen__banner {
@@ -418,17 +360,17 @@ body::after {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 50px 0 10px 0;
 }
+
+
 
 .breadcrumb {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 30px;
+  gap: 41px;
   width: 100%;
   flex-wrap: wrap;
-  padding: 20px 0;
 }
 
 .breadcrumb li {
@@ -444,7 +386,7 @@ body::after {
   justify-content: center;
   font-weight: 700;
   align-items: center;
-  margin: 30px 0 0 0;
+  margin: 0 0 25px 0;
 }
 
 .breadcrumb li a .link-name {
@@ -454,7 +396,7 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(229, 229, 229, 0.5);
+  color: rgba(229, 229, 229, 0.50);
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
@@ -463,10 +405,11 @@ body::after {
   text-transform: uppercase;
 }
 
+
 .first-screen__subtext {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
   border-radius: 100px;
   flex-wrap: wrap;
   width: 74%;
@@ -494,7 +437,6 @@ body::after {
   background-color: rgba(69, 182, 179, 0.1);
   padding: 12px 22px;
   border-radius: 33px;
-  color: rgba(255, 255, 255, 0.95);
   text-decoration: none;
 }
 
@@ -627,50 +569,6 @@ body::after {
   z-index: 10;
 }
 
-.first-screen__banner::before {
-  content: "";
-  position: absolute;
-  left: 80%;
-  bottom: 300px;
-  width: 311.88px;
-  height: 908.818px;
-  z-index: -1;
-  transform: rotate(15deg);
-  border-radius: 683.016px;
-  opacity: 0.15;
-  -moz-opacity: 0.15;
-  -webkit-opacity: 0.15;
-  filter: alpha(opacity=15);
-  background: #6c48ff;
-  filter: blur(90px);
-  display: inline-block;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-image: url("images/icons/gradientEllipse4.svg");
-}
-
-.first-screen__banner::after {
-  content: "";
-  position: absolute;
-  left: 75%;
-  bottom: 250px;
-  width: 419.82px;
-  height: 528.848px;
-  transform: rotate(30deg);
-  border-radius: 528.848px;
-  flex-shrink: 0;
-  opacity: 0.15;
-  -moz-opacity: 0.15;
-  -webkit-opacity: 0.15;
-  filter: alpha(opacity=15);
-  background: #48ffd3;
-  filter: blur(90px);
-  display: inline-block;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-image: url("images/icons/gradientEllipse3.svg");
-}
-
 .slider__img {
   width: 100%;
   height: 726px;
@@ -679,6 +577,21 @@ body::after {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+}
+
+.slider__img::after {
+  content: "Лучшие предложения";
+  position: absolute;
+  top: 42%;
+  width: 365px;
+  left: 89%;
+  text-transform: uppercase;
+  color: #62646c;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 6.44px;
 }
 
 .slider__text {
@@ -766,6 +679,17 @@ body::after {
   margin: 2px 0 0 0;
 }
 
+.game__info-item:nth-child(3)::before {
+  content: "";
+  background-image: url("images/icons/price.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0 0;
+}
+
 .game__info-item:nth-child(4)::before {
   content: "";
   background-image: url("images/icons/rightArrow.svg");
@@ -782,28 +706,11 @@ body::after {
   padding: 8px;
 }
 
-.game__info-item-price {
-  padding: 8px;
-  color: #0deae7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
+.game__info-item:nth-child(3) {
   width: 60px;
-  font-size: 10px;
-  font-weight: 600;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.game__info-item-price::before {
-  content: "";
-  background-image: url("images/icons/price.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 20px;
-  height: 15px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #0deae7;
 }
 
 /* Каталог */
@@ -939,6 +846,7 @@ body::after {
   background: #171b20;
 }
 
+
 .filter__block-container {
   display: flex;
   width: 100%;
@@ -984,6 +892,8 @@ body::after {
       #20e3b2 33.48%,
       #29ffc6 71.39%);
 }
+
+
 
 .filter__dropdown-list {
   display: flex;
@@ -1090,7 +1000,7 @@ input[type="number"] {
   background: transparent;
   display: flex;
   flex: 1 1;
-  color: #95979f;
+  color: #95979F;
   text-align: center;
   leading-trim: both;
   text-edge: cap;
@@ -1151,59 +1061,8 @@ input[type="number"] {
   background: #181b20;
 }
 
-
-.radio-group__input {
-  display: none;
-}
-
-.radio-group__label {
-  position: relative;
-  padding-left: 30px;
-}
-
-.radio-group__label::before {
-  content: "";
-  box-sizing: border-box;
-  border: 2px solid #62646C;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 5px;
-}
-
-.radio-group__input:checked+.radio-group__label::before {
-  border: 2px solid #FCFCFD;
-}
-
-.radio-group__input:checked+.radio-group__label::after {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: #FCFCFD;
-  left: 9.5px;
-  top: 4.5px;
-}
-
-.radio-group__block {
-  display: flex;
-  align-items: center;
-  height: 42px;
-  gap: 12px;
-}
-
-.radio-group__block--tb {
-  display: none;
-}
-
 input[type="radio"]:checked+label {
   color: #fcfcfd;
-}
-
-input[type="radio"] {
-  accent-color: white;
 }
 
 .filter__price {
@@ -1454,7 +1313,7 @@ ul li {
 }
 
 .game__card {
-  height: 424px;
+  height: 345px;
   position: relative;
   display: flex;
   flex: 1 1;
@@ -1465,27 +1324,26 @@ ul li {
   text-decoration: none;
 }
 
-.game__card-info-block {
-  min-height: 124px;
-}
-
 .games__card-info {
+  padding: 0 25px;
   display: flex;
   align-items: center;
-  min-width: 281px;
-  min-height: 24px;
 }
 
 .game__card-img {
-  height: 300px;
+  height: 240px;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-a.game__card.sale_item::before {
-  content: "sale";
+
+    a.game__card.sale_item::before 
+
+{
+
+      content: "sale";
   position: absolute;
   color: #111317;
   padding: 10px;
@@ -1502,39 +1360,49 @@ a.game__card.sale_item::before {
 
 .game__card-title {
   color: #dbdbdb;
+  padding: 10px 25px;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
 
-  /* white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   box-sizing: border-box;
 }
 
 .gradient-text {
-  background-color: #f3ec78;
-  background-image: linear-gradient(90.27deg,
-      #0cebeb 0.25%,
-      #20e3b2 47.04%,
-      #29ffc6 99.32%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-weight: bold;
+    background-color: #f3ec78;
+    background-image: linear-gradient(90.27deg, #0CEBEB 0.25%, #20E3B2 47.04%, #29FFC6 99.32%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 .games__card-price {
-  /* border-radius: 8px; */
-  position: relative;
-  /* width: 78px; */
-  padding: 6px 17px 6px 17px;
-  border-radius: 8px;
-  gap: 3px;
+    /* border-radius: 8px; */
+    /* width: 78px; */
+    display: flex;
+    padding: 6px 17px 6px 17px;
+    border-radius: 8px;
+    gap: 3px;
+    -webkit-background-clip: text;
+   background: rgba(255, 255, 255, 0.03);
+    align-items: center;
+}
+
+.games__card-price::after {
+  content: "";
+  background: linear-gradient(90deg,
+      #0cebeb 0.25%,
+      #20e3b2 47.04%,
+      #29ffc6 99.32%);
   -webkit-background-clip: text;
-  background: rgba(255, 255, 255, 0.03);
+  color: rgba(0, 0, 0, 0);
+  font-size: 16px;
 }
 
 .games__card-price::before {
@@ -1545,73 +1413,31 @@ a.game__card.sale_item::before {
   right: 140px;
   min-height: 20px;
   width: 1px;
-  right: 108%;
-  top: 20%;
 }
 
 .games__card-group-icons {
   display: flex;
   gap: 5px;
-  min-width: 158px;
 }
 
 .games__card-icons {
   display: flex;
-  gap: 5px;
   flex-wrap: wrap;
+  gap: 5px 30px;
   justify-content: space-between;
   color: #76dba1;
   text-transform: uppercase;
-  min-width: 100%;
 }
 
 .games__card-icon-info {
   display: flex;
-  width: 74px;
-  font-weight: bold;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
   gap: 4px;
   border-radius: 8px;
   background: rgba(118, 219, 161, 0.12);
-}
-
-.games-card-icon-service {
-  display: flex;
-  width: 74px;
-  padding: 2px;
-  justify-content: center;
-  gap: 3px;
-  border-radius: 8px;
-  background: rgba(118, 219, 161, 0.12);
-  color: #76dba1;
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.games-card-icon-service::before {
-  content: "";
-  background-image: url("images/icons/infoIcon1.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 12px;
-  min-height: 12px;
-  display: flex;
-  justify-content: center;
-}
-
-.game__card-info-block {
-  /* min-width: 205px; */
-  min-height: 79px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .games__card-icon-info::before {
@@ -1628,8 +1454,7 @@ a.game__card.sale_item::before {
 
 .games__card-info-simple {
   display: flex;
-  font-weight: bold;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1640,9 +1465,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-discord {
   display: flex;
-  font-weight: bold;
-  font-size: 10px;
   position: relative;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1663,9 +1487,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-epicgames {
   display: flex;
-  font-weight: bold;
-  font-size: 10px;
   position: relative;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1686,9 +1509,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-uplay {
   display: flex;
-  font-weight: bold;
-  font-size: 10px;
   position: relative;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1709,9 +1531,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-account {
   display: flex;
-  font-weight: bold;
-  font-size: 10px;
   position: relative;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1732,9 +1553,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-random {
   display: flex;
-  font-weight: bold;
-  font-size: 10px;
   position: relative;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1755,9 +1575,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-service {
   display: flex;
-  font-weight: bold;
   position: relative;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1779,8 +1598,7 @@ a.game__card.sale_item::before {
 .games__card-icon-serviceSettings {
   display: flex;
   position: relative;
-  font-weight: bold;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1802,8 +1620,7 @@ a.game__card.sale_item::before {
 .games__card-icon-key {
   display: flex;
   position: relative;
-  font-weight: bold;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1825,9 +1642,7 @@ a.game__card.sale_item::before {
 .games__card-icon-steam {
   display: flex;
   position: relative;
-  width: 59px;
-  font-weight: bold;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1849,9 +1664,7 @@ a.game__card.sale_item::before {
 .games__card-icon-minecraft {
   display: flex;
   position: relative;
-  font-weight: bold;
-  width: 74px;
-  font-size: 10px;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -1872,8 +1685,8 @@ a.game__card.sale_item::before {
 
 .games__card-icon-spotify {
   display: flex;
-  font-weight: bold;
   position: relative;
+  height: 20px;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -2934,6 +2747,7 @@ a.game__card.sale_item::before {
   letter-spacing: 0.144px;
 }
 
+
 /* Адаптив */
 
 /* tablet */
@@ -2946,6 +2760,7 @@ a.game__card.sale_item::before {
     background: transparent;
     width: 100%;
   }
+
 
   .swiper-button-prev,
   .swiper-button-next {
@@ -3259,6 +3074,7 @@ a.game__card.sale_item::before {
 }
 
 @media (max-width: 990px) {
+
   .radio-group {
     display: none;
   }
@@ -3318,12 +3134,12 @@ a.game__card.sale_item::before {
   }
 
   .first-screen__subtext {
-    width: 92%;
+    width: 100%;
+    gap: 25px;
   }
 
   .first-screen__subtext-item {
     font-size: 10px;
-    margin: 10px 0;
   }
 
   .first-screen__btns {
@@ -3353,6 +3169,8 @@ a.game__card.sale_item::before {
   .catalog__stats-item {
     width: 35%;
   }
+
+
 
   .first-screen__slider {
     width: 47%;
@@ -3402,6 +3220,7 @@ a.game__card.sale_item::before {
   .filter__categoryName {
     padding: 29px 37px;
   }
+
 
   .filter__categoryName--active::after {
     top: 60px;
@@ -3493,6 +3312,7 @@ a.game__card.sale_item::before {
   .footer__about-text-group {
     padding: 40px 0 0 0;
   }
+
 
   /* Shopping cart popup */
 
@@ -3609,6 +3429,7 @@ a.game__card.sale_item::before {
 
 /* mobile */
 @media (max-width: 800px) {
+
   .filter__block-container {
     flex-direction: column;
   }
@@ -3810,7 +3631,7 @@ a.game__card.sale_item::before {
   .games__card-icon-spotify,
   .games__card-price,
   .games__card-icon-discord {
-    padding: 2px 10px;
+    /* padding: 2px -1px; */
     font-size: 7px;
   }
 
@@ -3867,5 +3688,5 @@ a.game__card.sale_item::before {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.10);
 }
