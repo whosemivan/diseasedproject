@@ -439,6 +439,7 @@ body::after {
   border-radius: 33px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.95);
+  display: block;
 }
 
 .first-screen__subtext-item:nth-child(2) {
