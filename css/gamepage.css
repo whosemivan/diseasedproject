@@ -442,7 +442,6 @@ body::after {
 .gamePage__gameplay-img-block {
   width: 100%;
   height: 82%;
-  display: none;
 }
 
 .gamePage__preview-link {
@@ -535,9 +534,12 @@ body::after {
   font-weight: 700;
   line-height: 34px;
   letter-spacing: 0.56px;
-  white-space: nowrap; /* Текст не переносится */
-  overflow: hidden; /* Обрезаем всё за пределами блока */
-  text-overflow: ellipsis; /* Добавляем многоточие */
+  white-space: nowrap;
+  /* Текст не переносится */
+  overflow: hidden;
+  /* Обрезаем всё за пределами блока */
+  text-overflow: ellipsis;
+  /* Добавляем многоточие */
 }
 
 .gamePage__gameplay-text {
@@ -637,12 +639,10 @@ body::after {
 }
 
 .gamePage__requirements-btn--active {
-  background: linear-gradient(
-    90deg,
-    #0cebeb -0.44%,
-    #20e3b2 33.48%,
-    #29ffc6 71.39%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb -0.44%,
+      #20e3b2 33.48%,
+      #29ffc6 71.39%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -656,12 +656,10 @@ body::after {
   min-height: 3px;
   width: 50%;
   border-radius: 8px;
-  background: linear-gradient(
-    90deg,
-    #0cebeb -0.44%,
-    #20e3b2 33.48%,
-    #29ffc6 71.39%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb -0.44%,
+      #20e3b2 33.48%,
+      #29ffc6 71.39%);
 }
 
 strong {
@@ -726,7 +724,7 @@ ul.bb_ul {
   border-radius: 4px;
 }
 
-.gamePage__buy-terms-btn input:checked ~ .checkmark-title {
+.gamePage__buy-terms-btn input:checked~.checkmark-title {
   background-color: #dbdbdb;
 }
 
@@ -736,7 +734,7 @@ ul.bb_ul {
   display: none;
 }
 
-.gamePage__buy-terms-btn input:checked ~ .checkmark-title:after {
+.gamePage__buy-terms-btn input:checked~.checkmark-title:after {
   display: block;
 }
 
@@ -857,12 +855,10 @@ ul.bb_ul {
 
 .gamePage__buy-text::before {
   content: "Данные о товаре";
-  background: linear-gradient(
-    90deg,
-    #0cebeb 0.25%,
-    #20e3b2 47.04%,
-    #29ffc6 99.32%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb 0.25%,
+      #20e3b2 47.04%,
+      #29ffc6 99.32%);
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
   font-size: 16px;
@@ -876,12 +872,10 @@ ul.bb_ul {
   min-height: 3px;
   width: 50%;
   border-radius: 8px;
-  background: linear-gradient(
-    90deg,
-    #0cebeb -0.44%,
-    #20e3b2 33.48%,
-    #29ffc6 71.39%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb -0.44%,
+      #20e3b2 33.48%,
+      #29ffc6 71.39%);
 }
 
 .gamePage__buy-quantity {
@@ -983,12 +977,10 @@ span {
   cursor: pointer;
   flex-shrink: 0;
   border-radius: 12px;
-  background: linear-gradient(
-    90deg,
-    #0cebeb -0.44%,
-    #20e3b2 33.48%,
-    #29ffc6 71.39%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb -0.44%,
+      #20e3b2 33.48%,
+      #29ffc6 71.39%);
 }
 
 .gamePage__buy-btn:nth-child(2) {
@@ -1087,7 +1079,7 @@ input[type="checkbox"]::before {
   letter-spacing: 0.168px;
 }
 
-.gamePage__buy-similar-card > img {
+.gamePage__buy-similar-card>img {
   height: 114px;
 }
 
@@ -1107,12 +1099,10 @@ input[type="checkbox"]::before {
 
 .gamePage__buy-similar-text::before {
   content: "Похожие товары";
-  background: linear-gradient(
-    90deg,
-    #0cebeb 0.25%,
-    #20e3b2 47.04%,
-    #29ffc6 99.32%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb 0.25%,
+      #20e3b2 47.04%,
+      #29ffc6 99.32%);
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
   font-size: 16px;
@@ -1126,12 +1116,10 @@ input[type="checkbox"]::before {
   min-height: 3px;
   width: 50%;
   border-radius: 8px;
-  background: linear-gradient(
-    90deg,
-    #0cebeb -0.44%,
-    #20e3b2 33.48%,
-    #29ffc6 71.39%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb -0.44%,
+      #20e3b2 33.48%,
+      #29ffc6 71.39%);
 }
 
 .gamePage__buy-similar-card {
@@ -1552,12 +1540,10 @@ input[type="checkbox"]::before {
 
 .gamePage__buy-similar-card-price::before {
   content: "₽3600";
-  background: linear-gradient(
-    90deg,
-    #0cebeb 0.25%,
-    #20e3b2 47.04%,
-    #29ffc6 99.32%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb 0.25%,
+      #20e3b2 47.04%,
+      #29ffc6 99.32%);
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
   font-size: 16px;
@@ -1659,12 +1645,10 @@ input[type="checkbox"]::before {
 
 .gamePage__buy-similar-card-price::after {
   content: "₽3500";
-  background: linear-gradient(
-    90deg,
-    #0cebeb 0.25%,
-    #20e3b2 47.04%,
-    #29ffc6 99.32%
-  );
+  background: linear-gradient(90deg,
+      #0cebeb 0.25%,
+      #20e3b2 47.04%,
+      #29ffc6 99.32%);
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
   font-size: 12px;
@@ -1792,13 +1776,13 @@ input[type="checkbox"]::before {
   gap: 20px;
 }
 
-.shopping-cart__right-btn-freekassa > div,
-.shopping-cart__right-btn-visa > div,
-.shopping-cart__right-btn-walletKz > div,
-.shopping-cart__right-btn-walletUkr > div,
-.shopping-cart__right-btn-bitcoin > div,
-.shopping-cart__right-btn-sbp > div,
-.shopping-cart__right-btn-steam > div {
+.shopping-cart__right-btn-freekassa>div,
+.shopping-cart__right-btn-visa>div,
+.shopping-cart__right-btn-walletKz>div,
+.shopping-cart__right-btn-walletUkr>div,
+.shopping-cart__right-btn-bitcoin>div,
+.shopping-cart__right-btn-sbp>div,
+.shopping-cart__right-btn-steam>div {
   /*  position: relative;
   display: flex;
   align-items: center;
@@ -2692,6 +2676,7 @@ input[type="checkbox"]::before {
 }
 
 @media (max-width: 835px) {
+
   .gamePage__preview-wrapper::before,
   .gamePage__preview-wrapper::after,
   .gamePage__buy-wrapper::before,
@@ -3328,16 +3313,27 @@ input[type="checkbox"]::before {
   .results-card-icons {
     gap: 5px;
   }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
 }
 
 .gradient-text {
   background-color: #f3ec78;
-  background-image: linear-gradient(
-    90.27deg,
-    #0cebeb 0.25%,
-    #20e3b2 47.04%,
-    #29ffc6 99.32%
-  );
+  background-image: linear-gradient(90.27deg,
+      #0cebeb 0.25%,
+      #20e3b2 47.04%,
+      #29ffc6 99.32%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -3358,11 +3354,11 @@ input[type="checkbox"]::before {
   content: "";
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 90px;
+  bottom: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -3376,9 +3372,7 @@ input[type="checkbox"]::before {
 .swiper-pagination-bullet-active {
   width: 28px;
   border-radius: 4px;
-  background: var(
-    --1,
-    linear-gradient(90deg, #0cebeb -0.44%, #20e3b2 33.48%, #29ffc6 71.39%)
-  );
+  background: var(--1,
+      linear-gradient(90deg, #0cebeb -0.44%, #20e3b2 33.48%, #29ffc6 71.39%));
   opacity: 1;
 }

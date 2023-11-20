@@ -438,6 +438,7 @@ body::after {
   padding: 12px 22px;
   border-radius: 33px;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .first-screen__subtext-item:nth-child(2) {
